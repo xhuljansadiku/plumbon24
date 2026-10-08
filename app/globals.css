@@ -1,0 +1,352 @@
+@import "tailwindcss";
+
+/* ──────────────────────────────────────────────────────────────
+   Design tokens — derived from the official PLUMBON24 logo
+   (black · plumbing blue · white)
+   ────────────────────────────────────────────────────────────── */
+@theme {
+  --color-brand-50: #eef7fd;
+  --color-brand-100: #d8edfa;
+  --color-brand-200: #b0d9f4;
+  --color-brand-300: #6ebcec;
+  --color-brand-400: #2c9de0;
+  --color-brand-500: #027ec6; /* Primary brand blue (logo) */
+  --color-brand-600: #0274b8; /* Brand blue tuned for 5:1 contrast with white text */
+  --color-brand-700: #005a91; /* Dark blue */
+  --color-brand-800: #064a75;
+  --color-brand-900: #093a5b;
+
+  --color-navy-950: #071923; /* Deep navy */
+  --color-navy-900: #0b2230;
+  --color-navy-800: #123140;
+  --color-navy-700: #1b4153;
+
+  --color-ink: #111827; /* Dark gray: headings and body copy */
+  --color-ink-900: #0a0e13; /* Near-black for dark bands */
+  --color-muted: #4b5563; /* Medium gray */
+  --color-subtle: #6b7280;
+  --color-line: #e5e7eb; /* Light gray */
+  --color-line-strong: #d3d8df;
+  --color-mist: #f7f9fc; /* Very light background */
+  --color-mist-200: #eef2f7;
+
+  --shadow-card: 0 1px 2px rgb(17 24 39 / 0.04), 0 14px 32px -18px rgb(17 24 39 / 0.2);
+  --shadow-lift: 0 2px 4px rgb(17 24 39 / 0.05), 0 28px 56px -24px rgb(17 24 39 / 0.32);
+  --shadow-cta: 0 12px 24px -14px rgb(2 116 184 / 0.75);
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-display: var(--font-manrope), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Base
+   ────────────────────────────────────────────────────────────── */
+@layer base {
+  :root {
+    interpolate-size: allow-keywords;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-brand-100);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-brand-500);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Type scale (desktop → mobile ranges from the brand brief)
+   ────────────────────────────────────────────────────────────── */
+@utility text-h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.375rem, 1.6rem + 2.75vw, 4.25rem);
+  line-height: 1.03;
+  letter-spacing: -0.035em;
+}
+
+@utility text-h2 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.875rem, 1.33rem + 2.2vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+@utility text-h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.375rem, 1.16rem + 0.85vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+@utility text-h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1875rem;
+  line-height: 1.35;
+  letter-spacing: -0.012em;
+}
+
+@utility text-lead {
+  font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
+  line-height: 1.65;
+}
+
+@utility text-eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Technical / blueprint details
+   ────────────────────────────────────────────────────────────── */
+@utility bg-blueprint {
+  background-image:
+    linear-gradient(to right, rgb(2 126 198 / 0.075) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(2 126 198 / 0.075) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+@utility bg-blueprint-dark {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.045) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+@utility fade-edges {
+  mask-image: radial-gradient(ellipse 75% 70% at 50% 40%, #000 35%, transparent 100%);
+}
+
+@utility fade-bottom {
+  mask-image: linear-gradient(to bottom, #000 45%, transparent 100%);
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Components
+   ────────────────────────────────────────────────────────────── */
+@layer components {
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -4rem;
+    z-index: 100;
+    border-radius: 0.5rem;
+    background: var(--color-ink);
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    transition: top 150ms var(--ease-out-soft);
+  }
+
+  .skip-link:focus-visible {
+    top: 1rem;
+  }
+
+  /* Sticky header gains depth once the page scrolls (no JavaScript needed). */
+  .site-header {
+    box-shadow: 0 0 0 transparent;
+  }
+
+  @supports (animation-timeline: scroll()) {
+    .site-header {
+      animation: header-elevate linear both;
+      animation-timeline: scroll(root);
+      animation-range: 0 120px;
+    }
+  }
+
+  /* FAQ accordions built on <details>: animated where the browser supports it. */
+  .faq-item::details-content {
+    block-size: 0;
+    overflow-y: clip;
+    transition:
+      block-size 320ms var(--ease-out-soft),
+      content-visibility 320ms allow-discrete;
+  }
+
+  .faq-item[open]::details-content {
+    block-size: auto;
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Mobile menu dialog */
+  html[data-menu-open] {
+    overflow: hidden;
+  }
+
+  .mobile-menu[open] {
+    animation: menu-in 280ms var(--ease-out-soft);
+  }
+
+  /* Desktop services mega menu */
+  .mega-panel:not([hidden]) {
+    animation: menu-in 200ms var(--ease-out-soft);
+  }
+
+  .mobile-menu::backdrop {
+    background: rgb(7 25 35 / 0.55);
+  }
+
+  /* Long-form legal and policy pages */
+  .prose-legal {
+    color: var(--color-muted);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+  }
+
+  .prose-legal h2 {
+    margin-top: 2.75rem;
+    margin-bottom: 0.875rem;
+    color: var(--color-ink);
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+
+  .prose-legal h3 {
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-ink);
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+
+  .prose-legal p + p {
+    margin-top: 1rem;
+  }
+
+  .prose-legal ul {
+    margin-top: 1rem;
+    list-style: disc;
+    padding-left: 1.25rem;
+  }
+
+  .prose-legal li + li {
+    margin-top: 0.5rem;
+  }
+
+  .prose-legal a {
+    color: var(--color-brand-700);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Motion — subtle, scroll-linked, CSS only.
+   Content is always visible; browsers without scroll-driven
+   animations (or with reduced motion) simply skip the effect.
+   ────────────────────────────────────────────────────────────── */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      animation: reveal-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 100%;
+    }
+
+    .reveal-image {
+      animation: image-settle linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 55%;
+    }
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(1.75rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes image-settle {
+  from {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes header-elevate {
+  to {
+    box-shadow: 0 12px 32px -22px rgb(17 24 39 / 0.45);
+  }
+}
+
+@keyframes menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+}
+
+@keyframes hero-zoom {
+  from {
+    transform: scale(1.06);
+  }
+}
