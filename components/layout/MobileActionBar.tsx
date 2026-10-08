@@ -31,9 +31,9 @@ export function MobileActionBar({ phone, email }: { phone: PhoneNumber | null; e
         <Link
           href={`/contact#${FORM_ID}`}
           onClick={goToForm}
-          className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-[10px] bg-brand-600 px-5 font-semibold text-white shadow-cta transition-colors hover:bg-brand-700"
+          className="button-sheen inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-[10px] bg-brand-600 px-5 font-semibold text-white shadow-cta transition duration-200 motion-safe:hover:-translate-y-px hover:bg-brand-700 motion-safe:active:translate-y-0 motion-safe:active:scale-[0.985]"
         >
-          Request Service
+          <span className="relative z-10">Request Service</span>
         </Link>
         {phone ? (
           <a

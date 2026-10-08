@@ -27,7 +27,10 @@ export function PageHero({
   return (
     <section className="relative isolate overflow-hidden bg-navy-950 text-white">
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-blueprint-dark fade-edges" />
-      <div aria-hidden="true" className="absolute -left-48 -top-48 -z-10 size-[34rem] rounded-full bg-brand-600/15 blur-3xl" />
+      <div
+        aria-hidden="true"
+        className="ambient-float absolute -left-48 -top-48 -z-10 size-[34rem] rounded-full bg-brand-600/15 blur-3xl"
+      />
       <Container className="pb-16 pt-8 sm:pb-20 sm:pt-10 lg:pb-24">
         <Breadcrumbs tone="dark" items={crumbs} />
         <div className={image ? 'mt-10 grid items-center gap-12 lg:mt-14 lg:grid-cols-12 lg:gap-12' : 'mt-10 lg:mt-14'}>
@@ -47,7 +50,7 @@ export function PageHero({
                   <span className="absolute bottom-0 left-0 size-6 border-b-2 border-l-2 border-brand-400" />
                   <span className="absolute bottom-0 right-0 size-6 border-b-2 border-r-2 border-brand-400" />
                 </span>
-                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-navy-900 ring-1 ring-white/10 lg:aspect-[5/6]">
+                <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl bg-navy-900 ring-1 ring-white/10 lg:aspect-[5/6]">
                   <Image
                     src={image.src}
                     alt={image.alt}
@@ -55,7 +58,7 @@ export function PageHero({
                     loading="eager"
                     fetchPriority="high"
                     sizes="(min-width: 1280px) 520px, (min-width: 1024px) 40vw, 100vw"
-                    className="object-cover"
+                    className="object-cover transition-transform duration-700 ease-out-soft motion-safe:group-hover:scale-[1.035]"
                     style={image.position ? { objectPosition: image.position } : undefined}
                     placeholder="blur"
                   />

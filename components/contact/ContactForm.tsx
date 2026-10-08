@@ -386,18 +386,20 @@ export function ContactForm({
         <button
           type="submit"
           disabled={submitting}
-          className="inline-flex min-h-14 w-full items-center justify-center gap-2.5 rounded-[10px] bg-brand-600 px-7 text-base font-semibold text-white shadow-cta transition duration-200 hover:-translate-y-px hover:bg-brand-700 disabled:translate-y-0 disabled:cursor-progress disabled:opacity-80"
+          className="button-sheen inline-flex min-h-14 w-full items-center justify-center gap-2.5 rounded-[10px] bg-brand-600 px-7 text-base font-semibold text-white shadow-cta transition duration-200 motion-safe:hover:-translate-y-px hover:bg-brand-700 motion-safe:active:translate-y-0 motion-safe:active:scale-[0.985] disabled:translate-y-0 disabled:cursor-progress disabled:opacity-80"
         >
-          {submitting ? (
-            <>
-              <svg viewBox="0 0 24 24" aria-hidden="true" className="size-5 animate-spin" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round">
-                <path d="M12 3a9 9 0 1 0 9 9" />
-              </svg>
-              Sending your request…
-            </>
-          ) : (
-            submitLabel
-          )}
+          <span className="relative z-10 inline-flex items-center gap-2.5">
+            {submitting ? (
+              <>
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="size-5 animate-spin" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round">
+                  <path d="M12 3a9 9 0 1 0 9 9" />
+                </svg>
+                Sending your request…
+              </>
+            ) : (
+              submitLabel
+            )}
+          </span>
         </button>
         <p className="text-center text-sm text-muted">
           We’ll only use your details to respond to this request. See our{' '}

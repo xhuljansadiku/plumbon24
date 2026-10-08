@@ -68,13 +68,13 @@ export function ResidentialCommercial() {
               </h2>
               <p className={cn('text-lead mt-5', dark ? 'text-white/75' : 'text-muted')}>{panel.text}</p>
 
-              <div className="relative mt-9 aspect-[16/10] overflow-hidden rounded-2xl">
+              <div className="group relative mt-9 aspect-[16/10] overflow-hidden rounded-2xl">
                 <Image
                   src={panel.image.src}
                   alt={panel.image.alt}
                   fill
                   sizes="(min-width: 1024px) 36rem, 100vw"
-                  className="reveal-image object-cover"
+                  className="reveal-image object-cover transition-transform duration-700 ease-out-soft motion-safe:group-hover:scale-[1.035]"
                   style={panel.image.position ? { objectPosition: panel.image.position } : undefined}
                 />
               </div>

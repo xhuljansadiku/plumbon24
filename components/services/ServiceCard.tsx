@@ -21,7 +21,7 @@ export function ServiceCard({
   return (
     <article
       className={cn(
-        'group relative flex h-full flex-col rounded-2xl border border-line bg-white p-6 transition duration-300 ease-out-soft hover:-translate-y-1 hover:border-brand-500/40 hover:shadow-lift sm:p-7',
+        'group relative flex h-full flex-col rounded-2xl border border-line bg-white p-6 transition duration-300 ease-out-soft motion-safe:hover:-translate-y-1 motion-safe:focus-within:-translate-y-1 hover:border-brand-500/40 hover:shadow-lift focus-within:border-brand-500/40 focus-within:shadow-lift sm:p-7',
         className,
       )}
     >
@@ -30,14 +30,14 @@ export function ServiceCard({
         className="absolute inset-x-6 top-0 h-[3px] origin-left scale-x-0 rounded-b-full bg-brand-500 transition-transform duration-500 ease-out-soft group-hover:scale-x-100"
       />
       <div className="flex items-start justify-between gap-4">
-        <span className="grid size-14 place-items-center rounded-xl bg-brand-50 text-brand-600 ring-1 ring-brand-100 transition-colors duration-300 group-hover:bg-brand-600 group-hover:text-white group-hover:ring-brand-600">
+        <span className="grid size-14 place-items-center rounded-xl bg-brand-50 text-brand-600 ring-1 ring-brand-100 transition duration-300 group-hover:bg-brand-600 group-hover:text-white group-hover:ring-brand-600 motion-safe:group-hover:scale-105">
           <Icon name={service.icon} className="size-7" />
         </span>
         {index !== undefined ? (
-          <span className="font-display text-sm font-bold tabular-nums tracking-[0.12em] text-subtle">{indexLabel(index)}</span>
+          <span className="font-display text-sm font-bold tabular-nums tracking-[0.12em] text-subtle transition-colors duration-300 group-hover:text-brand-600">{indexLabel(index)}</span>
         ) : null}
       </div>
-      <Heading className="mt-7 font-display text-[1.3125rem] font-bold leading-snug tracking-tight text-ink">
+      <Heading className="mt-7 font-display text-[1.3125rem] font-bold leading-snug tracking-tight text-ink transition-colors duration-200 group-hover:text-brand-700">
         <Link
           href={serviceHref(service.slug)}
           className="outline-none after:absolute after:inset-0 after:rounded-2xl focus-visible:after:outline-3 focus-visible:after:outline-offset-2 focus-visible:after:outline-brand-500"

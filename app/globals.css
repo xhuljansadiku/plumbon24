@@ -238,6 +238,45 @@
     animation: menu-in 200ms var(--ease-out-soft);
   }
 
+  /* Slow ambient motion for the soft blue light in the hero backgrounds. */
+  .ambient-float {
+    animation: ambient-float 18s ease-in-out infinite alternate;
+  }
+
+  .button-sheen {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+
+  .button-sheen::before {
+    position: absolute;
+    top: -75%;
+    bottom: -75%;
+    left: -35%;
+    z-index: 0;
+    width: 24%;
+    content: "";
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.34), transparent);
+    opacity: 0;
+    transform: translateX(-250%) rotate(22deg);
+  }
+
+  .button-sheen:focus-visible::before {
+    animation: button-sheen 850ms var(--ease-out-soft) both;
+  }
+
+  .button-sheen:disabled::before {
+    display: none;
+  }
+
+  @media (hover: hover) {
+    .button-sheen:hover::before {
+      animation: button-sheen 850ms var(--ease-out-soft) both;
+    }
+  }
+
   .mobile-menu::backdrop {
     background: rgb(7 25 35 / 0.55);
   }
@@ -348,5 +387,36 @@
 @keyframes hero-zoom {
   from {
     transform: scale(1.06);
+  }
+}
+
+@keyframes ambient-float {
+  from {
+    transform: translate3d(0, 0, 0) scale(0.96);
+  }
+
+  to {
+    transform: translate3d(-1.25rem, 1rem, 0) scale(1.04);
+  }
+}
+
+@keyframes button-sheen {
+  15% {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(850%) rotate(22deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-float {
+    animation: none;
+  }
+
+  .button-sheen::before {
+    display: none;
   }
 }

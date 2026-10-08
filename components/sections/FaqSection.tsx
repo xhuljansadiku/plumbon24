@@ -13,10 +13,10 @@ export function FaqList({ faqs }: { faqs: Faq[] }) {
       {faqs.map((faq) => (
         <details key={faq.question} className="faq-item group">
           <summary className="flex cursor-pointer list-none items-start justify-between gap-6 py-6 text-left">
-            <span className="font-display text-[1.0625rem] font-bold leading-snug tracking-tight text-ink sm:text-lg">{faq.question}</span>
+            <span className="font-display text-[1.0625rem] font-bold leading-snug tracking-tight text-ink transition-colors duration-200 group-hover:text-brand-700 sm:text-lg">{faq.question}</span>
             <span
               aria-hidden="true"
-              className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-full border border-line-strong text-ink transition duration-300 group-open:rotate-45 group-open:border-brand-600 group-open:bg-brand-600 group-open:text-white"
+              className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-full border border-line-strong text-ink transition duration-300 group-hover:border-brand-300 group-hover:text-brand-700 motion-safe:group-open:rotate-45 group-open:border-brand-600 group-open:bg-brand-600 group-open:text-white"
             >
               <Icon name="plus" className="size-4" strokeWidth={2} />
             </span>

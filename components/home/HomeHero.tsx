@@ -13,6 +13,10 @@ export function HomeHero() {
   return (
     <section aria-labelledby="hero-title" className="relative isolate overflow-hidden bg-white">
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-blueprint fade-edges" />
+      <div
+        aria-hidden="true"
+        className="ambient-float pointer-events-none absolute -right-44 -top-40 -z-10 size-[34rem] rounded-full bg-brand-300/20 blur-[96px]"
+      />
       <div aria-hidden="true" className="absolute inset-y-0 right-0 -z-10 hidden w-[26%] bg-mist lg:block" />
 
       <Container className="grid items-center gap-x-12 gap-y-14 pb-20 pt-10 sm:pt-14 lg:grid-cols-12 lg:pb-24 lg:pt-16">
@@ -73,7 +77,7 @@ export function HomeHero() {
             <span className="absolute bottom-0 right-0 size-7 border-b-2 border-r-2 border-brand-500" />
           </span>
 
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-navy-900 shadow-lift sm:aspect-[16/11] lg:aspect-[4/5]">
+          <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl bg-navy-900 shadow-lift sm:aspect-[16/11] lg:aspect-[4/5]">
             <Image
               src={photo.src}
               alt={photo.alt}
@@ -82,7 +86,7 @@ export function HomeHero() {
               fetchPriority="high"
               placeholder="blur"
               sizes="(min-width: 1280px) 500px, (min-width: 1024px) 40vw, 100vw"
-              className="object-cover [animation:hero-zoom_1.8s_var(--ease-out-soft)_both]"
+              className="object-cover [animation:hero-zoom_1.8s_var(--ease-out-soft)_both] transition-transform duration-700 ease-out-soft motion-safe:group-hover:scale-[1.035]"
               style={{ objectPosition: photo.position }}
             />
             <div aria-hidden="true" className="absolute inset-0 bg-linear-to-t from-navy-950/50 via-transparent to-transparent" />

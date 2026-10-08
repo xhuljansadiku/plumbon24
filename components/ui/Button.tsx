@@ -15,11 +15,11 @@ const sizes: Record<Size, string> = {
 }
 
 const variants: Record<Variant, string> = {
-  primary: 'bg-brand-600 text-white shadow-cta hover:-translate-y-px hover:bg-brand-700 active:translate-y-0',
-  dark: 'bg-ink-900 text-white hover:-translate-y-px hover:bg-ink hover:shadow-lift active:translate-y-0',
+  primary: 'bg-brand-600 text-white shadow-cta motion-safe:hover:-translate-y-px hover:bg-brand-700 motion-safe:active:translate-y-0 motion-safe:active:scale-[0.985]',
+  dark: 'bg-ink-900 text-white motion-safe:hover:-translate-y-px hover:bg-ink hover:shadow-lift motion-safe:active:translate-y-0 motion-safe:active:scale-[0.985]',
   outline: 'border border-ink/20 bg-white/70 text-ink hover:border-ink hover:bg-ink hover:text-white',
   'outline-light': 'border border-white/35 text-white hover:border-white hover:bg-white hover:text-ink',
-  light: 'bg-white text-ink hover:-translate-y-px hover:bg-mist-200 active:translate-y-0',
+  light: 'bg-white text-ink motion-safe:hover:-translate-y-px hover:bg-mist-200 motion-safe:active:translate-y-0 motion-safe:active:scale-[0.985]',
 }
 
 export function buttonClasses({
@@ -27,7 +27,7 @@ export function buttonClasses({
   size = 'md',
   className,
 }: { variant?: Variant; size?: Size; className?: string } = {}) {
-  return cn(base, sizes[size], variants[variant], className)
+  return cn(base, sizes[size], variants[variant], variant === 'primary' && 'button-sheen', className)
 }
 
 type ButtonContentProps = {
@@ -46,11 +46,11 @@ function ButtonContent({ children, icon, iconPosition = 'end' }: ButtonContentPr
   ) : null
 
   return (
-    <>
+    <span className="relative z-10 inline-flex items-center gap-2.5">
       {iconPosition === 'start' && glyph}
       <span>{children}</span>
       {iconPosition === 'end' && glyph}
-    </>
+    </span>
   )
 }
 
