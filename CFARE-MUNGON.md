@@ -76,3 +76,29 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 - [ ] **Faqet ligjore** (Privacy, Terms, Accessibility): t'i rishikojë klienti ose një jurist.
 - [ ] **Fotot stock që kanë mbetur** (rrugë NYC, gaz, kapak kanalizimi, rubinet, pompë, etj.): zëvendësoji kur të vijnë më shumë foto reale.
 - [ ] **Faqja About**: një paragraf i shkurtër për pronarin/historinë e kompanisë do e bënte më personale. (Pyet klientin.)
+
+---
+
+## 4. SEO lokale (jashtë faqes, peshon më shumë se vetë faqja)
+
+### Nga klienti / ne bashkë me klientin
+- [ ] **Google Business Profile**: hape ose verifikoje (business.google.com). Kategoria kryesore: *Plumber*. Shto:
+      - NAP identik me faqen: `PLUMBON24 MECHANICAL INC`, `235 43rd St, Brooklyn, NY 11232`, `(917) 702-0072`
+      - Service areas: Manhattan, Brooklyn, Queens, Bronx, Staten Island
+      - Orari Mon–Fri 9–5 + "Open 24 hours" për emergjencat (ose shënim në përshkrim)
+      - Linkun e faqes, shërbimet, 10+ foto reale nga `plumbon24-materiale`
+      - Postime të rregullta (1 në javë: projekt, foto, këshillë)
+- [ ] **Review në Google**: t'u kërkojë klientëve të kënaqur review pas çdo pune (me link direkt nga GBP → "Ask for reviews"). Synimi: 10+ review në 2–3 muajt e parë, dhe t'u përgjigjet të gjithave.
+- [ ] **Citations (NAP i njëjtë kudo)**: profil në Yelp, Angi, HomeAdvisor, Thumbtack, BBB, Facebook, Nextdoor, Apple Maps (Business Connect), Bing Places. Emri, adresa dhe telefoni duhet të jenë **saktësisht** si në faqe.
+- [ ] **Backlinks**: link nga furnitorët, kontraktorët partnerë, shoqatat lokale (p.sh. Chamber of Commerce), komuniteti shqiptar në NYC.
+
+### Nga ne (teknike)
+- [ ] **Domain + `NEXT_PUBLIC_SITE_URL`**: pa këtë, canonical dhe sitemap tregojnë `localhost`. ⚠️ Mos publiko pa të.
+- [ ] **Google Search Console**: verifiko domain-in, dorëzo `sitemap.xml`, kërko indeksimin e faqes kryesore.
+- [ ] **Bing Webmaster Tools**: importo nga Search Console.
+- [ ] **Faqe për çdo borough** (`/service-areas/queens` etj.), me përmbajtje unike për secilin (lloje ndërtesash, probleme tipike, projekte aty). Vetëm kur kemi informacion real, ndryshe Google i sheh si "doorway pages".
+- [ ] **Licensed & Insured + numri i licencës** në faqe dhe në schema, kur ta japë klienti.
+- [ ] **Review në schema** (`aggregateRating`), vetëm me review reale të verifikueshme.
+- [ ] **Lighthouse audit** para publikimit (Performance / SEO / Accessibility ≥ 90).
+- [ ] **Analytics** (Vercel Analytics, pa cookies) + ndjekja e klikimeve "Call Now" dhe dërgimeve të formularit. Përditëso faqen Privacy.
+- [ ] **Kontroll mujor** në Search Console: cilat fjalë sjellin vizita, cilat faqe nuk janë indeksuar.
