@@ -43,7 +43,7 @@ function DetailRow({ icon, label, tone, children }: { icon: IconName; label: str
   )
 }
 
-/** Name, address, phone and email — the NAP block, identical everywhere it appears. */
+/** Name, address, phone, email and hours — the NAP block, identical everywhere it appears. */
 export function ContactDetails({ tone = 'light', showName = true, className }: { tone?: Tone; showName?: boolean; className?: string }) {
   const showPhone = Boolean(site.phone) || site.showPhonePlaceholder
 
@@ -84,6 +84,12 @@ export function ContactDetails({ tone = 'light', showName = true, className }: {
           <a href={`mailto:${site.email}`} className="font-semibold underline-offset-4 hover:underline">
             {site.email}
           </a>
+        </DetailRow>
+        <DetailRow icon="clock" label="Hours" tone={tone}>
+          <p>{site.hours.office}</p>
+          {site.hours.emergency ? (
+            <p className={cn('mt-0.5 font-semibold', tone === 'dark' ? 'text-brand-300' : 'text-brand-700')}>{site.hours.emergency}</p>
+          ) : null}
         </DetailRow>
       </ul>
     </div>

@@ -4,7 +4,6 @@ import { Icon } from '@/components/ui/Icon'
 import { Container, Section } from '@/components/ui/Layout'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { images } from '@/lib/images'
-import { neighborhoods } from '@/lib/service-areas'
 import { addressLine, site } from '@/lib/site'
 
 export function ServiceAreasSection() {
@@ -28,8 +27,8 @@ export function ServiceAreasSection() {
         <div className="lg:col-span-7">
           <SectionHeading
             eyebrow="Service areas"
-            title="Serving Brooklyn, NY"
-            lead={`${site.name} is based in Brooklyn and provides professional plumbing services for customers throughout our service areas.`}
+            title="Serving All 5 NYC Boroughs"
+            lead={`${site.name} is based in Brooklyn and provides professional plumbing services across Manhattan, Brooklyn, Queens, the Bronx and Staten Island.`}
             id="areas-title"
           />
           <div className="mt-8 flex items-start gap-4 rounded-xl border border-line bg-white p-5">
@@ -41,9 +40,9 @@ export function ServiceAreasSection() {
               <p className="mt-0.5 text-muted">{addressLine}</p>
             </div>
           </div>
-          <h3 className="text-eyebrow mt-10 text-[0.75rem] text-subtle">Brooklyn neighborhoods we serve</h3>
+          <h3 className="text-eyebrow mt-10 text-[0.75rem] text-subtle">Boroughs we serve</h3>
           <ul className="mt-5 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3">
-            {neighborhoods.map((name) => (
+            {site.boroughs.map((name) => (
               <li key={name} className="flex items-center gap-2.5 text-ink">
                 <span aria-hidden="true" className="size-1.5 shrink-0 rounded-full bg-brand-500" />
                 {name}

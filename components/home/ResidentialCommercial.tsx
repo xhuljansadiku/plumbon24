@@ -21,9 +21,9 @@ const panels: Panel[] = [
     slug: 'residential-plumbing',
     eyebrow: 'For homeowners & residents',
     title: 'Residential Plumbing',
-    text: 'Repairs, installations and upgrades for Brooklyn homes — handled with care for your space.',
+    text: 'Repairs, installations and upgrades for New York City homes — handled with care for your space.',
     items: ['Houses', 'Apartments', 'Condos', 'Kitchens', 'Bathrooms', 'Water heaters', 'Drains', 'Leaks', 'Fixtures', 'Pipes'],
-    image: images.brooklynBrownstones,
+    image: images.finishedBathroom,
     tone: 'light',
   },
   {
@@ -41,7 +41,7 @@ const panels: Panel[] = [
       'Plumbing maintenance',
       'Plumbing installations',
     ],
-    image: images.commercialKitchenSink,
+    image: images.mechanicalRoom,
     tone: 'dark',
   },
 ]

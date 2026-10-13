@@ -12,7 +12,7 @@ import { getRelatedServices, type Service } from '@/lib/services'
 import { ctaLabels, site } from '@/lib/site'
 import { indexLabel } from '@/lib/utils'
 
-/** 2. Service introduction + Brooklyn-specific note */
+/** 2. Service introduction + NYC-specific note */
 export function ServiceIntro({ service }: { service: Service }) {
   return (
     <Section tone="white" labelledBy="intro-title">
@@ -32,7 +32,7 @@ export function ServiceIntro({ service }: { service: Service }) {
           <div className="rounded-2xl border border-line bg-mist p-7 sm:p-8">
             <p className="flex items-center gap-3 text-eyebrow text-[0.75rem] text-brand-700">
               <Icon name="map-pin" className="size-4" />
-              Plumbing in Brooklyn
+              Plumbing in New York City
             </p>
             <h3 className="text-h4 mt-4 text-ink">{service.local.heading}</h3>
             <p className="mt-3 leading-relaxed text-muted">{service.local.text}</p>
@@ -157,10 +157,10 @@ export function ServiceBenefits({ service }: { service: Service }) {
 }
 
 const reasons = [
-  { icon: 'badge', title: '15+ years of experience', text: 'Practical plumbing experience across Brooklyn’s older and newer buildings.' },
+  { icon: 'badge', title: '15+ years of experience', text: 'Practical plumbing experience across New York City’s older and newer buildings.' },
   { icon: 'message', title: 'Clear communication', text: 'You’ll understand the problem and your options before work begins.' },
   { icon: 'shield-check', title: 'Quality workmanship', text: 'Careful work, suitable materials and proper testing.' },
-  { icon: 'map-pin', title: 'Local to Brooklyn', text: `Based in ${site.neighborhood}, serving homes and businesses across the borough.` },
+  { icon: 'map-pin', title: 'Local to NYC', text: `Based in ${site.neighborhood}, serving homes and businesses across all five boroughs.` },
 ] satisfies { icon: IconName; title: string; text: string }[]
 
 /** 7. Why choose PLUMBON24 */
@@ -223,7 +223,7 @@ export function ServiceHeroFacts() {
   const facts: { icon: IconName; label: string }[] = [
     { icon: 'badge', label: '15+ years of experience' },
     { icon: 'building', label: 'Residential & commercial' },
-    { icon: 'map-pin', label: 'Based in Brooklyn, NY' },
+    { icon: 'map-pin', label: 'All 5 NYC boroughs' },
   ]
   return (
     <ul className="flex flex-wrap gap-x-7 gap-y-3 border-t border-white/10 pt-7 text-sm font-medium text-white/80">

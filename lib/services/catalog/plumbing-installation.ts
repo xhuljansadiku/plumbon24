@@ -6,15 +6,15 @@ export const plumbingInstallation: Service = {
   category: 'projects',
   title: 'Plumbing Installation',
   icon: 'toolbox',
-  image: 'toolsOnBlueprint',
+  image: 'bathroomRoughIn',
   summary: 'Installation of new fixtures, appliances, piping and equipment for homes and businesses.',
   seo: {
-    title: 'Plumbing Installation in Brooklyn, NY | PLUMBON24 MECHANICAL INC',
+    title: 'Plumbing Installation in New York City | PLUMBON24 MECHANICAL INC',
     description:
-      'New fixtures, appliances, piping or equipment? PLUMBON24 MECHANICAL INC provides professional plumbing installation for Brooklyn homes and businesses.',
+      'New fixtures, appliances, piping or equipment? PLUMBON24 MECHANICAL INC provides professional plumbing installation for NYC homes and businesses.',
   },
   hero: {
-    heading: 'Plumbing Installation in Brooklyn, NY',
+    heading: 'Plumbing Installation in New York City',
     intro:
       'New fixtures, appliances, water heaters and piping — installed with careful planning, suitable materials and proper connections.',
   },
@@ -24,7 +24,7 @@ export const plumbingInstallation: Service = {
   ],
   local: {
     heading: 'New installations in older buildings',
-    text: 'Installing new fixtures and equipment in older Brooklyn buildings usually means connecting to existing piping of different materials and ages. Getting the transitions, valves and supports right is what makes a new installation reliable inside an old building.',
+    text: 'Installing new fixtures and equipment in older NYC buildings usually means connecting to existing piping of different materials and ages. Getting the transitions, valves and supports right is what makes a new installation reliable inside an old building.',
   },
   problemsHeading: 'What We Install',
   problems: [

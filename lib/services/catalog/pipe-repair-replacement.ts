@@ -7,15 +7,15 @@ export const pipeRepairReplacement: Service = {
   title: 'Pipe Repair & Replacement',
   shortTitle: 'Pipe Repair',
   icon: 'pipe',
-  image: 'pipeThreading',
+  image: 'basementCastIron',
   summary: 'Professional pipe repair, replacement and plumbing system upgrades.',
   seo: {
-    title: 'Pipe Repair & Replacement in Brooklyn, NY | PLUMBON24',
+    title: 'Pipe Repair & Replacement in New York City | PLUMBON24',
     description:
-      'Leaking, corroded or damaged pipes? PLUMBON24 MECHANICAL INC repairs and replaces water and drain piping in Brooklyn homes and commercial buildings.',
+      'Leaking, corroded or damaged pipes? PLUMBON24 MECHANICAL INC repairs and replaces water and drain piping in NYC homes and commercial buildings.',
   },
   hero: {
-    heading: 'Pipe Repair & Replacement in Brooklyn, NY',
+    heading: 'Pipe Repair & Replacement in New York City',
     intro:
       'Leaking joints, corroded sections and damaged pipes are repaired properly — and when a section is beyond repair, it’s replaced with suitable materials.',
   },
@@ -25,7 +25,7 @@ export const pipeRepairReplacement: Service = {
   ],
   local: {
     heading: 'Mixed piping in older buildings',
-    text: 'Brooklyn’s older homes often contain piping from several eras: original galvanized steel or cast iron alongside copper and plastic sections added during later renovations. Transitions between different materials need the right fittings to prevent leaks and corrosion, and poorly made transitions are a common source of repeat problems.',
+    text: 'New York City’s older homes often contain piping from several eras: original galvanized steel or cast iron alongside copper and plastic sections added during later renovations. Transitions between different materials need the right fittings to prevent leaks and corrosion, and poorly made transitions are a common source of repeat problems.',
   },
   problemsHeading: 'Pipe Problems We Repair',
   problems: [

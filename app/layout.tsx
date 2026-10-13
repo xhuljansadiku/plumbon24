@@ -17,20 +17,20 @@ export const ensureStatic = 'navigation'
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: {
-    default: 'Plumber in Brooklyn, NY | PLUMBON24 MECHANICAL INC',
+    default: 'NYC Plumber — All 5 Boroughs | PLUMBON24 MECHANICAL INC',
     template: '%s | PLUMBON24 MECHANICAL INC',
   },
   description:
-    'Professional plumbing services for homes and businesses in Brooklyn, NY. PLUMBON24 MECHANICAL INC brings 15+ years of plumbing experience.',
+    'Professional plumbing services for homes and businesses in Manhattan, Brooklyn, Queens, the Bronx and Staten Island. 24/7 emergency service and free estimates from PLUMBON24 MECHANICAL INC.',
   applicationName: site.name,
   category: 'Plumbing',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     siteName: site.name,
-    title: 'PLUMBON24 MECHANICAL INC | Professional Plumbing Services in Brooklyn',
+    title: 'PLUMBON24 MECHANICAL INC | Professional Plumbing Services in New York City',
     description:
-      'Professional plumbing services for homes and businesses in Brooklyn, NY. Contact PLUMBON24 MECHANICAL INC for professional plumbing solutions.',
+      'Professional plumbing services for homes and businesses across all five NYC boroughs. 24/7 emergency service and free estimates. Call (917) 702-0072.',
   },
   twitter: { card: 'summary_large_image' },
   formatDetection: { telephone: false, address: false, email: false },

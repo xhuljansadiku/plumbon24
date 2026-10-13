@@ -34,8 +34,14 @@ type SiteConfig = {
   neighborhood: string
   geo: { latitude: number; longitude: number } | null
   openingHours: string[]
+  hours: {
+    office: string
+    emergency: string | null
+  }
+  boroughs: string[]
   features: {
     emergencyService: boolean
+    emergency24h: boolean
     freeEstimates: boolean
   }
   profiles: {
@@ -49,18 +55,13 @@ export const site: SiteConfig = {
   name: 'PLUMBON24 MECHANICAL INC',
   shortName: 'PLUMBON24',
   description:
-    'Professional plumbing services for homes and businesses in Brooklyn, NY, backed by 15+ years of plumbing experience.',
+    'Professional plumbing services for homes and businesses across all five boroughs of New York City, backed by 15+ years of plumbing experience.',
   experienceYears: '15+',
   email: 'plumbon24@gmail.com',
 
-  /**
-   * Add the business phone number once it is confirmed, for example:
-   *   phone: { display: '(718) 555-0123', e164: '+17185550123' },
-   * "Call Now" buttons, the mobile call button and the schema `telephone` appear automatically.
-   */
-  phone: null,
+  phone: { display: '(917) 702-0072', e164: '+19177020072' },
   /** While `phone` is null, contact blocks show a clearly marked "[PHONE NUMBER]" placeholder. */
-  showPhonePlaceholder: true,
+  showPhonePlaceholder: false,
 
   address: {
     street: '235 43rd St',
@@ -75,13 +76,23 @@ export const site: SiteConfig = {
   /** Verified latitude/longitude for structured data. Leave null until confirmed. */
   geo: null,
   /** Business hours in schema.org format, e.g. ['Mo-Fr 08:00-18:00']. Leave empty until confirmed. */
-  openingHours: [],
+  openingHours: ['Mo-Fr 09:00-17:00'],
+  /** Human-readable hours shown on the site. */
+  hours: {
+    office: 'Mon–Fri, 9 AM – 5 PM',
+    emergency: '24/7 emergency service',
+  },
+
+  /** New York City boroughs the company serves. */
+  boroughs: ['Manhattan', 'Brooklyn', 'Queens', 'The Bronx', 'Staten Island'],
 
   features: {
-    /** Shows emergency plumbing messaging. The site never claims 24/7 availability. */
+    /** Shows emergency plumbing messaging. */
     emergencyService: true,
+    /** Confirmed by the company: emergency calls are answered 24 hours a day, 7 days a week. */
+    emergency24h: true,
     /** Set to true only if the company confirms free estimates; CTA copy switches automatically. */
-    freeEstimates: false,
+    freeEstimates: true,
   },
 
   profiles: {
@@ -91,7 +102,7 @@ export const site: SiteConfig = {
 
   copyrightYear: 2026,
   /** Date the content was last reviewed (YYYY-MM-DD). Used in the sitemap. */
-  lastUpdated: '2026-10-07',
+  lastUpdated: '2026-10-13',
 }
 
 export const addressLine = `${site.address.street}, ${site.address.city}, ${site.address.state} ${site.address.postalCode}`

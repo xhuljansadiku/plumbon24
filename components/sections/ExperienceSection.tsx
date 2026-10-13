@@ -3,7 +3,7 @@ import { Container, Section } from '@/components/ui/Layout'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { site } from '@/lib/site'
 
-const points = ['Professional service', 'Residential & commercial solutions', 'Quality workmanship', 'Local Brooklyn focus']
+const points = ['Professional service', 'Residential & commercial solutions', 'Quality workmanship', 'All 5 NYC boroughs']
 
 /** The "15+" number drawn like an engineering drawing, with a dimension line underneath. */
 export function ExperienceFigure({ tone = 'light' }: { tone?: 'light' | 'dark' }) {

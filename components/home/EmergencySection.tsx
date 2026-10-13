@@ -16,7 +16,7 @@ const whileYouWait = [
   'Move valuables away and take photos of the damage.',
 ]
 
-/** Dark emergency band. Never claims 24/7 availability. Hidden when emergency service is switched off. */
+/** Dark emergency band. Mentions 24/7 only when `emergency24h` is confirmed. Hidden when emergency service is switched off. */
 export function EmergencySection() {
   const emergency = getService('emergency-plumbing')
   if (!site.features.emergencyService || !emergency) return null
@@ -29,13 +29,15 @@ export function EmergencySection() {
       <div aria-hidden="true" className="absolute -left-56 top-1/2 -z-10 size-[40rem] -translate-y-1/2 rounded-full bg-brand-600/20 blur-3xl" />
       <Container className="grid items-center gap-14 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-7">
-          <Eyebrow tone="dark">Urgent plumbing problems</Eyebrow>
+          <Eyebrow tone="dark">{site.features.emergency24h ? '24/7 emergency service' : 'Urgent plumbing problems'}</Eyebrow>
           <h2 id="emergency-title" className="text-h2 mt-4 text-white">
-            Plumbing Problems Can’t Always Wait
+            {site.features.emergency24h ? 'Emergency Plumbing, Day or Night' : 'Plumbing Problems Can’t Always Wait'}
           </h2>
           <p className="text-lead mt-6 max-w-2xl text-white/75">
-            A burst pipe, major leak or serious drainage problem can quickly become a bigger issue. Contact {site.name} to
-            discuss your plumbing problem and determine the right next step.
+            A burst pipe, major leak or serious drainage problem can quickly become a bigger issue.{' '}
+            {site.features.emergency24h
+              ? `${site.name} answers emergency calls 24 hours a day, 7 days a week, across all five boroughs.`
+              : `Contact ${site.name} to discuss your plumbing problem and determine the right next step.`}
           </p>
           <ul className="mt-8 flex flex-wrap gap-2.5" aria-label="Common urgent problems">
             {urgentProblems.map((problem) => (
@@ -50,7 +52,7 @@ export function EmergencySection() {
             </ButtonLink>
             {site.phone ? (
               <ButtonLink href={`tel:${site.phone.e164}`} size="lg" variant="light" icon="phone" iconPosition="start">
-                {ctaLabels.call}
+                Call {site.phone.display}
               </ButtonLink>
             ) : null}
           </div>

@@ -13,7 +13,7 @@ const values = [
 ]
 
 export function AboutPreview() {
-  const photo = images.copperPipeVise
+  const photo = images.copperRisers
 
   return (
     <Section tone="navy" labelledBy="about-title" className="overflow-hidden">
@@ -40,7 +40,7 @@ export function AboutPreview() {
             tone="dark"
             eyebrow="About PLUMBON24"
             title="Built on Experience. Focused on Quality."
-            lead={`With 15+ years of plumbing experience, ${site.name} brings practical knowledge and professional service to residential and commercial plumbing projects in Brooklyn.`}
+            lead={`With 15+ years of plumbing experience, ${site.name} brings practical knowledge and professional service to residential and commercial plumbing projects across New York City.`}
             id="about-title"
           />
           <ul className="mt-9 grid gap-4">

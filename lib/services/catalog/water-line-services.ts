@@ -9,12 +9,12 @@ export const waterLineServices: Service = {
   image: 'waterServiceCover',
   summary: 'Water service line repair and replacement, from the street connection to the main valve inside.',
   seo: {
-    title: 'Water Line Repair & Replacement in Brooklyn, NY | PLUMBON24',
+    title: 'Water Line Repair & Replacement in New York City | PLUMBON24',
     description:
-      'Low water pressure or a leaking water service line? PLUMBON24 MECHANICAL INC provides water line repair and replacement for Brooklyn properties.',
+      'Low water pressure or a leaking water service line? PLUMBON24 MECHANICAL INC provides water line repair and replacement for NYC properties.',
   },
   hero: {
-    heading: 'Water Line Services in Brooklyn, NY',
+    heading: 'Water Line Services in New York City',
     intro:
       'The water service line brings water from the city main into your building. When it leaks, corrodes or loses pressure, we help diagnose the problem and plan the repair.',
   },
@@ -24,7 +24,7 @@ export const waterLineServices: Service = {
   ],
   local: {
     heading: 'Owner responsibility in New York City',
-    text: 'In NYC, property owners are generally responsible for the water service line that connects their building to the city’s water main, including the section under the sidewalk and street. Many older Brooklyn properties still have their original service lines, and homes built before the 1960s may have lead or galvanized steel lines that are good candidates for replacement.',
+    text: 'In NYC, property owners are generally responsible for the water service line that connects their building to the city’s water main, including the section under the sidewalk and street. Many older NYC properties still have their original service lines, and homes built before the 1960s may have lead or galvanized steel lines that are good candidates for replacement.',
   },
   problemsHeading: 'Water Line Problems We Handle',
   problems: [

@@ -10,12 +10,12 @@ export const garbageDisposalServices: Service = {
   image: 'wrenchOnSink',
   summary: 'Repair, replacement and installation of kitchen garbage disposals.',
   seo: {
-    title: 'Garbage Disposal Repair & Installation in Brooklyn, NY | PLUMBON24',
+    title: 'Garbage Disposal Repair & Installation in New York City | PLUMBON24',
     description:
-      'Jammed, leaking or humming garbage disposal? PLUMBON24 MECHANICAL INC repairs, replaces and installs garbage disposals in Brooklyn kitchens.',
+      'Jammed, leaking or humming garbage disposal? PLUMBON24 MECHANICAL INC repairs, replaces and installs garbage disposals in NYC kitchens.',
   },
   hero: {
-    heading: 'Garbage Disposal Services in Brooklyn, NY',
+    heading: 'Garbage Disposal Services in New York City',
     intro:
       'Jammed, leaking or noisy disposals are repaired or replaced, and new units are installed with secure mounting and the right drain connections.',
   },
@@ -25,7 +25,7 @@ export const garbageDisposalServices: Service = {
   ],
   local: {
     heading: 'Check before you add one',
-    text: 'Garbage disposals are common in Brooklyn kitchens, but older drain lines in some buildings don’t handle food waste well, and some co-op and condo buildings have their own rules about disposals. If you’re adding one for the first time, check the building rules and the condition of the kitchen drain first.',
+    text: 'Garbage disposals are common in NYC kitchens, but older drain lines in some buildings don’t handle food waste well, and some co-op and condo buildings have their own rules about disposals. If you’re adding one for the first time, check the building rules and the condition of the kitchen drain first.',
   },
   problemsHeading: 'Disposal Problems We Fix',
   problems: [

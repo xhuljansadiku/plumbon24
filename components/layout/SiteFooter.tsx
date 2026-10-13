@@ -23,7 +23,7 @@ export function SiteFooter() {
             <p className="mt-7 font-display text-lg font-extrabold tracking-tight">{site.name}</p>
             <p className="mt-1.5 font-semibold text-brand-300">{site.experienceYears} years of plumbing experience.</p>
             <p className="mt-4 max-w-sm text-white/70">
-              Professional residential and commercial plumbing services in Brooklyn, NY — repairs, installations and
+              Professional residential and commercial plumbing services across all five boroughs of New York City — repairs, installations and
               maintenance.
             </p>
             <ButtonLink href="/contact" icon="arrow-right" className="mt-7">

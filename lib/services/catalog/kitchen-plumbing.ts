@@ -6,15 +6,15 @@ export const kitchenPlumbing: Service = {
   category: 'projects',
   title: 'Kitchen Plumbing',
   icon: 'kitchen',
-  image: 'kitchenSink',
+  image: 'finishedKitchen',
   summary: 'Sinks, faucets, dishwashers, disposals and kitchen drains — repaired, upgraded or installed.',
   seo: {
-    title: 'Kitchen Plumbing in Brooklyn, NY | PLUMBON24 MECHANICAL INC',
+    title: 'Kitchen Plumbing in New York City | PLUMBON24 MECHANICAL INC',
     description:
-      'Kitchen sink, faucet, dishwasher and drain plumbing for Brooklyn homes and restaurants. Repairs, upgrades and installs by PLUMBON24 MECHANICAL INC.',
+      'Kitchen sink, faucet, dishwasher and drain plumbing for NYC homes and restaurants. Repairs, upgrades and installs by PLUMBON24 MECHANICAL INC.',
   },
   hero: {
-    heading: 'Kitchen Plumbing in Brooklyn, NY',
+    heading: 'Kitchen Plumbing in New York City',
     intro:
       'Kitchen sinks, faucets, dishwashers, disposals and drains — repaired when they fail and installed properly when you upgrade.',
   },
@@ -23,8 +23,8 @@ export const kitchenPlumbing: Service = {
     'We repair kitchen plumbing problems and install new sinks, faucets and appliance connections — in home kitchens, and in commercial kitchens where reliability matters for every service.',
   ],
   local: {
-    heading: 'Kitchen upgrades in Brooklyn homes',
-    text: 'Upgrading a kitchen in an older Brooklyn home often means connecting new fixtures to older drain lines, adding shut-off valves where there were none, and making room for a dishwasher or filtration system. In apartment buildings, kitchen drains usually tie into shared stacks, so clean, correctly sloped connections matter.',
+    heading: 'Kitchen upgrades in NYC homes',
+    text: 'Upgrading a kitchen in an older NYC home often means connecting new fixtures to older drain lines, adding shut-off valves where there were none, and making room for a dishwasher or filtration system. In apartment buildings, kitchen drains usually tie into shared stacks, so clean, correctly sloped connections matter.',
   },
   problemsHeading: 'Kitchen Plumbing We Handle',
   problems: [

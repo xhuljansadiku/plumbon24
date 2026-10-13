@@ -6,15 +6,15 @@ export const backflowPrevention: Service = {
   category: 'lines',
   title: 'Backflow Prevention',
   icon: 'backflow',
-  image: 'backflowPreventer',
+  image: 'backflowCopper',
   summary: 'Backflow prevention device installation, repair and replacement to protect the water supply.',
   seo: {
-    title: 'Backflow Prevention in Brooklyn, NY | PLUMBON24 MECHANICAL INC',
+    title: 'Backflow Prevention in New York City | PLUMBON24 MECHANICAL INC',
     description:
-      'Need a backflow preventer installed, repaired or replaced in Brooklyn? PLUMBON24 MECHANICAL INC helps protect your building’s drinking water supply.',
+      'Need a backflow preventer installed, repaired or replaced in NYC? PLUMBON24 MECHANICAL INC helps protect your building’s drinking water supply.',
   },
   hero: {
-    heading: 'Backflow Prevention in Brooklyn, NY',
+    heading: 'Backflow Prevention in New York City',
     intro:
       'Backflow prevention devices keep contaminated water from flowing back into the drinking water supply. We help with installation, repair and replacement.',
   },

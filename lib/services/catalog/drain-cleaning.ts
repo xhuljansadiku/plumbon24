@@ -9,12 +9,12 @@ export const drainCleaning: Service = {
   image: 'underSinkRepair',
   summary: 'Solutions for clogged, slow or blocked drains.',
   seo: {
-    title: 'Drain Cleaning in Brooklyn, NY | PLUMBON24 MECHANICAL INC',
+    title: 'Drain Cleaning in New York City | PLUMBON24 MECHANICAL INC',
     description:
-      'Slow or clogged drains in Brooklyn? PLUMBON24 MECHANICAL INC clears kitchen, bathroom and main line blockages and finds the cause. 15+ years of experience.',
+      'Slow or clogged drains in NYC? PLUMBON24 MECHANICAL INC clears kitchen, bathroom and main line blockages and finds the cause. 15+ years of experience.',
   },
   hero: {
-    heading: 'Drain Cleaning in Brooklyn, NY',
+    heading: 'Drain Cleaning in New York City',
     intro:
       'Slow sinks, standing water in the shower and gurgling toilets rarely fix themselves. We clear the blockage and find out why it formed, so the same drain doesn’t clog again next month.',
   },
@@ -24,7 +24,7 @@ export const drainCleaning: Service = {
   ],
   local: {
     heading: 'Older drain lines, recurring clogs',
-    text: 'Many Brooklyn buildings still rely on original cast iron and galvanized drain piping. Over decades, the inside of those pipes roughens and narrows, so grease and debris catch faster. In multi-family buildings, a blockage in a shared stack or main line often shows up first as a backup in the lowest unit.',
+    text: 'Many NYC buildings still rely on original cast iron and galvanized drain piping. Over decades, the inside of those pipes roughens and narrows, so grease and debris catch faster. In multi-family buildings, a blockage in a shared stack or main line often shows up first as a backup in the lowest unit.',
   },
   problemsHeading: 'Drains We Clear',
   problems: [

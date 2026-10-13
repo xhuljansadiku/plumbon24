@@ -6,15 +6,15 @@ export const faucetFixtureRepair: Service = {
   category: 'equipment',
   title: 'Faucet & Fixture Repair',
   icon: 'faucet',
-  image: 'bathroomFaucet',
+  image: 'finishedBathroom',
   summary: 'Repair and replacement of leaking faucets, shower valves, sinks and other fixtures.',
   seo: {
-    title: 'Faucet & Fixture Repair in Brooklyn, NY | PLUMBON24',
+    title: 'Faucet & Fixture Repair in New York City | PLUMBON24',
     description:
-      'Dripping faucet or a shower valve that won’t hold temperature? PLUMBON24 MECHANICAL INC repairs and installs faucets and fixtures across Brooklyn.',
+      'Dripping faucet or a shower valve that won’t hold temperature? PLUMBON24 MECHANICAL INC repairs and installs faucets and fixtures across all five boroughs.',
   },
   hero: {
-    heading: 'Faucet & Fixture Repair in Brooklyn, NY',
+    heading: 'Faucet & Fixture Repair in New York City',
     intro:
       'Dripping faucets, leaking shower valves and loose fixtures are repaired or replaced — with care for the finishes around them.',
   },
@@ -24,7 +24,7 @@ export const faucetFixtureRepair: Service = {
   ],
   local: {
     heading: 'Older fixtures, hard-to-find parts',
-    text: 'Many Brooklyn homes and pre-war apartments still have older two-handle faucets and shower valves set behind original tile. Parts for discontinued models can be hard to find, so part of the job is identifying exactly what you have and whether a repair, a rebuild or a replacement is the practical choice.',
+    text: 'Many NYC homes and pre-war apartments still have older two-handle faucets and shower valves set behind original tile. Parts for discontinued models can be hard to find, so part of the job is identifying exactly what you have and whether a repair, a rebuild or a replacement is the practical choice.',
   },
   problemsHeading: 'Fixture Problems We Fix',
   problems: [

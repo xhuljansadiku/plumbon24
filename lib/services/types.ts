@@ -38,7 +38,7 @@ export type Service = {
     intro: string
   }
   overview: string[]
-  /** Brooklyn-specific context for this service. */
+  /** NYC-specific context for this service. */
   local: {
     heading: string
     text: string

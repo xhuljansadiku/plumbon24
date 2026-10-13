@@ -62,11 +62,11 @@ export default async function ServicePage({ params }: PageProps<'/services/[slug
       <FaqSection
         faqs={service.faqs}
         title="Common Questions"
-        lead={`Answers to common questions about ${service.title.toLowerCase()} in Brooklyn.`}
+        lead={`Answers to common questions about ${service.title.toLowerCase()} in New York City.`}
       />
       <RelatedServices service={service} />
       <CtaBand
-        title={`Need ${service.title} in Brooklyn?`}
+        title={`Need ${service.title} in New York City?`}
         text="Tell us what you’re dealing with and we’ll help you determine the next step."
         primaryHref={`#${REQUEST_ANCHOR}`}
         secondary={null}

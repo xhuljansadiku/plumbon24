@@ -9,12 +9,12 @@ export const commercialPlumbing: Service = {
   image: 'commercialKitchenSink',
   summary: 'Plumbing for offices, restaurants, retail spaces, property managers and commercial buildings.',
   seo: {
-    title: 'Commercial Plumber in Brooklyn, NY | PLUMBON24 MECHANICAL INC',
+    title: 'Commercial Plumber in New York City | PLUMBON24 MECHANICAL INC',
     description:
-      'Commercial plumbing for Brooklyn restaurants, offices, retail and property managers. Repairs, installations and maintenance from PLUMBON24 MECHANICAL INC.',
+      'Commercial plumbing for NYC restaurants, offices, retail and property managers. Repairs, installations and maintenance from PLUMBON24 MECHANICAL INC.',
   },
   hero: {
-    heading: 'Commercial Plumbing in Brooklyn, NY',
+    heading: 'Commercial Plumbing in New York City',
     intro:
       'For restaurants, offices, retail spaces and building owners, plumbing problems affect customers, tenants and revenue. We provide professional commercial plumbing with clear communication.',
   },
@@ -23,8 +23,8 @@ export const commercialPlumbing: Service = {
     'We work with business owners and property managers on repairs, installations and maintenance — communicating clearly about the problem, the plan and anything that affects your operations.',
   ],
   local: {
-    heading: 'Brooklyn’s commercial mix',
-    text: 'From restaurants and shops on Brooklyn’s commercial avenues to mixed-use buildings with storefronts below apartments, commercial plumbing here often means working in tight spaces, around business hours and alongside residential tenants. Planning work to limit disruption is part of the job.',
+    heading: 'New York City’s commercial mix',
+    text: 'From restaurants and shops on New York City’s commercial avenues to mixed-use buildings with storefronts below apartments, commercial plumbing here often means working in tight spaces, around business hours and alongside residential tenants. Planning work to limit disruption is part of the job.',
   },
   problemsHeading: 'Commercial Plumbing We Handle',
   problems: [

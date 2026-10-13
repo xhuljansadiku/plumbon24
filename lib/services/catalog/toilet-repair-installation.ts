@@ -6,15 +6,15 @@ export const toiletRepairInstallation: Service = {
   category: 'equipment',
   title: 'Toilet Repair & Installation',
   icon: 'toilet',
-  image: 'toilet',
+  image: 'inWallToiletCarrier',
   summary: 'Repair of running, leaking or clogged toilets, plus professional toilet installation.',
   seo: {
-    title: 'Toilet Repair & Installation in Brooklyn, NY | PLUMBON24',
+    title: 'Toilet Repair & Installation in New York City | PLUMBON24',
     description:
-      'Running, leaking or constantly clogged toilet? PLUMBON24 MECHANICAL INC repairs and installs toilets in Brooklyn homes, apartments and businesses.',
+      'Running, leaking or constantly clogged toilet? PLUMBON24 MECHANICAL INC repairs and installs toilets in NYC homes, apartments and businesses.',
   },
   hero: {
-    heading: 'Toilet Repair & Installation in Brooklyn, NY',
+    heading: 'Toilet Repair & Installation in New York City',
     intro:
       'From a toilet that runs all night to a leak at the base, we repair the problem — or install a new toilet when it’s time to replace.',
   },
@@ -23,7 +23,7 @@ export const toiletRepairInstallation: Service = {
     'When a toilet is cracked, inefficient or simply worn out, we install a new one — setting it properly on the flange, sealing it and connecting a new supply line so it sits solid and stays dry.',
   ],
   local: {
-    heading: 'Toilets in older Brooklyn bathrooms',
+    heading: 'Toilets in older NYC bathrooms',
     text: 'In older buildings, removing a toilet can reveal a corroded closet flange, a deteriorated floor or an unusual rough-in distance. Those details matter: a toilet that isn’t properly supported and sealed will rock, leak and damage the floor below — which, in a stacked building, may be a neighbor’s ceiling.',
   },
   problemsHeading: 'Toilet Problems We Fix',

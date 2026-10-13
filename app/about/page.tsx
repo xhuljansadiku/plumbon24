@@ -14,9 +14,9 @@ import { createMetadata } from '@/lib/seo'
 import { addressLine, ctaLabels, mapsLinks, site } from '@/lib/site'
 
 export const metadata = createMetadata({
-  title: 'About PLUMBON24 MECHANICAL INC | Brooklyn Plumbing Company',
+  title: 'About PLUMBON24 MECHANICAL INC | NYC Plumbing Company',
   description:
-    'PLUMBON24 MECHANICAL INC is a Brooklyn plumbing company based in Sunset Park, bringing 15+ years of plumbing experience to homes and businesses.',
+    'PLUMBON24 MECHANICAL INC is a New York City plumbing company based in Sunset Park, Brooklyn, bringing 15+ years of plumbing experience to homes and businesses.',
   path: '/about',
 })
 
@@ -51,12 +51,12 @@ export default function AboutPage() {
         title="Your Local Plumbing Partner"
         intro={
           <p>
-            {site.name} is a Brooklyn plumbing company with 15+ years of plumbing experience, serving homes and businesses from our
+            {site.name} is a New York City plumbing company with 15+ years of plumbing experience, serving homes and businesses from our
             base in {site.neighborhood}.
           </p>
         }
         crumbs={[{ name: 'About', path: '/about' }]}
-        image={images.toolsOnBlueprint}
+        image={images.bathroomRoughIn}
         actions={
           <>
             <ButtonLink href="/contact" size="lg" icon="arrow-right">
@@ -74,7 +74,7 @@ export default function AboutPage() {
           <div className="lg:col-span-6">
             <Eyebrow>Who we are</Eyebrow>
             <h2 id="story-title" className="text-h2 mt-4 text-ink">
-              15+ Years of Plumbing Experience in Brooklyn
+              15+ Years of Plumbing Experience in New York City
             </h2>
             <div className="mt-7 grid gap-5 text-lg leading-relaxed text-muted">
               <p>
@@ -88,7 +88,7 @@ export default function AboutPage() {
                 before any work begins.
               </p>
               <p>
-                We serve homeowners, residents, business owners and property managers across Brooklyn — from brownstones and
+                We serve homeowners, residents, business owners and property managers across all five boroughs — from brownstones and
                 apartment buildings to restaurants, shops and commercial properties.
               </p>
             </div>
@@ -97,19 +97,19 @@ export default function AboutPage() {
             <div className="grid grid-cols-5 gap-4">
               <div className="relative col-span-3 aspect-[3/4] overflow-hidden rounded-2xl">
                 <Image
-                  src={images.copperPipeVise.src}
-                  alt={images.copperPipeVise.alt}
+                  src={images.copperRisers.src}
+                  alt={images.copperRisers.alt}
                   fill
                   sizes="(min-width: 1024px) 28vw, 60vw"
                   className="reveal-image object-cover"
-                  style={{ objectPosition: images.copperPipeVise.position }}
+                  style={{ objectPosition: images.copperRisers.position }}
                 />
               </div>
               <div className="col-span-2 flex flex-col gap-4 pt-16">
                 <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
                   <Image
-                    src={images.pipeThreading.src}
-                    alt={images.pipeThreading.alt}
+                    src={images.basementCastIron.src}
+                    alt={images.basementCastIron.alt}
                     fill
                     sizes="(min-width: 1024px) 18vw, 40vw"
                     className="reveal-image object-cover"
@@ -170,7 +170,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Who we serve"
             title="Residential & Commercial Plumbing"
-            lead="Plumbing services for homes, apartments, businesses and commercial properties across Brooklyn."
+            lead="Plumbing services for homes, apartments, businesses and commercial properties across New York City."
             id="properties-title"
           />
           <div className="mt-12">
@@ -185,7 +185,7 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Our location"
               title={`Based in ${site.neighborhood}, Brooklyn`}
-              lead={`Our base at ${addressLine} puts us in South Brooklyn, close to the neighborhoods we serve.`}
+              lead={`Our base at ${addressLine} puts us in South Brooklyn, with quick access to all five boroughs.`}
               id="location-title"
             />
             <ContactDetails className="mt-10" />

@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
-import { serviceAreaGroups } from '@/lib/service-areas'
 import { services, serviceHref, type Faq, type Service } from '@/lib/services'
 import { absoluteUrl, getSiteUrl, site } from '@/lib/site'
 
 export type Crumb = { name: string; path: string }
 
-export const OG_IMAGE_ALT = 'PLUMBON24 MECHANICAL INC — Professional Plumbing Services in Brooklyn, NY'
+export const OG_IMAGE_ALT = 'PLUMBON24 MECHANICAL INC — Professional Plumbing Services in New York City'
 
 /**
  * The generated share image (app/opengraph-image.tsx). Page-level `openGraph` objects replace the
@@ -74,10 +73,8 @@ export function businessSchema(): Record<string, unknown> {
       addressCountry: site.address.countryCode,
     },
     areaServed: [
-      { '@type': 'City', name: 'Brooklyn', containedInPlace: { '@type': 'State', name: 'New York' } },
-      ...serviceAreaGroups.flatMap((group) =>
-        group.neighborhoods.map((neighborhood) => ({ '@type': 'Place', name: `${neighborhood.name}, Brooklyn, NY` })),
-      ),
+      { '@type': 'City', name: 'New York', containedInPlace: { '@type': 'State', name: 'New York' } },
+      ...site.boroughs.map((borough) => ({ '@type': 'AdministrativeArea', name: `${borough}, NY` })),
     ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -116,7 +113,7 @@ export function serviceSchema(service: Service): Record<string, unknown> {
     description: service.seo.description,
     url: absoluteUrl(serviceHref(service.slug)),
     provider: { '@id': businessId() },
-    areaServed: { '@type': 'City', name: 'Brooklyn', containedInPlace: { '@type': 'State', name: 'New York' } },
+    areaServed: { '@type': 'City', name: 'New York', containedInPlace: { '@type': 'State', name: 'New York' } },
   }
 }
 

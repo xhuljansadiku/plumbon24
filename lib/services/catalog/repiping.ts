@@ -6,15 +6,15 @@ export const repiping: Service = {
   category: 'lines',
   title: 'Repiping',
   icon: 'repipe',
-  image: 'copperPipeVise',
+  image: 'copperRisers',
   summary: 'Replacing old, corroded or failing piping systems with modern, reliable materials.',
   seo: {
-    title: 'Repiping Services in Brooklyn, NY | PLUMBON24 MECHANICAL INC',
+    title: 'Repiping Services in New York City | PLUMBON24 MECHANICAL INC',
     description:
-      'Corroded galvanized pipes, low pressure or constant leaks? PLUMBON24 MECHANICAL INC provides repiping for Brooklyn homes, apartments and buildings.',
+      'Corroded galvanized pipes, low pressure or constant leaks? PLUMBON24 MECHANICAL INC provides repiping for NYC homes, apartments and buildings.',
   },
   hero: {
-    heading: 'Repiping Services in Brooklyn, NY',
+    heading: 'Repiping Services in New York City',
     intro:
       'When old piping causes constant leaks, low pressure or discolored water, replacing the system can be the most practical long-term solution.',
   },
@@ -23,8 +23,8 @@ export const repiping: Service = {
     'We plan repiping projects carefully: assessing the existing system, discussing materials and scope, and organizing access so the work is as orderly and as minimally disruptive as possible.',
   ],
   local: {
-    heading: 'Galvanized pipe in Brooklyn’s older housing',
-    text: 'Galvanized steel water piping was widely used in homes built before the 1960s, and much of it is still in service in Brooklyn brownstones, row houses and walk-ups. As it ages it corrodes internally, restricting flow and leaking at the threads. Many owners plan repiping alongside a kitchen or bathroom renovation, while the walls are already open.',
+    heading: 'Galvanized pipe in New York City’s older housing',
+    text: 'Galvanized steel water piping was widely used in homes built before the 1960s, and much of it is still in service in NYC brownstones, row houses and walk-ups. As it ages it corrodes internally, restricting flow and leaking at the threads. Many owners plan repiping alongside a kitchen or bathroom renovation, while the walls are already open.',
   },
   problemsHeading: 'Why Buildings Get Repiped',
   problems: [

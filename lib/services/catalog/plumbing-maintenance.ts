@@ -9,12 +9,12 @@ export const plumbingMaintenance: Service = {
   image: 'manifoldGauge',
   summary: 'Inspections and preventive maintenance that catch small problems before they become emergencies.',
   seo: {
-    title: 'Plumbing Maintenance in Brooklyn, NY | PLUMBON24 MECHANICAL INC',
+    title: 'Plumbing Maintenance in New York City | PLUMBON24 MECHANICAL INC',
     description:
-      'Preventive plumbing maintenance and inspections for Brooklyn homes, buildings and businesses. Catch small problems early with PLUMBON24 MECHANICAL INC.',
+      'Preventive plumbing maintenance and inspections for NYC homes, buildings and businesses. Catch small problems early with PLUMBON24 MECHANICAL INC.',
   },
   hero: {
-    heading: 'Plumbing Maintenance in Brooklyn, NY',
+    heading: 'Plumbing Maintenance in New York City',
     intro:
       'Preventive maintenance finds worn valves, slow leaks and failing components before they turn into emergencies.',
   },
@@ -24,7 +24,7 @@ export const plumbingMaintenance: Service = {
   ],
   local: {
     heading: 'Maintenance for older buildings',
-    text: 'In Brooklyn’s older housing stock, shut-off valves that haven’t been turned in years, aging water heaters and older drain lines are common. For multi-family and commercial buildings, planned maintenance also helps avoid tenant emergencies and keeps equipment such as sump pumps and backflow devices ready.',
+    text: 'In New York City’s older housing stock, shut-off valves that haven’t been turned in years, aging water heaters and older drain lines are common. For multi-family and commercial buildings, planned maintenance also helps avoid tenant emergencies and keeps equipment such as sump pumps and backflow devices ready.',
   },
   problemsHeading: 'What Maintenance Covers',
   problems: [

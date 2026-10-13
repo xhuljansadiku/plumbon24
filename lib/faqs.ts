@@ -10,7 +10,7 @@ export const generalFaqs: Faq[] = [
   {
     question: 'Do you provide residential plumbing services?',
     answer:
-      'Yes. We work in houses, brownstones, apartments, condos and multi-family buildings across Brooklyn — from leaks, clogs and running toilets to water heaters, fixtures and pipe work.',
+      'Yes. We work in houses, brownstones, apartments, condos and multi-family buildings across New York City — from leaks, clogs and running toilets to water heaters, fixtures and pipe work.',
   },
   {
     question: 'Do you provide commercial plumbing?',
@@ -25,9 +25,11 @@ export const generalFaqs: Faq[] = [
   ...(site.features.emergencyService
     ? [
         {
-          question: 'Do you handle emergency plumbing problems?',
+          question: 'Do you offer 24/7 emergency plumbing?',
           answer:
-            'Yes, we help with urgent problems such as burst pipes, major leaks and sewer backups. Send an emergency service request with as much detail as you can — photos help — and we’ll get back to you as soon as possible. If water is actively leaking, close the main water shut-off valve while you wait.',
+            site.features.emergency24h && site.phone
+              ? `Yes — emergency service is available 24 hours a day, 7 days a week, in all five boroughs. For burst pipes, major leaks or sewer backups, call us at ${site.phone.display}. If water is actively leaking, close the main water shut-off valve while you wait.`
+              : 'Yes, we help with urgent problems such as burst pipes, major leaks and sewer backups. Send an emergency service request with as much detail as you can — photos help — and we’ll get back to you as soon as possible. If water is actively leaking, close the main water shut-off valve while you wait.',
         },
       ]
     : []),
@@ -38,12 +40,17 @@ export const generalFaqs: Faq[] = [
   {
     question: 'What areas do you serve?',
     answer:
-      'We’re based at 235 43rd St in Sunset Park and serve customers throughout Brooklyn and the surrounding New York area. If you’re not sure whether we cover your location, just ask.',
+      'We’re based at 235 43rd St in Sunset Park and serve all five boroughs: Manhattan, Brooklyn, Queens, the Bronx and Staten Island. If you’re not sure whether we cover your location, just ask.',
+  },
+  {
+    question: 'What are your hours?',
+    answer: `Our regular hours are ${site.hours.office}.${site.hours.emergency ? ` Emergency service is available 24 hours a day, 7 days a week.` : ''}`,
   },
   {
     question: 'How much does plumbing service cost?',
-    answer:
-      'Every job is different. Cost depends on the problem, how accessible the plumbing is, the parts and materials needed and the overall scope of work. Tell us about the issue and we’ll discuss pricing once we understand what’s involved.',
+    answer: site.features.freeEstimates
+      ? 'Every job is different, so we offer free estimates. Cost depends on the problem, how accessible the plumbing is, the parts and materials needed and the overall scope of work. Tell us about the issue and we’ll give you a free estimate before any work begins.'
+      : 'Every job is different. Cost depends on the problem, how accessible the plumbing is, the parts and materials needed and the overall scope of work. Tell us about the issue and we’ll discuss pricing once we understand what’s involved.',
   },
 ]
 
@@ -61,11 +68,13 @@ export const contactFaqs: Faq[] = [
   {
     question: 'What areas do you serve?',
     answer:
-      'We’re based in Sunset Park and serve customers throughout Brooklyn and the surrounding New York area. If you’re not sure whether we cover your location, just ask.',
+      'We’re based in Sunset Park and serve all five boroughs: Manhattan, Brooklyn, Queens, the Bronx and Staten Island. If you’re not sure whether we cover your location, just ask.',
   },
   {
     question: 'How much does plumbing service cost?',
     answer:
-      'It depends on the problem and the scope of work. Once we understand what’s involved, we’ll discuss pricing with you before any work begins.',
+      site.features.freeEstimates
+        ? 'It depends on the problem and the scope of work. Estimates are free — once we understand what’s involved, we’ll give you a price before any work begins.'
+        : 'It depends on the problem and the scope of work. Once we understand what’s involved, we’ll discuss pricing with you before any work begins.',
   },
 ]

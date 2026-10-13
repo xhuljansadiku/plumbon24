@@ -8,7 +8,7 @@ import { REQUEST_ANCHOR } from '@/lib/navigation'
 import { addressLine, ctaLabels, site } from '@/lib/site'
 
 export function HomeHero() {
-  const photo = images.heroPlumber
+  const photo = images.commercialRoughIn
 
   return (
     <section aria-labelledby="hero-title" className="relative isolate overflow-hidden bg-white">
@@ -23,11 +23,11 @@ export function HomeHero() {
         <div className="lg:col-span-7">
           <Eyebrow>{site.name}</Eyebrow>
           <h1 id="hero-title" className="text-h1 mt-5 text-ink">
-            Reliable Plumbing Services in <span className="text-brand-600">Brooklyn, NY</span>
+            Reliable Plumbing Services in <span className="text-brand-600">New York City</span>
           </h1>
           <p className="text-lead mt-6 max-w-xl text-muted">
             With 15+ years of plumbing experience, {site.name} provides professional plumbing solutions for homes and
-            businesses in Brooklyn and the surrounding New York area.
+            businesses across Manhattan, Brooklyn, Queens, the Bronx and Staten Island.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -63,7 +63,11 @@ export function HomeHero() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Icon name="map-pin" className="size-5 text-brand-600" />
-                Based in Brooklyn, NY
+                Serving all 5 boroughs
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Icon name="clock" className="size-5 text-brand-600" />
+                24/7 emergency service
               </li>
             </ul>
           </div>
@@ -92,7 +96,7 @@ export function HomeHero() {
             <div aria-hidden="true" className="absolute inset-0 bg-linear-to-t from-navy-950/50 via-transparent to-transparent" />
             <p className="absolute right-4 top-4 hidden items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-ink shadow-card sm:flex">
               <BrandDrop className="h-4 text-brand-500" />
-              Residential &amp; Commercial
+              Real PLUMBON24 project
             </p>
           </div>
 

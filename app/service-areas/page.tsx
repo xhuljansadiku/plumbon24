@@ -14,9 +14,9 @@ import { serviceAreaGroups } from '@/lib/service-areas'
 import { addressLine, ctaLabels, mapsLinks, site } from '@/lib/site'
 
 export const metadata = createMetadata({
-  title: 'Brooklyn Plumbing Service Areas | PLUMBON24 MECHANICAL INC',
+  title: 'NYC Plumbing Service Areas — All 5 Boroughs | PLUMBON24',
   description:
-    'Based in Sunset Park, PLUMBON24 MECHANICAL INC provides plumbing services across Brooklyn — from Bay Ridge and Park Slope to Williamsburg and Bed-Stuy.',
+    'Based in Sunset Park, PLUMBON24 MECHANICAL INC provides plumbing services across all five NYC boroughs — Manhattan, Brooklyn, Queens, the Bronx and Staten Island.',
   path: '/service-areas',
 })
 
@@ -34,7 +34,7 @@ const buildingTypes: { icon: IconName; title: string; text: string }[] = [
   {
     icon: 'water-heater',
     title: 'One- and two-family homes',
-    text: 'Common across South Brooklyn. Typical needs include water heater replacement, sewer line problems, fixture upgrades and basement plumbing.',
+    text: 'Common across Brooklyn, Queens and Staten Island. Typical needs include water heater replacement, sewer line problems, fixture upgrades and basement plumbing.',
   },
   {
     icon: 'kitchen',
@@ -48,11 +48,11 @@ export default function ServiceAreasPage() {
     <>
       <PageHero
         eyebrow="Service areas"
-        title="Serving Brooklyn, NY"
+        title="Serving All 5 NYC Boroughs"
         intro={
           <p>
-            {site.name} is based in Brooklyn and provides professional plumbing services for customers throughout our service areas —
-            from Sunset Park and Bay Ridge to Park Slope, Williamsburg and beyond.
+            {site.name} is based in Brooklyn and provides professional plumbing services across Manhattan, Brooklyn, Queens, the
+            Bronx and Staten Island — with 24/7 emergency service.
           </p>
         }
         crumbs={[{ name: 'Service Areas', path: '/service-areas' }]}
@@ -75,7 +75,7 @@ export default function ServiceAreasPage() {
             <SectionHeading
               eyebrow="Our home base"
               title={`Based in ${site.neighborhood}`}
-              lead={`Our base at ${addressLine} puts us in the heart of South Brooklyn — close to Bay Ridge, Park Slope, Borough Park and the rest of the borough.`}
+              lead={`Our base at ${addressLine} puts us in South Brooklyn, with quick access to every borough of New York City.`}
               id="base-title"
             />
             <ContactDetails className="mt-10" />
@@ -90,8 +90,8 @@ export default function ServiceAreasPage() {
         <Container>
           <SectionHeading
             eyebrow="Neighborhoods"
-            title="Brooklyn Neighborhoods We Serve"
-            lead="We work with homeowners, residents, businesses and property managers across these Brooklyn neighborhoods."
+            title="Boroughs & Neighborhoods We Serve"
+            lead="We work with homeowners, residents, businesses and property managers across all five boroughs. The neighborhoods below are examples — if yours isn’t listed, just ask."
             id="neighborhoods-title"
           />
           <ul className="mt-12 grid gap-5 md:grid-cols-2">
@@ -122,10 +122,10 @@ export default function ServiceAreasPage() {
             <div className="lg:col-span-4">
               <Eyebrow>Local knowledge</Eyebrow>
               <h2 id="buildings-title" className="text-h2 mt-4 text-ink">
-                Plumbing for Every Kind of Brooklyn Building
+                Plumbing for Every Kind of NYC Building
               </h2>
               <p className="text-lead mt-5 text-muted">
-                Brooklyn’s housing stock spans more than a century. Each type of building comes with its own plumbing considerations.
+                New York City’s housing stock spans more than a century. Each type of building comes with its own plumbing considerations.
               </p>
             </div>
             <ul className="grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:col-span-8">

@@ -5,8 +5,8 @@ import { cn } from '@/lib/utils'
 const items: { icon: IconName; label: string }[] = [
   { icon: 'badge', label: '15+ Years Experience' },
   { icon: 'building', label: 'Residential & Commercial' },
-  { icon: 'wrench', label: 'Professional Plumbing Services' },
-  { icon: 'map-pin', label: 'Brooklyn, NY' },
+  { icon: 'clock', label: '24/7 Emergency Service' },
+  { icon: 'map-pin', label: 'All 5 NYC Boroughs' },
   { icon: 'shield-check', label: 'Quality Workmanship' },
 ]
 

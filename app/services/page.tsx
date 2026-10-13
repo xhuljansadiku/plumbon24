@@ -15,9 +15,9 @@ import { getServicesByCategory, serviceCategories } from '@/lib/services'
 import { ctaLabels } from '@/lib/site'
 
 export const metadata = createMetadata({
-  title: 'Plumbing Services in Brooklyn, NY | PLUMBON24',
+  title: 'Plumbing Services in New York City | PLUMBON24',
   description:
-    'Emergency plumbing, drain cleaning, sewer and water lines, water heaters, leak repair, repiping and more for Brooklyn homes and businesses. 15+ years of experience.',
+    'Emergency plumbing, drain cleaning, sewer and water lines, water heaters, leak repair, repiping and more for homes and businesses in all five NYC boroughs. 15+ years of experience.',
   path: '/services',
 })
 
@@ -36,15 +36,15 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="Plumbing services"
-        title="Plumbing Services in Brooklyn, NY"
+        title="Plumbing Services in New York City"
         intro={
           <p>
             From urgent repairs to installations and planned maintenance — professional plumbing services for homes and businesses
-            across Brooklyn, backed by 15+ years of plumbing experience.
+            across all five NYC boroughs, backed by 15+ years of plumbing experience.
           </p>
         }
         crumbs={[{ name: 'Services', path: '/services' }]}
-        image={images.valveManifold}
+        image={images.mechanicalRoom}
         actions={
           <>
             <ButtonLink href={`#${REQUEST_ANCHOR}`} size="lg" icon="arrow-right">

@@ -9,21 +9,21 @@ export const residentialPlumbing: Service = {
   image: 'brooklynBrownstones',
   summary: 'Plumbing for houses, brownstones, apartments and condos — repairs, installations and upgrades.',
   seo: {
-    title: 'Residential Plumber in Brooklyn, NY | PLUMBON24 MECHANICAL INC',
+    title: 'Residential Plumber in New York City | PLUMBON24 MECHANICAL INC',
     description:
-      'Residential plumbing for Brooklyn houses, apartments, condos and brownstones: leaks, drains, water heaters, fixtures and pipes. 15+ years of experience.',
+      'Residential plumbing for NYC houses, apartments, condos and brownstones: leaks, drains, water heaters, fixtures and pipes. 15+ years of experience.',
   },
   hero: {
-    heading: 'Residential Plumbing in Brooklyn, NY',
+    heading: 'Residential Plumbing in New York City',
     intro:
       'Houses, brownstones, apartments and condos — we handle residential plumbing repairs, installations and upgrades with respect for your home.',
   },
   overview: [
     'Residential plumbing covers everything that keeps a home running: water lines, drains, water heaters, fixtures, toilets and the main lines in and out of the building. When something goes wrong, you want a plumber who explains the problem clearly and treats your home with care.',
-    'We work in single-family and multi-family houses, apartments, condos and co-ops across Brooklyn — on everything from a dripping faucet to a water heater replacement or a full repipe.',
+    'We work in single-family and multi-family houses, apartments, condos and co-ops across all five boroughs — on everything from a dripping faucet to a water heater replacement or a full repipe.',
   ],
   local: {
-    heading: 'Every Brooklyn home is different',
+    heading: 'Every NYC home is different',
     text: 'A 19th-century brownstone, a 1920s two-family house and a new condo all have very different plumbing. Older homes may have galvanized and cast iron piping with decades of renovations layered on top; newer buildings have their own systems and building rules. Experience with that variety is what makes an accurate diagnosis possible.',
   },
   problemsHeading: 'Home Plumbing We Handle',
@@ -95,7 +95,7 @@ export const residentialPlumbing: Service = {
     },
     {
       title: 'Local experience',
-      text: 'Familiar with Brooklyn’s mix of older and newer housing.',
+      text: 'Familiar with New York City’s mix of older and newer housing.',
     },
   ],
   whyUs:
@@ -119,7 +119,7 @@ export const residentialPlumbing: Service = {
     {
       question: 'Do you serve my neighborhood?',
       answer:
-        'We’re based in Sunset Park and serve customers throughout Brooklyn. Check our service areas page or contact us to confirm.',
+        'We’re based in Sunset Park and serve customers throughout NYC. Check our service areas page or contact us to confirm.',
     },
   ],
   related: ['water-heater-services', 'leak-detection-repair', 'bathroom-plumbing'],

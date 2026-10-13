@@ -9,12 +9,12 @@ export const sumpPumpServices: Service = {
   image: 'pumpRepair',
   summary: 'Sump pump repair, replacement and installation to help keep basements dry.',
   seo: {
-    title: 'Sump Pump Repair & Installation in Brooklyn, NY | PLUMBON24',
+    title: 'Sump Pump Repair & Installation in New York City | PLUMBON24',
     description:
-      'Help protect your basement from water. PLUMBON24 MECHANICAL INC repairs, replaces and installs sump pumps for Brooklyn homes and buildings.',
+      'Help protect your basement from water. PLUMBON24 MECHANICAL INC repairs, replaces and installs sump pumps for NYC homes and buildings.',
   },
   hero: {
-    heading: 'Sump Pump Services in Brooklyn, NY',
+    heading: 'Sump Pump Services in New York City',
     intro:
       'A sump pump only matters if it works when the water arrives. We repair, replace and install sump pumps to help keep basements and cellars dry.',
   },
@@ -24,7 +24,7 @@ export const sumpPumpServices: Service = {
   ],
   local: {
     heading: 'Low-lying areas and heavy rain',
-    text: 'Parts of Brooklyn — especially low-lying and waterfront neighborhoods — deal with high groundwater and flooding during heavy storms. Basements and cellars in these areas often rely on sump pumps, and a working pump with a properly routed discharge line can make a real difference.',
+    text: 'Parts of NYC — especially low-lying and waterfront neighborhoods — deal with high groundwater and flooding during heavy storms. Basements and cellars in these areas often rely on sump pumps, and a working pump with a properly routed discharge line can make a real difference.',
   },
   problemsHeading: 'Sump Pump Problems We Fix',
   problems: [

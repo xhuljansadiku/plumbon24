@@ -10,12 +10,12 @@ export const sewerLineServices: Service = {
   image: 'manholeCover',
   summary: 'Professional sewer inspection, repair and replacement solutions.',
   seo: {
-    title: 'Sewer Line Repair & Services in Brooklyn, NY | PLUMBON24',
+    title: 'Sewer Line Repair & Services in New York City | PLUMBON24',
     description:
-      'Sewer backups, slow drains or sewage odors in Brooklyn? PLUMBON24 MECHANICAL INC provides sewer line inspection, cleaning, repair and replacement.',
+      'Sewer backups, slow drains or sewage odors in NYC? PLUMBON24 MECHANICAL INC provides sewer line inspection, cleaning, repair and replacement.',
   },
   hero: {
-    heading: 'Sewer Line Services in Brooklyn, NY',
+    heading: 'Sewer Line Services in New York City',
     intro:
       'When the main line that carries waste out of your building has a problem, every drain feels it. We diagnose sewer line issues and explain the right repair.',
   },
@@ -25,7 +25,7 @@ export const sewerLineServices: Service = {
   ],
   local: {
     heading: 'In NYC, the sewer connection is the owner’s responsibility',
-    text: 'New York City property owners are generally responsible for the sewer service line that runs from the building to the city’s sewer main, including the part under the sidewalk and street. Many Brooklyn sewer lines are decades old, made of clay or cast iron, and vulnerable to roots, cracks and settling.',
+    text: 'New York City property owners are generally responsible for the sewer service line that runs from the building to the city’s sewer main, including the part under the sidewalk and street. Many NYC sewer lines are decades old, made of clay or cast iron, and vulnerable to roots, cracks and settling.',
   },
   problemsHeading: 'Sewer Problems We Diagnose',
   problems: [

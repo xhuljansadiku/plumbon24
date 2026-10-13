@@ -10,12 +10,12 @@ export const leakDetectionRepair: Service = {
   image: 'drippingTap',
   summary: 'Identify and repair plumbing leaks before they become larger problems.',
   seo: {
-    title: 'Leak Detection & Repair in Brooklyn, NY | PLUMBON24',
+    title: 'Leak Detection & Repair in New York City | PLUMBON24',
     description:
-      'Water stains, damp walls or a rising water bill? PLUMBON24 MECHANICAL INC traces and repairs plumbing leaks in Brooklyn homes and commercial buildings.',
+      'Water stains, damp walls or a rising water bill? PLUMBON24 MECHANICAL INC traces and repairs plumbing leaks in NYC homes and commercial buildings.',
   },
   hero: {
-    heading: 'Leak Detection & Repair in Brooklyn, NY',
+    heading: 'Leak Detection & Repair in New York City',
     intro:
       'A small leak hidden in a wall or ceiling can do a lot of damage before anyone notices. We trace the source and repair it properly.',
   },

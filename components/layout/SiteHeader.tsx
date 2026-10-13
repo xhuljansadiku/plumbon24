@@ -20,7 +20,7 @@ function TopBar() {
           <span aria-hidden="true" className="text-white/30">
             /
           </span>
-          <span>Residential &amp; Commercial Plumbing in Brooklyn, NY</span>
+          <span>Residential &amp; Commercial Plumbing · All 5 NYC Boroughs · 24/7 Emergency</span>
         </p>
         <div className="flex items-center gap-6">
           <a href={mapsLinks.place} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors hover:text-white">

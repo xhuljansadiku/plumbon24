@@ -6,15 +6,15 @@ export const bathroomPlumbing: Service = {
   category: 'projects',
   title: 'Bathroom Plumbing',
   icon: 'bath',
-  image: 'modernBathroom',
+  image: 'finishedMarbleBathroom',
   summary: 'Plumbing for bathroom repairs, upgrades and remodels — showers, tubs, toilets and vanities.',
   seo: {
-    title: 'Bathroom Plumbing in Brooklyn, NY | PLUMBON24 MECHANICAL INC',
+    title: 'Bathroom Plumbing in New York City | PLUMBON24 MECHANICAL INC',
     description:
-      'Bathroom plumbing for repairs, upgrades and remodels in Brooklyn: showers, tubs, toilets, vanities and valves, from PLUMBON24 MECHANICAL INC.',
+      'Bathroom plumbing for repairs, upgrades and remodels in NYC: showers, tubs, toilets, vanities and valves, from PLUMBON24 MECHANICAL INC.',
   },
   hero: {
-    heading: 'Bathroom Plumbing in Brooklyn, NY',
+    heading: 'Bathroom Plumbing in New York City',
     intro:
       'From a leaking shower valve to a complete bathroom remodel, we handle the plumbing behind your fixtures and finishes.',
   },
@@ -24,7 +24,7 @@ export const bathroomPlumbing: Service = {
   ],
   local: {
     heading: 'Renovating bathrooms in older buildings',
-    text: 'Bathroom renovations in Brooklyn brownstones and pre-war apartments often uncover old galvanized supply lines, cast iron drains and tight spaces between floor joists. In co-ops and condos, the building may also have alteration requirements and set working hours. Planning the plumbing early avoids surprises once the walls are open.',
+    text: 'Bathroom renovations in NYC brownstones and pre-war apartments often uncover old galvanized supply lines, cast iron drains and tight spaces between floor joists. In co-ops and condos, the building may also have alteration requirements and set working hours. Planning the plumbing early avoids surprises once the walls are open.',
   },
   problemsHeading: 'Bathroom Plumbing We Handle',
   problems: [

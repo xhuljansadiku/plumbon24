@@ -6,15 +6,15 @@ export const waterHeaterServices: Service = {
   category: 'equipment',
   title: 'Water Heater Services',
   icon: 'water-heater',
-  image: 'basementWaterHeater',
+  image: 'indirectWaterHeater',
   summary: 'Professional repair, replacement and installation solutions.',
   seo: {
-    title: 'Water Heater Repair & Installation in Brooklyn, NY | PLUMBON24',
+    title: 'Water Heater Repair & Installation in New York City | PLUMBON24',
     description:
-      'No hot water or a leaking tank? PLUMBON24 MECHANICAL INC provides water heater repair, replacement and installation for Brooklyn homes and businesses.',
+      'No hot water or a leaking tank? PLUMBON24 MECHANICAL INC provides water heater repair, replacement and installation for NYC homes and businesses.',
   },
   hero: {
-    heading: 'Water Heater Services in Brooklyn, NY',
+    heading: 'Water Heater Services in New York City',
     intro:
       'From no hot water to a leaking tank, we diagnose water heater problems and help you decide whether to repair or replace.',
   },
@@ -23,8 +23,8 @@ export const waterHeaterServices: Service = {
     'We diagnose the problem and explain whether a repair makes sense or whether replacement is the better investment for the age and condition of the unit. Whether you have a tank-style or tankless heater, include the make and model in your request if you can.',
   ],
   local: {
-    heading: 'Basement water heaters in Brooklyn homes',
-    text: 'In many Brooklyn houses and small buildings, the water heater sits in the basement or cellar alongside the boiler, the meters and the main shut-off valve. Older installations can have outdated venting, gas connections or valves, so a replacement often involves more than swapping the tank. Gas-fired heaters also need proper venting and combustion air to operate safely.',
+    heading: 'Basement water heaters in NYC homes',
+    text: 'In many NYC houses and small buildings, the water heater sits in the basement or cellar alongside the boiler, the meters and the main shut-off valve. Older installations can have outdated venting, gas connections or valves, so a replacement often involves more than swapping the tank. Gas-fired heaters also need proper venting and combustion air to operate safely.',
   },
   problemsHeading: 'Water Heater Problems We Diagnose',
   problems: [

@@ -55,7 +55,7 @@ export default async function OpenGraphImage() {
               maxWidth: 940,
             }}
           >
-            Professional Plumbing Services in Brooklyn, NY
+            Professional Plumbing Services in New York City
           </div>
           <div style={{ display: 'flex', alignItems: 'center', marginTop: 30 }}>
             <div

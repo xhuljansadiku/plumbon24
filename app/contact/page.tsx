@@ -15,9 +15,9 @@ import { createMetadata, faqSchema } from '@/lib/seo'
 import { addressLine, mapsLinks, site } from '@/lib/site'
 
 export const metadata = createMetadata({
-  title: 'Contact a Brooklyn Plumber | PLUMBON24 MECHANICAL INC',
+  title: 'Contact a NYC Plumber | PLUMBON24 MECHANICAL INC',
   description:
-    'Request plumbing service in Brooklyn from PLUMBON24 MECHANICAL INC. 235 43rd St, Brooklyn, NY 11232 · plumbon24@gmail.com. Send photos with your request.',
+    'Request plumbing service anywhere in New York City from PLUMBON24 MECHANICAL INC. Call (917) 702-0072 — 24/7 emergency service, free estimates. Send photos with your request.',
   path: '/contact',
 })
 
@@ -32,7 +32,7 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact"
-        title="Contact a Brooklyn Plumber"
+        title="Contact a NYC Plumber"
         intro={
           <p>
             Tell us about your plumbing problem and we’ll get back to you as soon as possible. Photos and a short description help us

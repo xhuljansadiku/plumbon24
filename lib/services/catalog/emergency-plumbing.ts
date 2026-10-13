@@ -11,12 +11,12 @@ export const emergencyPlumbing: Service = {
   image: 'faucetDark',
   summary: 'Professional assistance for urgent plumbing problems and unexpected leaks.',
   seo: {
-    title: 'Emergency Plumbing Services in Brooklyn, NY | PLUMBON24',
+    title: 'Emergency Plumbing Services in New York City | PLUMBON24',
     description:
-      'Burst pipe, major leak or sewer backup in Brooklyn? Request emergency plumbing service from PLUMBON24 MECHANICAL INC, backed by 15+ years of experience.',
+      'Burst pipe, major leak or sewer backup in NYC? Request emergency plumbing service from PLUMBON24 MECHANICAL INC, backed by 15+ years of experience.',
   },
   hero: {
-    heading: 'Emergency Plumbing Services in Brooklyn, NY',
+    heading: 'Emergency Plumbing Services in New York City',
     intro:
       'A burst pipe, a major leak or a sewage backup can damage a home or business quickly. Tell us what’s happening and we’ll help you work out the right next step.',
   },
@@ -25,7 +25,7 @@ export const emergencyPlumbing: Service = {
     'With 15+ years of plumbing experience, we approach urgent problems methodically: make the situation safe and stop the water first, then find the cause and explain the options for a proper repair — instead of a quick patch that fails again a week later.',
   ],
   local: {
-    heading: 'Why urgent problems escalate quickly in Brooklyn buildings',
+    heading: 'Why urgent problems escalate quickly in NYC buildings',
     text: 'In row houses, brownstones and multi-family buildings, plumbing runs through shared walls, floors and stacks. A leak in one apartment can reach the unit below within minutes, and a blocked main line can affect every unit in the building. Knowing where your main shut-off valve is — usually in the basement or cellar, near where the water service enters from the street — is the most useful thing you can do before an emergency happens.',
   },
   problemsHeading: 'Common Plumbing Emergencies',
@@ -111,7 +111,7 @@ export const emergencyPlumbing: Service = {
     {
       question: 'Where is my main water shut-off valve?',
       answer:
-        'In most Brooklyn homes and buildings, the main shut-off valve is in the basement or cellar, usually on the front wall near the water meter, where the water service line enters from the street. If you can’t find it, mention it when you request service.',
+        'In most NYC homes and buildings, the main shut-off valve is in the basement or cellar, usually on the front wall near the water meter, where the water service line enters from the street. If you can’t find it, mention it when you request service.',
     },
     {
       question: 'What should I do if I smell gas?',

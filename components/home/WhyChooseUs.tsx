@@ -23,8 +23,8 @@ const reasons = [
     text: 'We focus on identifying the actual problem and providing the right solution for it.',
   },
   {
-    title: 'Local Brooklyn Service',
-    text: 'A local plumbing company based in Sunset Park, serving customers across Brooklyn.',
+    title: 'Local NYC Service',
+    text: 'A local plumbing company based in Sunset Park, serving customers across all five boroughs.',
   },
   {
     title: 'Easy to Contact',
