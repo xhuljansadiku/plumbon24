@@ -108,7 +108,7 @@ export const site: SiteConfig = {
 export const addressLine = `${site.address.street}, ${site.address.city}, ${site.address.state} ${site.address.postalCode}`
 
 export const ctaLabels = {
-  primary: 'Request Service',
+  primary: site.features.freeEstimates ? 'Get a Free Estimate' : 'Request Service',
   quote: site.features.freeEstimates ? 'Get a Free Estimate' : 'Request a Quote',
   emergency: 'Request Emergency Service',
   call: 'Call Now',

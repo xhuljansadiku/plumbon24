@@ -1,4 +1,3 @@
-import { AboutPreview } from '@/components/home/AboutPreview'
 import { EmergencySection } from '@/components/home/EmergencySection'
 import { HomeHero } from '@/components/home/HomeHero'
 import { ProcessSection } from '@/components/home/ProcessSection'
@@ -10,7 +9,6 @@ import { WhyChooseUs } from '@/components/home/WhyChooseUs'
 import { WorkGallery } from '@/components/home/WorkGallery'
 import { ContactSection } from '@/components/sections/ContactSection'
 import { CtaBand } from '@/components/sections/CtaBand'
-import { ExperienceSection } from '@/components/sections/ExperienceSection'
 import { FaqSection } from '@/components/sections/FaqSection'
 import { ReviewsSection } from '@/components/sections/ReviewsSection'
 import type { Metadata } from 'next'
@@ -44,13 +42,11 @@ export default function HomePage() {
       <TrustBar />
       <ServicesSection />
       <WorkGallery />
-      <ExperienceSection />
       <EmergencySection />
       <WhyChooseUs />
       <ResidentialCommercial />
       <ProcessSection />
       <ServiceAreasSection />
-      <AboutPreview />
       <ReviewsSection />
       <FaqSection faqs={generalFaqs} />
       <CtaBand primaryHref={`#${REQUEST_ANCHOR}`} />

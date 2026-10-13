@@ -7,7 +7,7 @@ const items: { icon: IconName; label: string }[] = [
   { icon: 'building', label: 'Residential & Commercial' },
   { icon: 'clock', label: '24/7 Emergency Service' },
   { icon: 'map-pin', label: 'All 5 NYC Boroughs' },
-  { icon: 'shield-check', label: 'Quality Workmanship' },
+  { icon: 'shield-check', label: 'Free Estimates' },
 ]
 
 export function TrustBar() {

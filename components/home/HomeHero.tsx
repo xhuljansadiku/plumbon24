@@ -65,6 +65,12 @@ export function HomeHero() {
                 <Icon name="map-pin" className="size-5 text-brand-600" />
                 Serving all 5 boroughs
               </li>
+              {site.features.freeEstimates ? (
+                <li className="flex items-center gap-2.5">
+                  <Icon name="check-circle" className="size-5 text-brand-600" />
+                  Free estimates
+                </li>
+              ) : null}
               <li className="flex items-center gap-2.5">
                 <Icon name="clock" className="size-5 text-brand-600" />
                 24/7 emergency service

@@ -7,28 +7,28 @@ import { indexLabel } from '@/lib/utils'
 
 const reasons = [
   {
-    title: '15+ Years of Experience',
-    text: 'More than 15 years of practical plumbing experience helps us approach every problem with knowledge and professionalism.',
+    title: 'Answered 24/7 for Emergencies',
+    text: 'Burst pipe at 2 AM or a sewer backup on a Sunday? Call us any time — emergency calls are answered day and night.',
   },
   {
-    title: 'Professional Service',
-    text: 'Clear communication and a professional approach from the initial request through completion.',
+    title: 'Free Estimates, Price Up Front',
+    text: 'We look at the job and tell you what it will cost before any work begins.',
   },
   {
-    title: 'Residential & Commercial',
-    text: 'Plumbing solutions for homes, apartments, businesses and commercial properties.',
+    title: 'From Small Repairs to Full Build-Outs',
+    text: 'The same crew that fixes a leaking faucet also roughs in bathrooms, kitchens, water heaters and commercial spaces.',
   },
   {
-    title: 'Practical Solutions',
-    text: 'We focus on identifying the actual problem and providing the right solution for it.',
+    title: 'We Know NYC Buildings',
+    text: 'Brownstones, pre-war walk-ups, co-ops and storefronts — 15+ years of working with old cast iron, galvanized pipe and building rules.',
   },
   {
-    title: 'Local NYC Service',
-    text: 'A local plumbing company based in Sunset Park, serving customers across all five boroughs.',
+    title: 'All Five Boroughs',
+    text: 'Based in Sunset Park, Brooklyn, with service across Manhattan, Brooklyn, Queens, the Bronx and Staten Island.',
   },
   {
-    title: 'Easy to Contact',
-    text: 'Requesting plumbing service is simple: tell us what’s happening and send photos if you can.',
+    title: 'Send Photos, Get Answers Faster',
+    text: 'Attach photos to your request so we understand the problem before we arrive and come prepared.',
   },
 ]
 
@@ -41,7 +41,7 @@ export function WhyChooseUs() {
             <SectionHeading
               eyebrow="Why PLUMBON24"
               title="Why Choose PLUMBON24?"
-              lead="Experience, clear communication and careful work — the things that matter when someone is working on your plumbing."
+              lead="What you get when you call PLUMBON24 — straight answers, fair prices and careful work."
               id="why-title"
             />
             <ButtonLink href={`#${REQUEST_ANCHOR}`} icon="arrow-right" className="mt-9">
