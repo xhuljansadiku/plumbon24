@@ -122,6 +122,12 @@ export const mapsLinks = {
   directions: `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(addressLine)}`,
 }
 
+/**
+ * Search engines may index the site only once the real domain is configured. A demo deployment
+ * (e.g. *.vercel.app without NEXT_PUBLIC_SITE_URL) stays out of Google, so it never competes with the real site.
+ */
+export const allowIndexing = Boolean(process.env.NEXT_PUBLIC_SITE_URL)
+
 /** Canonical origin of the site, without a trailing slash. */
 export function getSiteUrl(): string {
   const configured =

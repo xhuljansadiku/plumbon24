@@ -5,7 +5,7 @@ import { SiteFooter } from '@/components/layout/SiteFooter'
 import { SiteHeader } from '@/components/layout/SiteHeader'
 import { JsonLd } from '@/components/ui/JsonLd'
 import { businessSchema, websiteSchema } from '@/lib/seo'
-import { getSiteUrl, site } from '@/lib/site'
+import { allowIndexing, getSiteUrl, site } from '@/lib/site'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' })
@@ -34,6 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: { card: 'summary_large_image' },
   formatDetection: { telephone: false, address: false, email: false },
+  ...(allowIndexing ? {} : { robots: { index: false, follow: false } }),
 }
 
 export const viewport: Viewport = {
