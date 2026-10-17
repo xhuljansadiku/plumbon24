@@ -55,7 +55,7 @@ export const serviceCategories: { id: ServiceCategoryId; title: string; descript
   {
     id: 'lines',
     title: 'Water, Sewer & Gas Lines',
-    description: 'The lines that bring water and gas into your building and carry waste out — and the devices that protect them.',
+    description: 'The lines that bring water and gas into your building and carry waste out, and the devices that protect them.',
   },
   {
     id: 'equipment',

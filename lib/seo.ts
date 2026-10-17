@@ -4,7 +4,7 @@ import { absoluteUrl, getSiteUrl, site } from '@/lib/site'
 
 export type Crumb = { name: string; path: string }
 
-export const OG_IMAGE_ALT = 'PLUMBON24 MECHANICAL INC — Professional Plumbing Services in New York City'
+export const OG_IMAGE_ALT = 'PLUMBON24 MECHANICAL INC: Professional Plumbing Services in New York City'
 
 /**
  * The generated share image (app/opengraph-image.tsx). Page-level `openGraph` objects replace the
@@ -87,9 +87,12 @@ export function businessSchema(): Record<string, unknown> {
     ...(site.phone ? { telephone: site.phone.e164 } : {}),
     ...(site.geo ? { geo: { '@type': 'GeoCoordinates', ...site.geo } } : {}),
     ...(site.openingHours.length ? { openingHours: site.openingHours } : {}),
-    ...(site.profiles.googleBusinessProfile ? { sameAs: [site.profiles.googleBusinessProfile] } : {}),
+    ...(sameAs.length ? { sameAs } : {}),
   }
 }
+
+/** Verified profiles of the business on other sites. */
+const sameAs = Object.values(site.profiles).filter((url): url is string => Boolean(url))
 
 export function websiteSchema(): Record<string, unknown> {
   return {

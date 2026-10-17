@@ -20,8 +20,8 @@ export const garbageDisposalServices: Service = {
       'Jammed, leaking or noisy disposals are repaired or replaced, and new units are installed with secure mounting and the right drain connections.',
   },
   overview: [
-    'A garbage disposal is convenient — until it jams, hums without turning, leaks under the sink or starts pushing water into the other bowl. Some problems are simple to fix; others mean the unit has reached the end of its life.',
-    'We diagnose the disposal and the drain it empties into — many “disposal problems” are really drain problems — and then repair, replace or install the unit with secure mounting and leak-free connections.',
+    'A garbage disposal is convenient until it jams, hums without turning, leaks under the sink or starts pushing water into the other bowl. Some problems are simple to fix; others mean the unit has reached the end of its life.',
+    'We diagnose the disposal and the drain it empties into (many “disposal problems” are really drain problems), then repair, replace or install the unit with secure mounting and leak-free connections.',
   ],
   local: {
     heading: 'Check before you add one',
@@ -35,7 +35,7 @@ export const garbageDisposalServices: Service = {
     },
     {
       title: 'Humming but not turning',
-      text: 'Usually a jam or a seized motor — running it longer can burn out the motor.',
+      text: 'Usually a jam or a seized motor. Running it longer can burn out the motor.',
     },
     {
       title: 'Leaks under the sink',
@@ -99,7 +99,7 @@ export const garbageDisposalServices: Service = {
     },
   ],
   whyUs:
-    'We look at the disposal and the drain together, so you get a fix for the real problem — not just a new unit on a struggling drain line.',
+    'We look at the disposal and the drain together, so you get a fix for the real problem, not just a new unit on a struggling drain line.',
   faqs: [
     {
       question: 'What should never go in a garbage disposal?',
@@ -114,7 +114,7 @@ export const garbageDisposalServices: Service = {
     {
       question: 'Can I add a garbage disposal to my kitchen?',
       answer:
-        'Often, yes — but if you’re in a co-op or condo, check the building’s rules first, and make sure the kitchen drain is in good condition. A disposal also needs a suitable electrical connection.',
+        'Often, yes. But if you’re in a co-op or condo, check the building’s rules first, and make sure the kitchen drain is in good condition. A disposal also needs a suitable electrical connection.',
     },
     {
       question: 'How long does a garbage disposal last?',

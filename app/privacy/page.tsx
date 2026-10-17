@@ -45,7 +45,7 @@ export default function PrivacyPage() {
       <h2>How information is shared</h2>
       <p>
         We do not sell the personal information you submit through this website. We share it only with service providers that help us
-        operate the website and deliver your request to us — such as our website hosting and email delivery providers — and where we
+        operate the website and deliver your request to us (such as our website hosting and email delivery providers), and where we
         are required to by law.
       </p>
 

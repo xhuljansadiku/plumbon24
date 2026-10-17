@@ -67,7 +67,7 @@ function rows(submission: Submission): Array<[string, string]> {
 }
 
 function subject(submission: Submission) {
-  return headerSafe(`New service request: ${submission.serviceLabel} — ${submission.data.name}`)
+  return headerSafe(`New service request: ${submission.serviceLabel} from ${submission.data.name}`)
 }
 
 function textBody(submission: Submission) {

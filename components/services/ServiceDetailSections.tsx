@@ -37,14 +37,6 @@ export function ServiceIntro({ service }: { service: Service }) {
             <h3 className="text-h4 mt-4 text-ink">{service.local.heading}</h3>
             <p className="mt-3 leading-relaxed text-muted">{service.local.text}</p>
           </div>
-          <div className="mt-5 flex items-center gap-5 rounded-2xl bg-ink-900 p-6 text-white">
-            <p className="font-display text-4xl font-extrabold leading-none tracking-[-0.04em]">
-              15<span className="text-brand-400">+</span>
-            </p>
-            <p className="text-sm leading-snug text-white/80">
-              Years of plumbing experience, serving homes and businesses from our base in {site.neighborhood}, Brooklyn.
-            </p>
-          </div>
         </aside>
       </Container>
     </Section>
@@ -156,11 +148,14 @@ export function ServiceBenefits({ service }: { service: Service }) {
   )
 }
 
+/** Experience and service area are already in the hero facts and the figure beside this list. */
 const reasons = [
-  { icon: 'badge', title: '15+ years of experience', text: 'Practical plumbing experience across New York City’s older and newer buildings.' },
   { icon: 'message', title: 'Clear communication', text: 'You’ll understand the problem and your options before work begins.' },
   { icon: 'shield-check', title: 'Quality workmanship', text: 'Careful work, suitable materials and proper testing.' },
-  { icon: 'map-pin', title: 'Local to NYC', text: `Based in ${site.neighborhood}, serving homes and businesses across all five boroughs.` },
+  site.features.freeEstimates
+    ? { icon: 'clipboard-check', title: 'Free estimates', text: 'You get the price before any work starts, so there are no surprises.' }
+    : { icon: 'clipboard-check', title: 'Price before work', text: 'We agree on the scope and cost before any work starts.' },
+  { icon: 'camera', title: 'Send photos first', text: 'Attach photos to your request so we arrive with the right parts.' },
 ] satisfies { icon: IconName; title: string; text: string }[]
 
 /** 7. Why choose PLUMBON24 */

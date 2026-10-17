@@ -19,7 +19,7 @@ export const repiping: Service = {
       'When old piping causes constant leaks, low pressure or discolored water, replacing the system can be the most practical long-term solution.',
   },
   overview: [
-    'Repiping means replacing the water supply piping — and sometimes the drain piping — throughout a home, an apartment or part of a building. It’s a bigger project than a repair, but for buildings with failing galvanized steel or badly deteriorated pipe, it ends the cycle of leaks and patch repairs.',
+    'Repiping means replacing the water supply piping (and sometimes the drain piping) throughout a home, an apartment or part of a building. It’s a bigger project than a repair, but for buildings with failing galvanized steel or badly deteriorated pipe, it ends the cycle of leaks and patch repairs.',
     'We plan repiping projects carefully: assessing the existing system, discussing materials and scope, and organizing access so the work is as orderly and as minimally disruptive as possible.',
   ],
   local: {

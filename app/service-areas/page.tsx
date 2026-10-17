@@ -14,9 +14,9 @@ import { serviceAreaGroups } from '@/lib/service-areas'
 import { addressLine, ctaLabels, mapsLinks, site } from '@/lib/site'
 
 export const metadata = createMetadata({
-  title: 'NYC Plumbing Service Areas — All 5 Boroughs | PLUMBON24',
+  title: 'NYC Plumbing Service Areas in All 5 Boroughs | PLUMBON24',
   description:
-    'Based in Sunset Park, PLUMBON24 MECHANICAL INC provides plumbing services across all five NYC boroughs — Manhattan, Brooklyn, Queens, the Bronx and Staten Island.',
+    'Based in Sunset Park, PLUMBON24 MECHANICAL INC provides plumbing services across all five NYC boroughs: Manhattan, Brooklyn, Queens, the Bronx and Staten Island.',
   path: '/service-areas',
 })
 
@@ -39,7 +39,7 @@ const buildingTypes: { icon: IconName; title: string; text: string }[] = [
   {
     icon: 'kitchen',
     title: 'Mixed-use & commercial buildings',
-    text: 'Storefronts, restaurants and offices below apartments need plumbing that works for businesses and residents alike — including backflow protection where required.',
+    text: 'Storefronts, restaurants and offices below apartments need plumbing that works for businesses and residents alike, including backflow protection where required.',
   },
 ]
 
@@ -52,7 +52,7 @@ export default function ServiceAreasPage() {
         intro={
           <p>
             {site.name} is based in Brooklyn and provides professional plumbing services across Manhattan, Brooklyn, Queens, the
-            Bronx and Staten Island — with 24/7 emergency service.
+            Bronx and Staten Island, with 24/7 emergency service.
           </p>
         }
         crumbs={[{ name: 'Service Areas', path: '/service-areas' }]}
@@ -91,7 +91,7 @@ export default function ServiceAreasPage() {
           <SectionHeading
             eyebrow="Neighborhoods"
             title="Boroughs & Neighborhoods We Serve"
-            lead="We work with homeowners, residents, businesses and property managers across all five boroughs. The neighborhoods below are examples — if yours isn’t listed, just ask."
+            lead="We work with homeowners, residents, businesses and property managers across all five boroughs. The neighborhoods below are examples. If yours isn’t listed, just ask."
             id="neighborhoods-title"
           />
           <ul className="mt-12 grid gap-5 md:grid-cols-2">

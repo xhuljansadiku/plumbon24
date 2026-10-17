@@ -22,11 +22,11 @@ export const emergencyPlumbing: Service = {
   },
   overview: [
     'Some plumbing problems can wait for a convenient appointment. Others can’t. When water is coming through a ceiling, a drain is backing up into the basement or a pipe has split, you need a plumber who can assess the situation and stop the damage from spreading.',
-    'With 15+ years of plumbing experience, we approach urgent problems methodically: make the situation safe and stop the water first, then find the cause and explain the options for a proper repair — instead of a quick patch that fails again a week later.',
+    'We approach urgent problems methodically: make the situation safe and stop the water first, then find the cause and explain the options for a proper repair, instead of a quick patch that fails again a week later.',
   ],
   local: {
     heading: 'Why urgent problems escalate quickly in NYC buildings',
-    text: 'In row houses, brownstones and multi-family buildings, plumbing runs through shared walls, floors and stacks. A leak in one apartment can reach the unit below within minutes, and a blocked main line can affect every unit in the building. Knowing where your main shut-off valve is — usually in the basement or cellar, near where the water service enters from the street — is the most useful thing you can do before an emergency happens.',
+    text: 'In row houses, brownstones and multi-family buildings, plumbing runs through shared walls, floors and stacks. A leak in one apartment can reach the unit below within minutes, and a blocked main line can affect every unit in the building. Knowing where your main shut-off valve is (usually in the basement or cellar, near where the water service enters from the street) is the most useful thing you can do before an emergency happens.',
   },
   problemsHeading: 'Common Plumbing Emergencies',
   problems: [
@@ -44,7 +44,7 @@ export const emergencyPlumbing: Service = {
     },
     {
       title: 'Overflowing toilets',
-      text: 'A toilet that keeps overflowing — or overflows when other fixtures drain — can signal a deeper blockage in the line.',
+      text: 'A toilet that keeps overflowing, or overflows when other fixtures drain, can signal a deeper blockage in the line.',
     },
     {
       title: 'Leaking water heaters',
@@ -71,7 +71,7 @@ export const emergencyPlumbing: Service = {
     },
     {
       title: 'Make it safe',
-      text: 'The first priority is stopping the water and protecting the property — closing the right valve, isolating the affected line and containing the leak.',
+      text: 'The first priority is stopping the water and protecting the property: closing the right valve, isolating the affected line and containing the leak.',
     },
     {
       title: 'Find the cause',
@@ -97,7 +97,7 @@ export const emergencyPlumbing: Service = {
     },
     {
       title: 'Experience under pressure',
-      text: '15+ years of plumbing experience helps us diagnose urgent problems calmly and methodically.',
+      text: 'Years of plumbing experience help us diagnose urgent problems calmly and methodically.',
     },
   ],
   whyUs:
@@ -121,7 +121,7 @@ export const emergencyPlumbing: Service = {
     {
       question: 'How soon can someone come out?',
       answer:
-        'It depends on the timing of your request, your location and the work already scheduled. Send your request with as much detail as possible — photos help — and we’ll get back to you as soon as possible.',
+        'It depends on the timing of your request, your location and the work already scheduled. Send your request with as much detail as possible (photos help), and we’ll get back to you as soon as possible.',
     },
   ],
   related: ['leak-detection-repair', 'drain-cleaning', 'sewer-line-services'],

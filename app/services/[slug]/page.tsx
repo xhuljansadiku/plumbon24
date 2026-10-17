@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { ContactSection } from '@/components/sections/ContactSection'
-import { CtaBand } from '@/components/sections/CtaBand'
 import { FaqSection } from '@/components/sections/FaqSection'
 import { PageHero } from '@/components/sections/PageHero'
 import {
@@ -17,7 +16,6 @@ import {
 } from '@/components/services/ServiceDetailSections'
 import { JsonLd } from '@/components/ui/JsonLd'
 import { images } from '@/lib/images'
-import { REQUEST_ANCHOR } from '@/lib/navigation'
 import { createMetadata, serviceSchema } from '@/lib/seo'
 import { getService, serviceCategories, serviceHref, services } from '@/lib/services'
 
@@ -65,13 +63,6 @@ export default async function ServicePage({ params }: PageProps<'/services/[slug
         lead={`Answers to common questions about ${service.title.toLowerCase()} in New York City.`}
       />
       <RelatedServices service={service} />
-      <CtaBand
-        title={`Need ${service.title} in New York City?`}
-        text="Tell us what you’re dealing with and we’ll help you determine the next step."
-        primaryHref={`#${REQUEST_ANCHOR}`}
-        secondary={null}
-        id="service-cta-title"
-      />
       <ContactSection
         title={`Request ${service.title}`}
         lead="Tell us what’s happening, where you’re located and what type of property it is. Photos help us understand the problem."

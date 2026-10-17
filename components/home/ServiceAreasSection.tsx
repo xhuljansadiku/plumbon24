@@ -1,10 +1,9 @@
 import Image from 'next/image'
 import { ArrowLink } from '@/components/ui/Button'
-import { Icon } from '@/components/ui/Icon'
 import { Container, Section } from '@/components/ui/Layout'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { images } from '@/lib/images'
-import { addressLine, site } from '@/lib/site'
+import { site } from '@/lib/site'
 
 export function ServiceAreasSection() {
   const photo = images.brooklynStreet
@@ -28,18 +27,9 @@ export function ServiceAreasSection() {
           <SectionHeading
             eyebrow="Service areas"
             title="Serving All 5 NYC Boroughs"
-            lead={`${site.name} is based in Brooklyn and provides professional plumbing services across Manhattan, Brooklyn, Queens, the Bronx and Staten Island.`}
+            lead="Houses, apartment buildings and businesses anywhere in the city. One call covers every borough. Not sure we reach your block? Just ask."
             id="areas-title"
           />
-          <div className="mt-8 flex items-start gap-4 rounded-xl border border-line bg-white p-5">
-            <span className="grid size-11 shrink-0 place-items-center rounded-lg bg-brand-600 text-white">
-              <Icon name="map-pin" className="size-5" />
-            </span>
-            <div>
-              <p className="font-semibold text-ink">Based in {site.neighborhood}, Brooklyn</p>
-              <p className="mt-0.5 text-muted">{addressLine}</p>
-            </div>
-          </div>
           <h3 className="text-eyebrow mt-10 text-[0.75rem] text-subtle">Boroughs we serve</h3>
           <ul className="mt-5 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3">
             {site.boroughs.map((name) => (

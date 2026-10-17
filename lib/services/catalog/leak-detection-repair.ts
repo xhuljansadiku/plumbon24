@@ -21,7 +21,7 @@ export const leakDetectionRepair: Service = {
   },
   overview: [
     'Visible drips are easy to spot. The leaks that do the most damage usually aren’t visible at all: a pinhole in a supply line inside a wall, a failed drain connection under a tub, or a slow leak under a floor that only shows up as a stain on the ceiling below.',
-    'We trace leaks methodically — following the evidence, isolating parts of the system and testing — to find where the water is actually coming from before walls or floors are opened. Then we repair the failed pipe, fitting or connection.',
+    'We trace leaks methodically (following the evidence, isolating parts of the system and testing) to find where the water is actually coming from before walls or floors are opened. Then we repair the failed pipe, fitting or connection.',
   ],
   local: {
     heading: 'Leaks travel in stacked buildings',
@@ -87,7 +87,7 @@ export const leakDetectionRepair: Service = {
     },
     {
       title: 'Less wasted water',
-      text: 'Stopping hidden leaks reduces wasted water — and the bills that come with it.',
+      text: 'Stopping hidden leaks reduces wasted water and the bills that come with it.',
     },
     {
       title: 'Healthier spaces',

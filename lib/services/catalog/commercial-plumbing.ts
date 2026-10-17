@@ -20,7 +20,7 @@ export const commercialPlumbing: Service = {
   },
   overview: [
     'Commercial plumbing carries more load and more responsibility than residential plumbing: more fixtures, more users, larger piping and equipment, and requirements such as backflow protection. When something fails, it can close a restroom, stop a kitchen or affect every tenant in the building.',
-    'We work with business owners and property managers on repairs, installations and maintenance — communicating clearly about the problem, the plan and anything that affects your operations.',
+    'We work with business owners and property managers on repairs, installations and maintenance, communicating clearly about the problem, the plan and anything that affects your operations.',
   ],
   local: {
     heading: 'New York City’s commercial mix',
@@ -99,7 +99,7 @@ export const commercialPlumbing: Service = {
     },
   ],
   whyUs:
-    'Businesses need a plumber who communicates clearly and respects their operations. With 15+ years of plumbing experience, that’s how we work.',
+    'Businesses need a plumber who communicates clearly and respects their operations. That’s how we work.',
   faqs: [
     {
       question: 'What types of commercial properties do you work with?',

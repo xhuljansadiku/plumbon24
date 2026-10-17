@@ -20,7 +20,7 @@ export const gasLinePlumbing: Service = {
   },
   overview: [
     'Gas lines supply the appliances and equipment that heat water, cook food and dry clothes. Because a gas leak is a serious safety hazard, gas piping work has to be done carefully, tested properly and completed in line with applicable codes.',
-    'We help with gas piping for appliance connections, equipment changes and repairs, and we explain what your project involves — including any permits, inspections or utility coordination that may be required in New York City.',
+    'We help with gas piping for appliance connections, equipment changes and repairs, and we explain what your project involves, including any permits, inspections or utility coordination that may be required in New York City.',
   ],
   local: {
     heading: 'Gas work in New York City',
@@ -30,7 +30,7 @@ export const gasLinePlumbing: Service = {
   problems: [
     {
       title: 'Suspected gas leaks',
-      text: 'Any gas odor needs immediate action — leave the building and call 911 or your gas utility from outside first.',
+      text: 'Any gas odor needs immediate action: leave the building and call 911 or your gas utility from outside first.',
     },
     {
       title: 'New appliance connections',
@@ -55,7 +55,7 @@ export const gasLinePlumbing: Service = {
   ],
   signsHeading: 'When to Call About Gas Piping',
   signs: [
-    'You smell gas — leave first, then call 911 or your utility from outside',
+    'You smell gas: leave first, then call 911 or your utility from outside',
     'You’re adding or replacing a gas appliance',
     'You’re renovating a kitchen with a gas range',
     'Your gas service has been shut off',

@@ -21,7 +21,7 @@ export const sewerLineServices: Service = {
   },
   overview: [
     'Your building sewer is the pipe that carries all wastewater from the property to the city sewer. When it’s blocked, cracked, sagging or invaded by roots, the symptoms show up everywhere: slow drains, gurgling fixtures, sewage odors and backups in the lowest drains.',
-    'We work to establish the actual condition of the line — often with a camera inspection — before recommending cleaning, a section repair or a replacement. That way the recommendation is based on what’s really inside the pipe, not a guess.',
+    'We work to establish the actual condition of the line, often with a camera inspection, before recommending cleaning, a section repair or a replacement. That way the recommendation is based on what’s really inside the pipe, not a guess.',
   ],
   local: {
     heading: 'In NYC, the sewer connection is the owner’s responsibility',
@@ -95,7 +95,7 @@ export const sewerLineServices: Service = {
     },
   ],
   whyUs:
-    'Sewer work is disruptive and important to get right. With 15+ years of plumbing experience, we focus on diagnosing the line correctly and explaining your options clearly.',
+    'Sewer work is disruptive and important to get right. We focus on diagnosing the line correctly and explaining your options clearly.',
   faqs: [
     {
       question: 'Who is responsible for my sewer line in New York City?',
@@ -105,7 +105,7 @@ export const sewerLineServices: Service = {
     {
       question: 'What is a sewer camera inspection?',
       answer:
-        'A small waterproof camera is fed into the sewer line to show its condition on a screen — revealing blockages, roots, cracks, sags and offset joints without digging.',
+        'A small waterproof camera is fed into the sewer line to show its condition on a screen, revealing blockages, roots, cracks, sags and offset joints without digging.',
     },
     {
       question: 'What is a backwater valve?',

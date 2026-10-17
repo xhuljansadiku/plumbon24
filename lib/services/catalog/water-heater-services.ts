@@ -19,7 +19,7 @@ export const waterHeaterServices: Service = {
       'From no hot water to a leaking tank, we diagnose water heater problems and help you decide whether to repair or replace.',
   },
   overview: [
-    'Water heaters work every day and usually give some warning before they fail: hot water that runs out sooner, rumbling noises, discolored water or moisture around the base. Catching those signs early gives you time to plan a repair or replacement instead of dealing with a cold shower — or a wet basement.',
+    'Water heaters work every day and usually give some warning before they fail: hot water that runs out sooner, rumbling noises, discolored water or moisture around the base. Catching those signs early gives you time to plan a repair or replacement instead of dealing with a cold shower or a wet basement.',
     'We diagnose the problem and explain whether a repair makes sense or whether replacement is the better investment for the age and condition of the unit. Whether you have a tank-style or tankless heater, include the make and model in your request if you can.',
   ],
   local: {
@@ -90,7 +90,7 @@ export const waterHeaterServices: Service = {
     },
     {
       title: 'Better efficiency',
-      text: 'A properly working — or new, correctly sized — heater can use energy more efficiently.',
+      text: 'A properly working (or new, correctly sized) heater can use energy more efficiently.',
     },
     {
       title: 'Fewer surprises',
@@ -98,7 +98,7 @@ export const waterHeaterServices: Service = {
     },
   ],
   whyUs:
-    'Whether it’s a repair or a replacement, we explain the options honestly and complete the work with attention to the safety details — venting, valves and connections.',
+    'Whether it’s a repair or a replacement, we explain the options honestly and complete the work with attention to the safety details: venting, valves and connections.',
   faqs: [
     {
       question: 'How long does a water heater last?',

@@ -12,19 +12,25 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 - [x] Orari: Mon–Fri, 9 AM – 5 PM, plus emergjenca 24/7
 - [x] Foto reale të punës (`public/images/work/`)
 
+## ✅ Të marra nga klienti (2026-10-17)
+- [x] Email-i mbetet `plumbon24@gmail.com`
+- [x] Eksperienca: 15+ vite eksperiencë personale. Kompania sapo është hapur, ndaj **mos shkruaj kurrë** "since 20XX", "in business for 15 years" ose `foundingDate` në schema.
+- [x] Fotot: përdorim ato që dërguan + fotot falas me licencë (`docs/IMAGE-CREDITS.md`). Fotot e banjave/kuzhinave të përfunduara janë në rregull.
+- [x] Lagjet e projekteve: nuk dihen. Galeria dhe karta te hero mbeten pa lagje.
+- [x] Instagram: https://www.instagram.com/plumbon24/ (shtuar në footer dhe te `sameAs` në schema)
+
 ---
 
-## 1. Pyetje për klientin (dërgoja këto)
+## 1. Pyetje për klientin
 
-### Të rëndësishme (rrisin besimin e klientit amerikan)
-- [ ] **A janë Licensed & Insured?** Nëse po: numri i licencës (NYC Licensed Master Plumber / LMP #) dhe emri i licencuesit.
-      → Shfaqet në hero, footer dhe TrustBar (duhet shtuar një fushë te `lib/site.ts`).
-- [ ] **Review reale nga klientët**: linku i Google Business Profile, Yelp ose Facebook, ose screenshot-e të review-ve.
-      → `lib/reviews.ts`. Seksioni shfaqet vetë. Vetëm review të vërteta, fjalë për fjalë.
-- [ ] **Link i Google Business Profile** (nëse e kanë; nëse jo, rekomandohet ta hapin)
-      → `profiles.googleBusinessProfile` te `lib/site.ts`
+### Në pritje
+- [ ] **Licensed & Insured + numri LMP**: klienti pyeti nëse duhet patjetër. Për faqen jo, por mos e shkruaj pa e konfirmuar. Për punën në NYC, shumica e punëve hidraulike kërkojnë LMP (Gas Line dhe Backflow sidomos).
+      → Kur ta japë: shfaqet në hero (pranë "15+ Years" dhe adresës), te faktet e faqeve të shërbimeve dhe në footer (duhet shtuar një fushë te `lib/site.ts`).
+- [ ] **Google Business Profile**: do ta hapim ne me email-in e klientit. Linku → `profiles.googleBusinessProfile` te `lib/site.ts`
+- [ ] **Review reale**: vijnë pasi të hapet GBP. → `lib/reviews.ts`. Seksioni shfaqet vetë. Vetëm review të vërteta, fjalë për fjalë.
+- [ ] **Domain-i**: `plumbon24.com` (i lirë më 2026-10-17). Blije sa më shpejt, në emër të klientit. Faqja do jetë `https://www.plumbon24.com`.
 
-### Shërbimet
+### Shërbimet (klienti po i pyet)
 - [ ] **Cilat nga këto 20 shërbime i ofrojnë realisht?** Ato që nuk i ofrojnë fshihen nga faqja (`published: false`).
       1. Emergency Plumbing
       2. Drain Cleaning
@@ -49,15 +55,11 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 - [ ] **A bëjnë edhe sprinkler / fire protection?** Në fotot e tyre ka valvola sprinkler dhe FDC. Nëse po, mund të shtohet si shërbim.
 - [ ] **A bëjnë heating / boilers?** Fotot tregojnë dhoma boileri. Nëse po, mund të shtohet si shërbim.
 
-### Detaje të tjera
-- [ ] **Fotot e banjave/kuzhinës së përfunduar**: a janë punë e tyre dhe a kanë të drejtë t'i përdorin? (Duken foto profesionale të fotografuara nga dikush tjetër.)
-- [ ] **Ku i kanë bërë projektet?** P.sh. "Bathroom renovation, Park Slope". Me lagjen/llojin e projektit, galeria bind shumë më shumë.
+### Opsionale
 - [ ] **Videoja**: a duan ta vendosim në faqe?
-- [ ] **Vitet e eksperiencës**: a është saktë "15+"? Viti kur u themelua kompania?
-- [ ] **Mënyrat e pagesës** (cash, card, Zelle, check?) (opsionale)
-- [ ] **Gjuhët që flasin** (p.sh. English, Albanian, Spanish?). Në NYC kjo vlen si pikë shitjeje. (opsionale)
-- [ ] **Email-i**: a mbetet `plumbon24@gmail.com`, apo do email me domain (p.sh. `info@plumbon24.com`)?
-- [ ] **Instagram / Facebook** (nëse kanë)
+- [ ] **Mënyrat e pagesës** (cash, card, Zelle, check?)
+- [ ] **Gjuhët që flasin** (p.sh. English, Albanian, Spanish?). Në NYC kjo vlen si pikë shitjeje.
+- [ ] **Facebook** (nëse kanë)
 
 ---
 

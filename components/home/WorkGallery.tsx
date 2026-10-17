@@ -12,7 +12,7 @@ export function WorkGallery() {
         <SectionHeading
           eyebrow="Our work"
           title="Real Projects Across New York City"
-          lead="Photos from our own jobs — from rough-in and mechanical rooms to finished kitchens and bathrooms."
+          lead="Photos from our own jobs, from rough-in and mechanical rooms to finished kitchens and bathrooms."
           id="work-title"
         />
         <ul className="mt-12 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">

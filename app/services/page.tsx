@@ -39,7 +39,7 @@ export default function ServicesPage() {
         title="Plumbing Services in New York City"
         intro={
           <p>
-            From urgent repairs to installations and planned maintenance — professional plumbing services for homes and businesses
+            Urgent repairs, installations and planned maintenance for homes and businesses
             across all five NYC boroughs, backed by 15+ years of plumbing experience.
           </p>
         }
@@ -111,7 +111,7 @@ export default function ServicesPage() {
 
       <FaqSection faqs={generalFaqs} tone={gridCategories.length % 2 === 0 ? 'mist' : 'white'} />
       <CtaBand primaryHref={`#${REQUEST_ANCHOR}`} />
-      <ContactSection lead="Not sure which service you need? Choose “Other / not sure” and describe the problem — we’ll help you work it out." />
+      <ContactSection lead="Not sure which service you need? Choose “Other / not sure” and describe the problem. We’ll help you work it out." />
     </>
   )
 }

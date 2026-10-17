@@ -16,11 +16,11 @@ export const plumbingInstallation: Service = {
   hero: {
     heading: 'Plumbing Installation in New York City',
     intro:
-      'New fixtures, appliances, water heaters and piping — installed with careful planning, suitable materials and proper connections.',
+      'New fixtures, appliances, water heaters and piping, installed with careful planning, suitable materials and proper connections.',
   },
   overview: [
     'A good installation is one you never have to think about again. That means suitable materials, proper support and slope, accessible shut-off valves, and connections that are made correctly the first time.',
-    'We install plumbing fixtures, appliances, water heaters, piping and equipment for homes and businesses — from a single new faucet to the plumbing for a renovated kitchen or a new commercial space.',
+    'We install plumbing fixtures, appliances, water heaters, piping and equipment for homes and businesses, from a single new faucet to the plumbing for a renovated kitchen or a new commercial space.',
   ],
   local: {
     heading: 'New installations in older buildings',

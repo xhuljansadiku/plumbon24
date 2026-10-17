@@ -20,7 +20,7 @@ export const plumbingMaintenance: Service = {
   },
   overview: [
     'Most plumbing emergencies start as small problems nobody noticed: a seeping valve, a corroded fitting, a water heater full of sediment or a drain that has been slowing down for months. Regular maintenance is the most practical way to catch them early.',
-    'We inspect and maintain plumbing for homeowners, building owners and businesses — checking valves, water heaters, drains, fixtures and visible piping, and explaining anything that needs attention.',
+    'We inspect and maintain plumbing for homeowners, building owners and businesses, checking valves, water heaters, drains, fixtures and visible piping, and explaining anything that needs attention.',
   ],
   local: {
     heading: 'Maintenance for older buildings',
@@ -99,7 +99,7 @@ export const plumbingMaintenance: Service = {
     },
   ],
   whyUs:
-    'Maintenance is about noticing details. With 15+ years of plumbing experience, we know where problems tend to start — and how to catch them early.',
+    'Maintenance is about noticing details. We know where problems tend to start and how to catch them early.',
   faqs: [
     {
       question: 'How often should plumbing be inspected?',

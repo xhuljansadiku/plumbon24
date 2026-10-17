@@ -20,7 +20,7 @@ export const waterLineServices: Service = {
   },
   overview: [
     'Your water service line runs from the city water main, under the street and sidewalk, to the main shut-off valve inside your building. Problems with it can show up as low pressure throughout the property, discolored water, a wet area in the sidewalk or basement wall, or a sudden loss of water.',
-    'We help locate water line problems and repair or replace service lines, main shut-off valves and the connections inside the building — and we explain what the work involves before it begins.',
+    'We help locate water line problems and repair or replace service lines, main shut-off valves and the connections inside the building, and we explain what the work involves before it begins.',
   ],
   local: {
     heading: 'Owner responsibility in New York City',
@@ -72,7 +72,7 @@ export const waterLineServices: Service = {
     },
     {
       title: 'Plan the repair',
-      text: 'We explain the scope — from a valve replacement to a service line repair or replacement — before work begins.',
+      text: 'We explain the scope, from a valve replacement to a service line repair or replacement, before work begins.',
     },
     {
       title: 'Restore service',

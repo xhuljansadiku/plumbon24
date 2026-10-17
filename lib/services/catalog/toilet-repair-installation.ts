@@ -16,15 +16,15 @@ export const toiletRepairInstallation: Service = {
   hero: {
     heading: 'Toilet Repair & Installation in New York City',
     intro:
-      'From a toilet that runs all night to a leak at the base, we repair the problem — or install a new toilet when it’s time to replace.',
+      'From a toilet that runs all night to a leak at the base, we repair the problem or install a new toilet when it’s time to replace.',
   },
   overview: [
     'Toilets are simple, but small failures cause big problems: a worn flapper can waste a surprising amount of water, a failed wax seal can rot the subfloor, and a cracked tank can flood a bathroom. Most toilet problems can be repaired once the cause is identified.',
-    'When a toilet is cracked, inefficient or simply worn out, we install a new one — setting it properly on the flange, sealing it and connecting a new supply line so it sits solid and stays dry.',
+    'When a toilet is cracked, inefficient or simply worn out, we install a new one, setting it properly on the flange, sealing it and connecting a new supply line so it sits solid and stays dry.',
   ],
   local: {
     heading: 'Toilets in older NYC bathrooms',
-    text: 'In older buildings, removing a toilet can reveal a corroded closet flange, a deteriorated floor or an unusual rough-in distance. Those details matter: a toilet that isn’t properly supported and sealed will rock, leak and damage the floor below — which, in a stacked building, may be a neighbor’s ceiling.',
+    text: 'In older buildings, removing a toilet can reveal a corroded closet flange, a deteriorated floor or an unusual rough-in distance. Those details matter: a toilet that isn’t properly supported and sealed will rock, leak and damage the floor below, which in a stacked building may be a neighbor’s ceiling.',
   },
   problemsHeading: 'Toilet Problems We Fix',
   problems: [

@@ -24,7 +24,7 @@ const values: { icon: IconName; title: string; text: string }[] = [
   {
     icon: 'clipboard-check',
     title: 'Professional approach',
-    text: 'We treat every job — and every property — professionally, from the first request to the finished work.',
+    text: 'We treat every job and every property professionally, from the first request to the finished work.',
   },
   {
     icon: 'badge',
@@ -34,7 +34,7 @@ const values: { icon: IconName; title: string; text: string }[] = [
   {
     icon: 'message',
     title: 'Customer-focused communication',
-    text: 'Plain-language explanations of the problem, the options and what the work involves — before it begins.',
+    text: 'Plain-language explanations of the problem, the options and what the work involves, before it begins.',
   },
   {
     icon: 'target',
@@ -74,22 +74,17 @@ export default function AboutPage() {
           <div className="lg:col-span-6">
             <Eyebrow>Who we are</Eyebrow>
             <h2 id="story-title" className="text-h2 mt-4 text-ink">
-              15+ Years of Plumbing Experience in New York City
+              Plumbing Done Properly, Explained Clearly
             </h2>
             <div className="mt-7 grid gap-5 text-lg leading-relaxed text-muted">
               <p>
-                {site.name} is a professional plumbing company based at {site.address.street} in {site.neighborhood}, Brooklyn. With
-                15+ years of plumbing experience, we work on the plumbing that homes and businesses depend on every day — water
-                lines, drains, water heaters, fixtures, sewer connections and the systems that tie them together.
+                We work on the plumbing that homes and businesses depend on every day: water lines, drains, water heaters,
+                fixtures, sewer connections and the systems that tie them together.
               </p>
               <p>
                 Our approach is straightforward: listen to the problem, find the actual cause, explain the options clearly and do the
                 work properly. We believe you should understand what’s wrong with your plumbing, and why a repair is recommended,
                 before any work begins.
-              </p>
-              <p>
-                We serve homeowners, residents, business owners and property managers across all five boroughs — from brownstones and
-                apartment buildings to restaurants, shops and commercial properties.
               </p>
             </div>
           </div>
@@ -114,10 +109,6 @@ export default function AboutPage() {
                     sizes="(min-width: 1024px) 18vw, 40vw"
                     className="reveal-image object-cover"
                   />
-                </div>
-                <div className="rounded-2xl bg-brand-600 p-5 text-white">
-                  <p className="font-display text-4xl font-extrabold leading-none tracking-[-0.04em]">15+</p>
-                  <p className="mt-2 text-sm font-semibold">Years of plumbing experience</p>
                 </div>
               </div>
             </div>
@@ -158,7 +149,7 @@ export default function AboutPage() {
               tone="dark"
               eyebrow="Experience"
               title="Experience That Shows in the Details"
-              lead="Fifteen-plus years of plumbing teaches you where problems start, how older buildings behave and why careful work matters. That experience is what we bring to every job — big or small."
+              lead="Fifteen-plus years of plumbing teaches you where problems start, how older buildings behave and why careful work matters. That experience is what we bring to every job, big or small."
               id="experience-about-title"
             />
           </div>
@@ -185,7 +176,7 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Our location"
               title={`Based in ${site.neighborhood}, Brooklyn`}
-              lead={`Our base at ${addressLine} puts us in South Brooklyn, with quick access to all five boroughs.`}
+              lead="From South Brooklyn, we reach jobs in every borough of New York City."
               id="location-title"
             />
             <ContactDetails className="mt-10" />

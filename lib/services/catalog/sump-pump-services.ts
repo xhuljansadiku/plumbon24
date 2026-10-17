@@ -19,12 +19,12 @@ export const sumpPumpServices: Service = {
       'A sump pump only matters if it works when the water arrives. We repair, replace and install sump pumps to help keep basements and cellars dry.',
   },
   overview: [
-    'A sump pump collects water that gathers below or around a basement floor and pumps it away from the building. Because pumps often sit idle for months, many fail without warning — usually during the storm when they’re needed most.',
+    'A sump pump collects water that gathers below or around a basement floor and pumps it away from the building. Because pumps often sit idle for months, many fail without warning, usually during the storm when they’re needed most.',
     'We test, repair and replace sump pumps, check float switches, check valves and discharge piping, and discuss options such as battery backup systems for properties where basement water is a recurring concern.',
   ],
   local: {
     heading: 'Low-lying areas and heavy rain',
-    text: 'Parts of NYC — especially low-lying and waterfront neighborhoods — deal with high groundwater and flooding during heavy storms. Basements and cellars in these areas often rely on sump pumps, and a working pump with a properly routed discharge line can make a real difference.',
+    text: 'Parts of NYC, especially low-lying and waterfront neighborhoods, deal with high groundwater and flooding during heavy storms. Basements and cellars in these areas often rely on sump pumps, and a working pump with a properly routed discharge line can make a real difference.',
   },
   problemsHeading: 'Sump Pump Problems We Fix',
   problems: [
@@ -98,7 +98,7 @@ export const sumpPumpServices: Service = {
     },
   ],
   whyUs:
-    'We treat a sump pump as a system — pump, switch, check valve and discharge — so the whole setup is ready when the water comes.',
+    'We treat a sump pump as a system (pump, switch, check valve and discharge) so the whole setup is ready when the water comes.',
   faqs: [
     {
       question: 'How often should I test my sump pump?',

@@ -23,7 +23,7 @@ export function Logo({
   const image = (
     <Image
       src={logo}
-      alt={linked ? 'PLUMBON24 Mechanical Inc – home' : 'PLUMBON24 Mechanical Inc'}
+      alt={linked ? 'PLUMBON24 Mechanical Inc home page' : 'PLUMBON24 Mechanical Inc'}
       sizes={sizes}
       quality={90}
       loading={eager ? 'eager' : undefined}

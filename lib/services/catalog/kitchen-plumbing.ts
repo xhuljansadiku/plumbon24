@@ -7,7 +7,7 @@ export const kitchenPlumbing: Service = {
   title: 'Kitchen Plumbing',
   icon: 'kitchen',
   image: 'finishedKitchen',
-  summary: 'Sinks, faucets, dishwashers, disposals and kitchen drains — repaired, upgraded or installed.',
+  summary: 'Sinks, faucets, dishwashers, disposals and kitchen drains: repaired, upgraded or installed.',
   seo: {
     title: 'Kitchen Plumbing in New York City | PLUMBON24 MECHANICAL INC',
     description:
@@ -16,11 +16,11 @@ export const kitchenPlumbing: Service = {
   hero: {
     heading: 'Kitchen Plumbing in New York City',
     intro:
-      'Kitchen sinks, faucets, dishwashers, disposals and drains — repaired when they fail and installed properly when you upgrade.',
+      'Kitchen sinks, faucets, dishwashers, disposals and drains, repaired when they fail and installed properly when you upgrade.',
   },
   overview: [
     'The kitchen sink handles grease, food waste and heavy daily use, and the plumbing around it connects to the faucet, dishwasher, garbage disposal, ice maker and water filter. Small leaks under the sink often go unnoticed until the cabinet floor is ruined.',
-    'We repair kitchen plumbing problems and install new sinks, faucets and appliance connections — in home kitchens, and in commercial kitchens where reliability matters for every service.',
+    'We repair kitchen plumbing problems and install new sinks, faucets and appliance connections in home kitchens, and in commercial kitchens where reliability matters for every service.',
   ],
   local: {
     heading: 'Kitchen upgrades in NYC homes',
@@ -68,7 +68,7 @@ export const kitchenPlumbing: Service = {
     },
     {
       title: 'Recommend solutions',
-      text: 'Repair, replace or upgrade — with the options explained clearly.',
+      text: 'Repair, replace or upgrade, with the options explained clearly.',
     },
     {
       title: 'Complete the work',
@@ -98,7 +98,7 @@ export const kitchenPlumbing: Service = {
     },
   ],
   whyUs:
-    'Whether it’s a home kitchen or a restaurant, we treat the kitchen as a system — fixtures, appliances and drains working together.',
+    'Whether it’s a home kitchen or a restaurant, we treat the kitchen as a system: fixtures, appliances and drains working together.',
   faqs: [
     {
       question: 'Why does my kitchen sink keep clogging?',

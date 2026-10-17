@@ -46,6 +46,7 @@ type SiteConfig = {
   }
   profiles: {
     googleBusinessProfile: string | null
+    instagram: string | null
   }
   copyrightYear: number
   lastUpdated: string
@@ -98,6 +99,7 @@ export const site: SiteConfig = {
   profiles: {
     /** Google Business Profile URL, once the listing is verified. */
     googleBusinessProfile: null,
+    instagram: 'https://www.instagram.com/plumbon24/',
   },
 
   copyrightYear: 2026,

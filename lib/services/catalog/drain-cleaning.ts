@@ -19,7 +19,7 @@ export const drainCleaning: Service = {
       'Slow sinks, standing water in the shower and gurgling toilets rarely fix themselves. We clear the blockage and find out why it formed, so the same drain doesn’t clog again next month.',
   },
   overview: [
-    'Most drain problems build up over time: grease and food in kitchen lines, hair and soap in bathroom drains, and scale or debris inside older pipes. Store-bought chemicals may open a small channel, but they rarely remove the buildup — and they can be hard on older pipes and seals.',
+    'Most drain problems build up over time: grease and food in kitchen lines, hair and soap in bathroom drains, and scale or debris inside older pipes. Store-bought chemicals may open a small channel, but they rarely remove the buildup, and they can be hard on older pipes and seals.',
     'We clear clogs with the method that suits the drain and the blockage. When a clog keeps coming back, we look for the underlying cause, such as a sagging line, a damaged section, roots or a venting problem.',
   ],
   local: {
@@ -72,7 +72,7 @@ export const drainCleaning: Service = {
     },
     {
       title: 'Advise on prevention',
-      text: 'If the clog points to a bigger issue — damaged pipe, poor slope or roots — we explain what we found and your options.',
+      text: 'If the clog points to a bigger issue (damaged pipe, poor slope or roots), we explain what we found and your options.',
     },
   ],
   benefits: [
@@ -104,7 +104,7 @@ export const drainCleaning: Service = {
     {
       question: 'Why does my drain keep clogging?',
       answer:
-        'Repeat clogs usually mean something in the line is catching debris — buildup on the pipe walls, a sag, a damaged section or a partial blockage further down. Finding that cause is the key to stopping the cycle.',
+        'Repeat clogs usually mean something in the line is catching debris: buildup on the pipe walls, a sag, a damaged section or a partial blockage further down. Finding that cause is the key to stopping the cycle.',
     },
     {
       question: 'Why are several drains backing up at the same time?',

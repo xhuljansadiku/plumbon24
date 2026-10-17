@@ -36,7 +36,7 @@ export function EmergencySection() {
           <p className="text-lead mt-6 max-w-2xl text-white/75">
             A burst pipe, major leak or serious drainage problem can quickly become a bigger issue.{' '}
             {site.features.emergency24h
-              ? `${site.name} answers emergency calls 24 hours a day, 7 days a week, across all five boroughs.`
+              ? `${site.name} answers emergency calls 24 hours a day, 7 days a week, including nights, weekends and holidays.`
               : `Contact ${site.name} to discuss your plumbing problem and determine the right next step.`}
           </p>
           <ul className="mt-8 flex flex-wrap gap-2.5" aria-label="Common urgent problems">

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { DesktopNav } from '@/components/layout/DesktopNav'
 import { MobileMenu } from '@/components/layout/MobileMenu'
 import { MobileMenuContent } from '@/components/layout/MobileMenuContent'
@@ -7,36 +8,60 @@ import { BrandDrop, Icon } from '@/components/ui/Icon'
 import { Container } from '@/components/ui/Layout'
 import { Logo } from '@/components/ui/Logo'
 import { mainNav } from '@/lib/navigation'
-import { addressLine, ctaLabels, mapsLinks, site } from '@/lib/site'
+import { ctaLabels, site } from '@/lib/site'
 
-/** Thin information bar above the header (desktop only): reinforces name, address and experience. */
+function TopBarDivider() {
+  return <span aria-hidden="true" className="h-3.5 w-px bg-white/15" />
+}
+
+/**
+ * Slim single-line bar above the header (desktop only). Kept to a few short facts so it never
+ * wraps; the full address and email live in the footer and on the contact page.
+ */
 function TopBar() {
   return (
-    <div className="hidden bg-ink-900 text-[0.8125rem] text-white/75 lg:block">
-      <Container className="flex h-10 items-center justify-between gap-6">
-        <p className="flex items-center gap-2.5">
-          <BrandDrop className="h-3.5 text-brand-400" />
-          <span className="font-semibold text-white">{site.experienceYears} Years of Plumbing Experience</span>
-          <span aria-hidden="true" className="text-white/30">
-            /
+    <div className="relative hidden overflow-hidden whitespace-nowrap bg-ink-900 text-[0.8125rem] text-white/70 lg:block">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-y-0 left-0 w-[38rem] bg-[radial-gradient(60%_160%_at_0%_50%,rgb(2_126_198/0.28),transparent)]"
+      />
+      <Container className="relative flex h-10 items-center justify-between gap-6">
+        {site.features.emergency24h ? (
+          <p className="flex items-center gap-2.5">
+            <span className="relative flex size-2">
+              <span className="absolute inline-flex size-full rounded-full bg-emerald-400 opacity-75 motion-safe:animate-ping" />
+              <span className="relative inline-flex size-2 rounded-full bg-emerald-400" />
+            </span>
+            <span className="font-semibold text-white">24/7 Emergency Service</span>
+            <span className="hidden text-white/55 xl:inline">· We answer day and night</span>
+          </p>
+        ) : (
+          <p className="flex items-center gap-2.5">
+            <BrandDrop className="h-3.5 text-brand-400" />
+            <span className="font-semibold text-white">{site.experienceYears} Years of Plumbing Experience</span>
+          </p>
+        )}
+
+        <div className="flex items-center gap-5">
+          <span className="hidden items-center gap-2 xl:flex">
+            <Icon name="clock" className="size-3.5 text-brand-400" />
+            Office {site.hours.office}
           </span>
-          <span>Residential &amp; Commercial Plumbing · All 5 NYC Boroughs · 24/7 Emergency</span>
-        </p>
-        <div className="flex items-center gap-6">
-          <a href={mapsLinks.place} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors hover:text-white">
-            <Icon name="map-pin" className="size-4 text-brand-400" />
-            {addressLine}
-            <span className="sr-only">(opens Google Maps in a new tab)</span>
-          </a>
-          <a href={`mailto:${site.email}`} className="flex items-center gap-2 transition-colors hover:text-white">
-            <Icon name="mail" className="size-4 text-brand-400" />
-            {site.email}
-          </a>
+          <span className="hidden xl:contents">
+            <TopBarDivider />
+          </span>
+          <Link href="/service-areas" className="flex items-center gap-2 transition-colors hover:text-white">
+            <Icon name="map-pin" className="size-3.5 text-brand-400" />
+            Serving All 5 NYC Boroughs
+          </Link>
           {site.phone ? (
-            <a href={`tel:${site.phone.e164}`} className="flex items-center gap-2 font-semibold text-white">
-              <Icon name="phone" className="size-4 text-brand-400" />
-              {site.phone.display}
-            </a>
+            <span className="contents xl:hidden">
+              <TopBarDivider />
+              <a href={`tel:${site.phone.e164}`} className="flex items-center gap-2 font-semibold text-white">
+                <Icon name="phone" className="size-3.5 text-brand-400" />
+                {site.phone.display}
+              </a>
+            </span>
           ) : null}
         </div>
       </Container>

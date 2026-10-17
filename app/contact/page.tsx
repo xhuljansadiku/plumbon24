@@ -17,7 +17,7 @@ import { addressLine, mapsLinks, site } from '@/lib/site'
 export const metadata = createMetadata({
   title: 'Contact a NYC Plumber | PLUMBON24 MECHANICAL INC',
   description:
-    'Request plumbing service anywhere in New York City from PLUMBON24 MECHANICAL INC. Call (917) 702-0072 — 24/7 emergency service, free estimates. Send photos with your request.',
+    'Request plumbing service anywhere in New York City from PLUMBON24 MECHANICAL INC. Call (917) 702-0072 for 24/7 emergency service and free estimates. Send photos with your request.',
   path: '/contact',
 })
 

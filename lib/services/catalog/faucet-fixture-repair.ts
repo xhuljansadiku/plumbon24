@@ -16,11 +16,11 @@ export const faucetFixtureRepair: Service = {
   hero: {
     heading: 'Faucet & Fixture Repair in New York City',
     intro:
-      'Dripping faucets, leaking shower valves and loose fixtures are repaired or replaced — with care for the finishes around them.',
+      'Dripping faucets, leaking shower valves and loose fixtures are repaired or replaced with care for the finishes around them.',
   },
   overview: [
     'Fixtures are the plumbing you use every day: faucets, shower valves, sinks, tubs and outdoor hose bibs. When a cartridge wears out, a seal fails or a connection loosens, the result can be a constant drip, a shower that won’t hold temperature or a leak inside the vanity.',
-    'We repair fixtures when parts are available and the fixture is worth saving, and install new faucets and fixtures when replacement makes more sense — taking care with the countertops, tile and finishes around them.',
+    'We repair fixtures when parts are available and the fixture is worth saving, and install new faucets and fixtures when replacement makes more sense, taking care with the countertops, tile and finishes around them.',
   ],
   local: {
     heading: 'Older fixtures, hard-to-find parts',

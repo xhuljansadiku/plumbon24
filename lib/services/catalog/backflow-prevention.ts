@@ -19,7 +19,7 @@ export const backflowPrevention: Service = {
       'Backflow prevention devices keep contaminated water from flowing back into the drinking water supply. We help with installation, repair and replacement.',
   },
   overview: [
-    'Backflow happens when water reverses direction in a plumbing system — after a pressure drop in the city main, for example — and draws water from equipment, irrigation or process lines back into the drinking water supply. A backflow prevention device is designed to stop that.',
+    'Backflow happens when water reverses direction in a plumbing system (after a pressure drop in the city main, for example) and draws water from equipment, irrigation or process lines back into the drinking water supply. A backflow prevention device is designed to stop that.',
     'Commercial buildings, restaurants, medical and industrial properties, and buildings with fire sprinkler or irrigation systems commonly need backflow protection. We help owners and property managers with installing, repairing and replacing backflow prevention assemblies.',
   ],
   local: {

@@ -17,11 +17,11 @@ export const pipeRepairReplacement: Service = {
   hero: {
     heading: 'Pipe Repair & Replacement in New York City',
     intro:
-      'Leaking joints, corroded sections and damaged pipes are repaired properly — and when a section is beyond repair, it’s replaced with suitable materials.',
+      'Leaking joints, corroded sections and damaged pipes are repaired properly, and when a section is beyond repair, it’s replaced with suitable materials.',
   },
   overview: [
     'Pipes fail for many reasons: corrosion, age, freezing, physical damage, high water pressure or a fitting that was never installed correctly. Sometimes a single repair is all that’s needed. Other times, a failed section is a sign that the pipe around it is near the end of its life.',
-    'We repair and replace water supply and drain piping, matching materials and fittings to your system, and we’ll tell you honestly when a repair is enough — and when a larger replacement is worth considering.',
+    'We repair and replace water supply and drain piping, matching materials and fittings to your system, and we’ll tell you honestly when a repair is enough and when a larger replacement is worth considering.',
   ],
   local: {
     heading: 'Mixed piping in older buildings',
@@ -99,7 +99,7 @@ export const pipeRepairReplacement: Service = {
     },
   ],
   whyUs:
-    'Good pipe work depends on details — suitable materials, proper fittings and careful workmanship. That is the standard we bring from 15+ years of plumbing experience.',
+    'Good pipe work depends on details: suitable materials, proper fittings and careful workmanship. That is the standard we bring to every job.',
   faqs: [
     {
       question: 'Should I repair or replace my pipes?',
@@ -119,7 +119,7 @@ export const pipeRepairReplacement: Service = {
     {
       question: 'Why are my pipes banging?',
       answer:
-        'Banging, often called water hammer, usually happens when water flow stops suddenly — for example, when a valve closes quickly. Loose pipe supports and high water pressure can make it worse.',
+        'Banging, often called water hammer, usually happens when water flow stops suddenly, for example when a valve closes quickly. Loose pipe supports and high water pressure can make it worse.',
     },
   ],
   related: ['repiping', 'leak-detection-repair', 'water-line-services'],

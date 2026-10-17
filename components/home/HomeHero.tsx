@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { ButtonLink } from '@/components/ui/Button'
-import { BrandDrop, Icon } from '@/components/ui/Icon'
+import { Icon } from '@/components/ui/Icon'
 import { Container } from '@/components/ui/Layout'
 import { Eyebrow } from '@/components/ui/SectionHeading'
 import { images } from '@/lib/images'
@@ -26,8 +26,8 @@ export function HomeHero() {
             Reliable Plumbing Services in <span className="text-brand-600">New York City</span>
           </h1>
           <p className="text-lead mt-6 max-w-xl text-muted">
-            With 15+ years of plumbing experience, {site.name} provides professional plumbing solutions for homes and
-            businesses across Manhattan, Brooklyn, Queens, the Bronx and Staten Island.
+            Repairs, installations and emergency service for homes and businesses in all five boroughs, from a leaking
+            faucet to a full bathroom rough-in.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -56,26 +56,15 @@ export function HomeHero() {
               </span>
             </p>
             <div aria-hidden="true" className="hidden h-12 w-px bg-line sm:block" />
-            <ul className="grid gap-2.5 text-[0.9375rem] font-medium text-ink">
-              <li className="flex items-center gap-2.5">
-                <Icon name="building" className="size-5 text-brand-600" />
-                Residential &amp; Commercial
-              </li>
-              <li className="flex items-center gap-2.5">
-                <Icon name="map-pin" className="size-5 text-brand-600" />
-                Serving all 5 boroughs
-              </li>
-              {site.features.freeEstimates ? (
-                <li className="flex items-center gap-2.5">
-                  <Icon name="check-circle" className="size-5 text-brand-600" />
-                  Free estimates
-                </li>
-              ) : null}
-              <li className="flex items-center gap-2.5">
-                <Icon name="clock" className="size-5 text-brand-600" />
-                24/7 emergency service
-              </li>
-            </ul>
+            <p className="flex items-center gap-4">
+              <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600">
+                <Icon name="map-pin" className="size-6" />
+              </span>
+              <span className="text-sm leading-snug">
+                <span className="block font-semibold text-ink">Based in {site.neighborhood}, Brooklyn</span>
+                <span className="mt-0.5 block text-muted">{addressLine}</span>
+              </span>
+            </p>
           </div>
         </div>
 
@@ -100,20 +89,16 @@ export function HomeHero() {
               style={{ objectPosition: photo.position }}
             />
             <div aria-hidden="true" className="absolute inset-0 bg-linear-to-t from-navy-950/50 via-transparent to-transparent" />
-            <p className="absolute right-4 top-4 hidden items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-ink shadow-card sm:flex">
-              <BrandDrop className="h-4 text-brand-500" />
-              Real PLUMBON24 project
-            </p>
           </div>
 
           <div className="relative -mt-10 mx-4 rounded-xl bg-white p-5 shadow-lift ring-1 ring-line sm:mx-6 sm:max-w-sm lg:absolute lg:-bottom-8 lg:-left-8 lg:mx-0 lg:mt-0">
             <div className="flex items-start gap-4">
               <span className="grid size-11 shrink-0 place-items-center rounded-lg bg-brand-600 text-white">
-                <Icon name="map-pin" className="size-5" />
+                <Icon name="camera" className="size-5" />
               </span>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-subtle">Based in {site.neighborhood}, Brooklyn</p>
-                <p className="mt-1 font-semibold text-ink">{addressLine}</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-subtle">From our own job site</p>
+                <p className="mt-1 font-semibold text-ink">Drain &amp; vent rough-in, commercial build-out</p>
               </div>
             </div>
           </div>

@@ -17,7 +17,7 @@ export const ensureStatic = 'navigation'
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: {
-    default: 'NYC Plumber — All 5 Boroughs | PLUMBON24 MECHANICAL INC',
+    default: 'NYC Plumber for All 5 Boroughs | PLUMBON24 MECHANICAL INC',
     template: '%s | PLUMBON24 MECHANICAL INC',
   },
   description:

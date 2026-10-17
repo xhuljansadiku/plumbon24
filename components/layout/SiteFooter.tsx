@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ContactDetails } from '@/components/contact/ContactDetails'
 import { ButtonLink } from '@/components/ui/Button'
+import { Icon } from '@/components/ui/Icon'
 import { Container } from '@/components/ui/Layout'
 import { LogoPlate } from '@/components/ui/Logo'
 import { legalNav, mainNav } from '@/lib/navigation'
@@ -23,12 +24,26 @@ export function SiteFooter() {
             <p className="mt-7 font-display text-lg font-extrabold tracking-tight">{site.name}</p>
             <p className="mt-1.5 font-semibold text-brand-300">{site.experienceYears} years of plumbing experience.</p>
             <p className="mt-4 max-w-sm text-white/70">
-              Professional residential and commercial plumbing services across all five boroughs of New York City — repairs, installations and
+              Professional residential and commercial plumbing services across all five boroughs of New York City: repairs, installations and
               maintenance.
             </p>
             <ButtonLink href="/contact" icon="arrow-right" className="mt-7">
               {ctaLabels.primary}
             </ButtonLink>
+            {site.profiles.instagram ? (
+              <a
+                href={site.profiles.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 flex w-fit items-center gap-2.5 text-white/75 transition-colors hover:text-white"
+              >
+                <span className="grid size-9 place-items-center rounded-full ring-1 ring-white/20">
+                  <Icon name="instagram" className="size-[1.125rem]" />
+                </span>
+                @plumbon24 on Instagram
+                <span className="sr-only">(opens in a new tab)</span>
+              </a>
+            ) : null}
           </div>
 
           <nav aria-labelledby="footer-navigation" className="lg:col-span-2">

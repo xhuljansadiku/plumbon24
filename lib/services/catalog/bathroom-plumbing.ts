@@ -7,7 +7,7 @@ export const bathroomPlumbing: Service = {
   title: 'Bathroom Plumbing',
   icon: 'bath',
   image: 'finishedMarbleBathroom',
-  summary: 'Plumbing for bathroom repairs, upgrades and remodels — showers, tubs, toilets and vanities.',
+  summary: 'Plumbing for bathroom repairs, upgrades and remodels: showers, tubs, toilets and vanities.',
   seo: {
     title: 'Bathroom Plumbing in New York City | PLUMBON24 MECHANICAL INC',
     description:
@@ -19,7 +19,7 @@ export const bathroomPlumbing: Service = {
       'From a leaking shower valve to a complete bathroom remodel, we handle the plumbing behind your fixtures and finishes.',
   },
   overview: [
-    'A bathroom packs more plumbing into a small space than any other room: supply lines, drains, vents, shower valves, tub connections and the toilet flange, all hidden behind tile and finishes. Good bathroom plumbing is the part you never see — and it’s what keeps the room working for years.',
+    'A bathroom packs more plumbing into a small space than any other room: supply lines, drains, vents, shower valves, tub connections and the toilet flange, all hidden behind tile and finishes. Good bathroom plumbing is the part you never see, and it’s what keeps the room working for years.',
     'We handle bathroom plumbing repairs and upgrades, and we work with homeowners and contractors on renovations: roughing in new layouts, installing valves and drains, and setting fixtures once the finishes are complete.',
   ],
   local: {

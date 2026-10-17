@@ -7,7 +7,7 @@ export const residentialPlumbing: Service = {
   title: 'Residential Plumbing',
   icon: 'home',
   image: 'brooklynBrownstones',
-  summary: 'Plumbing for houses, brownstones, apartments and condos — repairs, installations and upgrades.',
+  summary: 'Plumbing for houses, brownstones, apartments and condos: repairs, installations and upgrades.',
   seo: {
     title: 'Residential Plumber in New York City | PLUMBON24 MECHANICAL INC',
     description:
@@ -16,11 +16,11 @@ export const residentialPlumbing: Service = {
   hero: {
     heading: 'Residential Plumbing in New York City',
     intro:
-      'Houses, brownstones, apartments and condos — we handle residential plumbing repairs, installations and upgrades with respect for your home.',
+      'Houses, brownstones, apartments and condos: we handle residential plumbing repairs, installations and upgrades with respect for your home.',
   },
   overview: [
     'Residential plumbing covers everything that keeps a home running: water lines, drains, water heaters, fixtures, toilets and the main lines in and out of the building. When something goes wrong, you want a plumber who explains the problem clearly and treats your home with care.',
-    'We work in single-family and multi-family houses, apartments, condos and co-ops across all five boroughs — on everything from a dripping faucet to a water heater replacement or a full repipe.',
+    'We work in single-family and multi-family houses, apartments, condos and co-ops across all five boroughs, on everything from a dripping faucet to a water heater replacement or a full repipe.',
   ],
   local: {
     heading: 'Every NYC home is different',
@@ -99,7 +99,7 @@ export const residentialPlumbing: Service = {
     },
   ],
   whyUs:
-    'Your home deserves careful, professional work. We bring 15+ years of plumbing experience and a practical, respectful approach to every residential job.',
+    'Your home deserves careful, professional work. We bring a practical, respectful approach to every residential job.',
   faqs: [
     {
       question: 'Do you work in apartments, condos and co-ops?',

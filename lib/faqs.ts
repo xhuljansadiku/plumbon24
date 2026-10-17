@@ -8,14 +8,9 @@ const contactOptions = site.phone
 /** General questions shown on the homepage and the services page. Answers only state verified facts. */
 export const generalFaqs: Faq[] = [
   {
-    question: 'Do you provide residential plumbing services?',
+    question: 'Do you work on homes and businesses?',
     answer:
-      'Yes. We work in houses, brownstones, apartments, condos and multi-family buildings across New York City — from leaks, clogs and running toilets to water heaters, fixtures and pipe work.',
-  },
-  {
-    question: 'Do you provide commercial plumbing?',
-    answer:
-      'Yes. We work with offices, restaurants, retail spaces, property managers and commercial building owners on repairs, installations and maintenance.',
+      'Yes, both. We work in houses, brownstones, apartments, condos and multi-family buildings, and with offices, restaurants, retail spaces, property managers and commercial building owners, on repairs, installations and maintenance.',
   },
   {
     question: 'What plumbing problems can you help with?',
@@ -28,8 +23,8 @@ export const generalFaqs: Faq[] = [
           question: 'Do you offer 24/7 emergency plumbing?',
           answer:
             site.features.emergency24h && site.phone
-              ? `Yes — emergency service is available 24 hours a day, 7 days a week, in all five boroughs. For burst pipes, major leaks or sewer backups, call us at ${site.phone.display}. If water is actively leaking, close the main water shut-off valve while you wait.`
-              : 'Yes, we help with urgent problems such as burst pipes, major leaks and sewer backups. Send an emergency service request with as much detail as you can — photos help — and we’ll get back to you as soon as possible. If water is actively leaking, close the main water shut-off valve while you wait.',
+              ? `Yes. Emergency service is available 24 hours a day, 7 days a week, in all five boroughs. For burst pipes, major leaks or sewer backups, call us at ${site.phone.display}. If water is actively leaking, close the main water shut-off valve while you wait.`
+              : 'Yes, we help with urgent problems such as burst pipes, major leaks and sewer backups. Send an emergency service request with as much detail as you can (photos help), and we’ll get back to you as soon as possible. If water is actively leaking, close the main water shut-off valve while you wait.',
         },
       ]
     : []),
@@ -59,7 +54,7 @@ export const contactFaqs: Faq[] = [
   {
     question: 'What should I include in my request?',
     answer:
-      'Your name, phone number and email, the address or neighborhood, the type of property, and a short description of what’s happening — when it started, where it is and anything you’ve noticed.',
+      'Your name, phone number and email, the address or neighborhood, the type of property, and a short description of what’s happening: when it started, where it is and anything you’ve noticed.',
   },
   {
     question: 'Can I send photos of the problem?',
@@ -74,7 +69,7 @@ export const contactFaqs: Faq[] = [
     question: 'How much does plumbing service cost?',
     answer:
       site.features.freeEstimates
-        ? 'It depends on the problem and the scope of work. Estimates are free — once we understand what’s involved, we’ll give you a price before any work begins.'
+        ? 'It depends on the problem and the scope of work. Estimates are free. Once we understand what’s involved, we’ll give you a price before any work begins.'
         : 'It depends on the problem and the scope of work. Once we understand what’s involved, we’ll discuss pricing with you before any work begins.',
   },
 ]
