@@ -19,7 +19,6 @@ names, or update `lib/images.ts`).
 | `pump-repair.jpg` | https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/ |
 | `manifold-gauge.jpg` | https://www.pexels.com/photo/steel-pipes-with-pressure-gauge-7937300/ |
 | `water-service-cover.jpg` | https://www.pexels.com/photo/water-source-lid-19380385/ |
-| `manhole-cover.jpg` | https://www.pexels.com/photo/manhole-cover-on-a-pavement-18110389/ |
 | `under-sink-repair.jpg` | https://www.pexels.com/photo/a-person-holding-brown-doorknob-7220892/ |
 
 ## Brand assets
@@ -30,4 +29,4 @@ the script only removes the white background, trims the margins and crops the fa
 
 ## Project photos
 
-Everything in `public/images/work/` shows real jobs, supplied by PLUMBON24 MECHANICAL INC (2026-10-13). These are not stock photos.
+Everything in `public/images/work/` shows real jobs, supplied by PLUMBON24 MECHANICAL INC (2026-10-13, plus boilers, sprinklers, underground, water heaters and cast iron on 2026-10-18). These are not stock photos.

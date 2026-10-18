@@ -1,11 +1,9 @@
 import type { StaticImageData } from 'next/image'
 import brooklynBrownstones from '@/public/images/brooklyn-brownstones.jpg'
 import brooklynStreet from '@/public/images/brooklyn-street.jpg'
-import commercialKitchenSink from '@/public/images/commercial-kitchen-sink.jpg'
 import drippingTap from '@/public/images/dripping-tap.jpg'
 import faucetDark from '@/public/images/faucet-dark.jpg'
 import gasPipeFitting from '@/public/images/gas-pipe-fitting.jpg'
-import manholeCover from '@/public/images/manhole-cover.jpg'
 import manifoldGauge from '@/public/images/manifold-gauge.jpg'
 import pumpRepair from '@/public/images/pump-repair.jpg'
 import underSinkRepair from '@/public/images/under-sink-repair.jpg'
@@ -34,6 +32,14 @@ import showerValveLaser from '@/public/images/work/shower-valve-laser.jpg'
 import sprinklerValve from '@/public/images/work/sprinkler-valve.jpg'
 import tanklessWaterHeaters from '@/public/images/work/tankless-water-heaters.jpg'
 import utilitySink from '@/public/images/work/utility-sink.jpg'
+import boilerRoomInstall from '@/public/images/work/boiler-room-install.jpg'
+import castIronDrainStack from '@/public/images/work/cast-iron-drain-stack.jpg'
+import radiantManifold from '@/public/images/work/radiant-manifold.jpg'
+import sprinklerBuildOut from '@/public/images/work/sprinkler-build-out.jpg'
+import sprinklerTestDrain from '@/public/images/work/sprinkler-test-drain.jpg'
+import undergroundRoughIn from '@/public/images/work/underground-rough-in.jpg'
+import wallHungBoilers from '@/public/images/work/wall-hung-boilers.jpg'
+import waterHeaterBank from '@/public/images/work/water-heater-bank.jpg'
 
 export type SiteImage = {
   src: StaticImageData
@@ -112,6 +118,47 @@ const registry = {
     src: sprinklerValve,
     alt: 'Red sprinkler control valve assembly with a pressure gauge',
   },
+  // Project photos supplied 2026-10-18
+  boilerRoomInstall: {
+    src: boilerRoomInstall,
+    alt: 'PLUMBON24 plumber at work in a mechanical room with three wall-hung boilers and a copper heating manifold',
+    position: '45% 50%',
+  },
+  wallHungBoilers: {
+    src: wallHungBoilers,
+    alt: 'Three wall-hung high-efficiency boilers piped in copper to a hydraulic separator',
+    position: '40% 50%',
+  },
+  radiantManifold: {
+    src: radiantManifold,
+    alt: 'Copper heating manifold with circulator pumps and zone valves feeding radiant floor heating',
+    position: '50% 45%',
+  },
+  waterHeaterBank: {
+    src: waterHeaterBank,
+    alt: 'Six electric water heaters connected with new copper piping in a basement',
+    position: '62% 60%',
+  },
+  sprinklerTestDrain: {
+    src: sprinklerTestDrain,
+    alt: 'Sprinkler control valve, test and drain assembly and pressure gauge in a building basement',
+    position: '50% 55%',
+  },
+  sprinklerBuildOut: {
+    src: sprinklerBuildOut,
+    alt: 'Sprinkler piping with red grooved fittings and a hose valve in a building under renovation',
+    position: '30% 50%',
+  },
+  undergroundRoughIn: {
+    src: undergroundRoughIn,
+    alt: 'Underground drain piping roughed in on gravel in a basement before the concrete slab is poured',
+    position: '50% 60%',
+  },
+  castIronDrainStack: {
+    src: castIronDrainStack,
+    alt: 'No-hub cast iron drain and vent piping between ceiling joists during a renovation',
+    position: '50% 40%',
+  },
   basementCastIron: {
     src: basementCastIron,
     alt: 'Cast iron waste piping run across a basement ceiling',
@@ -160,11 +207,6 @@ const registry = {
     src: gasPipeFitting,
     alt: 'Gloved hands using an adjustable wrench on a gas pipe under a commercial kitchen hood',
   },
-  commercialKitchenSink: {
-    src: commercialKitchenSink,
-    alt: 'Restaurant dish station with a stainless steel sink and pre-rinse faucet',
-    position: '60% 50%',
-  },
   faucetDark: {
     src: faucetDark,
     alt: 'Chrome faucet over an old sink in low light',
@@ -192,10 +234,6 @@ const registry = {
     src: waterServiceCover,
     alt: 'Sidewalk access cover marked “WATER” for a building’s water service',
   },
-  manholeCover: {
-    src: manholeCover,
-    alt: 'Sewer manhole cover on a wet city street',
-  },
   underSinkRepair: {
     src: underSinkRepair,
     alt: 'Hands adjusting a pipe connection underneath a sink',
@@ -209,16 +247,17 @@ export const images: Record<ImageKey, SiteImage> = registry
 
 /** Real project photos for the "Our Work" gallery — finished spaces first, then work behind the walls. */
 export const workGallery: ImageKey[] = [
+  'commercialRoughIn',
   'finishedFreestandingTub',
   'finishedKitchen',
+  'radiantManifold',
+  'waterHeaterBank',
   'finishedTiledShower',
+  'undergroundRoughIn',
+  'sprinklerTestDrain',
+  'wallHungBoilers',
+  'castIronDrainStack',
   'finishedGlassShower',
-  'commercialRoughIn',
-  'bathroomRoughIn',
-  'indirectWaterHeater',
-  'backflowCopper',
   'tanklessWaterHeaters',
-  'showerPan',
-  'inWallToiletCarrier',
-  'copperRisers',
+  'bathroomRoughIn',
 ]

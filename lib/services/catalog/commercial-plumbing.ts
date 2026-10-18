@@ -6,7 +6,7 @@ export const commercialPlumbing: Service = {
   category: 'property',
   title: 'Commercial Plumbing',
   icon: 'building',
-  image: 'commercialKitchenSink',
+  image: 'sprinklerBuildOut',
   summary: 'Plumbing for offices, restaurants, retail spaces, property managers and commercial buildings.',
   seo: {
     title: 'Commercial Plumber in New York City | PLUMBON24 MECHANICAL INC',
@@ -122,5 +122,5 @@ export const commercialPlumbing: Service = {
         'Many do. NYC DEP requires backflow protection based on a building’s use and potential hazard, and required devices must generally be tested every year.',
     },
   ],
-  related: ['backflow-prevention', 'plumbing-maintenance', 'drain-cleaning'],
+  related: ['fire-sprinkler-systems', 'backflow-prevention', 'boiler-heating-services'],
 }

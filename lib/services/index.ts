@@ -1,9 +1,11 @@
 import { backflowPrevention } from './catalog/backflow-prevention'
+import { boilerHeatingServices } from './catalog/boiler-heating-services'
 import { bathroomPlumbing } from './catalog/bathroom-plumbing'
 import { commercialPlumbing } from './catalog/commercial-plumbing'
 import { drainCleaning } from './catalog/drain-cleaning'
 import { emergencyPlumbing } from './catalog/emergency-plumbing'
 import { faucetFixtureRepair } from './catalog/faucet-fixture-repair'
+import { fireSprinklerSystems } from './catalog/fire-sprinkler-systems'
 import { garbageDisposalServices } from './catalog/garbage-disposal-services'
 import { gasLinePlumbing } from './catalog/gas-line-plumbing'
 import { kitchenPlumbing } from './catalog/kitchen-plumbing'
@@ -32,8 +34,10 @@ const catalog: Service[] = [
   waterLineServices,
   gasLinePlumbing,
   backflowPrevention,
+  fireSprinklerSystems,
   repiping,
   waterHeaterServices,
+  boilerHeatingServices,
   sumpPumpServices,
   faucetFixtureRepair,
   toiletRepairInstallation,
@@ -54,13 +58,13 @@ export const serviceCategories: { id: ServiceCategoryId; title: string; descript
   },
   {
     id: 'lines',
-    title: 'Water, Sewer & Gas Lines',
-    description: 'The lines that bring water and gas into your building and carry waste out, and the devices that protect them.',
+    title: 'Water, Sewer, Gas & Sprinkler Lines',
+    description: 'The lines that bring water and gas into your building, carry waste out and protect it from fire, and the devices that keep them safe.',
   },
   {
     id: 'equipment',
-    title: 'Water Heaters, Pumps & Fixtures',
-    description: 'The equipment and fixtures you rely on every day, repaired, replaced or installed.',
+    title: 'Heating, Hot Water & Fixtures',
+    description: 'Boilers, water heaters, pumps and the fixtures you rely on every day, repaired, replaced or installed.',
   },
   {
     id: 'projects',

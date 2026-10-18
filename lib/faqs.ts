@@ -15,7 +15,7 @@ export const generalFaqs: Faq[] = [
   {
     question: 'What plumbing problems can you help with?',
     answer:
-      'Leaks, clogged drains, sewer and water line problems, water heaters, pipe repair and replacement, repiping, faucets and fixtures, toilets, garbage disposals, sump pumps, backflow prevention, gas piping, and kitchen and bathroom plumbing.',
+      'Leaks, clogged drains, sewer and water line problems, water heaters, pipe repair and replacement, repiping, faucets and fixtures, toilets, garbage disposals, sump pumps, boilers and heating, fire sprinkler systems, backflow prevention, gas piping, and kitchen and bathroom plumbing.',
   },
   ...(site.features.emergencyService
     ? [

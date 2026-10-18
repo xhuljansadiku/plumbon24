@@ -19,6 +19,13 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 - [x] Lagjet e projekteve: nuk dihen. Galeria dhe karta te hero mbeten pa lagje.
 - [x] Instagram: https://www.instagram.com/plumbon24/ (shtuar në footer dhe te `sameAs` në schema)
 
+## ✅ Të marra nga klienti (2026-10-18)
+- [x] Bëjnë **sprinklers**: u shtua `/services/fire-sprinkler-systems` (kategoria Water, Sewer, Gas & Sprinkler Lines)
+- [x] Bëjnë **boilers**: u shtua `/services/boiler-heating-services` (kategoria Heating, Hot Water & Fixtures)
+- [x] Dërguan foto të reja në WhatsApp: valvola sprinkler, underground, 6 water heaters, combi boilers + manifold radiant
+      → [ ] **Shkarko origjinalet** nga WhatsApp (jo screenshot) te `plumbon24-materiale/` dhe vendosi në faqe.
+- [ ] **Licenca për sprinklers**: në NYC, puna me sprinkler zakonisht kërkon licencë Master Fire Suppression Piping Contractor (ose kufizime për LMP). Pyet cilën licencë kanë. Faqja nuk pretendon licencë.
+
 ---
 
 ## 1. Pyetje për klientin
@@ -31,7 +38,7 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 - [ ] **Domain-i**: `plumbon24.com` (i lirë më 2026-10-17). Blije sa më shpejt, në emër të klientit. Faqja do jetë `https://www.plumbon24.com`.
 
 ### Shërbimet (klienti po i pyet)
-- [ ] **Cilat nga këto 20 shërbime i ofrojnë realisht?** Ato që nuk i ofrojnë fshihen nga faqja (`published: false`).
+- [ ] **Cilat nga këto 20 shërbime i ofrojnë realisht?** (+ sprinklers dhe boilers, të konfirmuara) Ato që nuk i ofrojnë fshihen nga faqja (`published: false`).
       1. Emergency Plumbing
       2. Drain Cleaning
       3. Water Heater Services
@@ -52,8 +59,6 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
       18. Plumbing Maintenance
       19. Residential Plumbing
       20. Commercial Plumbing
-- [ ] **A bëjnë edhe sprinkler / fire protection?** Në fotot e tyre ka valvola sprinkler dhe FDC. Nëse po, mund të shtohet si shërbim.
-- [ ] **A bëjnë heating / boilers?** Fotot tregojnë dhoma boileri. Nëse po, mund të shtohet si shërbim.
 
 ### Opsionale
 - [ ] **Videoja**: a duan ta vendosim në faqe?

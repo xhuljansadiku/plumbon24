@@ -7,7 +7,7 @@ export const sewerLineServices: Service = {
   title: 'Sewer Line Services',
   shortTitle: 'Sewer Services',
   icon: 'sewer',
-  image: 'manholeCover',
+  image: 'undergroundRoughIn',
   summary: 'Professional sewer inspection, repair and replacement solutions.',
   seo: {
     title: 'Sewer Line Repair & Services in New York City | PLUMBON24',

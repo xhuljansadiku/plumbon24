@@ -80,6 +80,8 @@ export const iconPaths = {
   external:
     '<path d="M14 4.5h5.5V10M19.5 4.5 11 13"/><path d="M18 14v4.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"/>',
   snowflake: '<path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="m9.5 4 2.5 2 2.5-2M9.5 20l2.5-2 2.5 2"/>',
+  boiler:
+    '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 6.5h6"/><path d="M12 17c-1.5 0-2.5-1-2.5-2.3 0-1.6 1.4-2.4 2.5-4.2 1.1 1.8 2.5 2.6 2.5 4.2 0 1.3-1 2.3-2.5 2.3Z"/>',
   instagram: '<rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.2 6.8h.01"/>',
 } as const
 

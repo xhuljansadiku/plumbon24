@@ -6,7 +6,7 @@ export const waterHeaterServices: Service = {
   category: 'equipment',
   title: 'Water Heater Services',
   icon: 'water-heater',
-  image: 'indirectWaterHeater',
+  image: 'waterHeaterBank',
   summary: 'Professional repair, replacement and installation solutions.',
   seo: {
     title: 'Water Heater Repair & Installation in New York City | PLUMBON24',
@@ -121,5 +121,5 @@ export const waterHeaterServices: Service = {
         'The type of heater (gas or electric, tank or tankless), its approximate age, the make and model from the label, and what you’re experiencing. Photos of the label and the area around the heater are very helpful.',
     },
   ],
-  related: ['plumbing-maintenance', 'leak-detection-repair', 'gas-line-plumbing'],
+  related: ['boiler-heating-services', 'plumbing-maintenance', 'gas-line-plumbing'],
 }

@@ -8,7 +8,7 @@ import { REQUEST_ANCHOR } from '@/lib/navigation'
 import { addressLine, ctaLabels, site } from '@/lib/site'
 
 export function HomeHero() {
-  const photo = images.commercialRoughIn
+  const photo = images.boilerRoomInstall
 
   return (
     <section aria-labelledby="hero-title" className="relative isolate overflow-hidden bg-white">
@@ -98,7 +98,7 @@ export function HomeHero() {
               </span>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.12em] text-subtle">From our own job site</p>
-                <p className="mt-1 font-semibold text-ink">Drain &amp; vent rough-in, commercial build-out</p>
+                <p className="mt-1 font-semibold text-ink">Boiler room with a radiant heating manifold</p>
               </div>
             </div>
           </div>

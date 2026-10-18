@@ -121,5 +121,5 @@ export const backflowPrevention: Service = {
         'A reduced pressure zone (RPZ) assembly is a type of backflow preventer used where the hazard is high. It has a relief valve that discharges water if its internal check valves stop sealing.',
     },
   ],
-  related: ['water-line-services', 'commercial-plumbing', 'plumbing-maintenance'],
+  related: ['water-line-services', 'fire-sprinkler-systems', 'commercial-plumbing'],
 }
