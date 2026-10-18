@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 import { Container } from '@/components/ui/Layout'
 import { Eyebrow } from '@/components/ui/SectionHeading'
-import type { SiteImage } from '@/lib/images'
+import { heroSizes, type SiteImage } from '@/lib/images'
 import type { Crumb } from '@/lib/seo'
 
 /** Dark hero used by inner pages: breadcrumbs, H1, intro, actions and an optional framed photo. */
@@ -57,7 +57,8 @@ export function PageHero({
                     fill
                     loading="eager"
                     fetchPriority="high"
-                    sizes="(min-width: 1280px) 520px, (min-width: 1024px) 40vw, 100vw"
+                    quality={90}
+                    sizes={heroSizes(image, [4, 3], [5, 6], 520)}
                     className="object-cover transition-transform duration-700 ease-out-soft motion-safe:group-hover:scale-[1.035]"
                     style={image.position ? { objectPosition: image.position } : undefined}
                     placeholder="blur"

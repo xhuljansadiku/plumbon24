@@ -3,7 +3,7 @@ import { ButtonLink } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
 import { Container } from '@/components/ui/Layout'
 import { Eyebrow } from '@/components/ui/SectionHeading'
-import { images } from '@/lib/images'
+import { heroSizes, images } from '@/lib/images'
 import { REQUEST_ANCHOR } from '@/lib/navigation'
 import { addressLine, ctaLabels, site } from '@/lib/site'
 
@@ -84,7 +84,8 @@ export function HomeHero() {
               loading="eager"
               fetchPriority="high"
               placeholder="blur"
-              sizes="(min-width: 1280px) 500px, (min-width: 1024px) 40vw, 100vw"
+              quality={90}
+              sizes={heroSizes(photo, [4, 3], [4, 5], 500)}
               className="object-cover [animation:hero-zoom_1.8s_var(--ease-out-soft)_both] transition-transform duration-700 ease-out-soft motion-safe:group-hover:scale-[1.035]"
               style={{ objectPosition: photo.position }}
             />

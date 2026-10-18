@@ -49,6 +49,22 @@ export type SiteImage = {
 }
 
 /**
+ * How much wider than its box an image renders with object-cover. A landscape photo in a portrait box
+ * fills the height and overflows the width, so its `sizes` must be scaled up, or the browser downloads
+ * a version that is too small and upscales it (a blurry hero photo).
+ */
+function coverScale(image: SiteImage, [boxWidth, boxHeight]: [number, number]): number {
+  return Math.max(1, (boxHeight / boxWidth) * (image.src.width / image.src.height))
+}
+
+/** `sizes` for a hero photo: full width below lg, a 40vw column at lg and a fixed column from xl. Boxes are [width, height] ratios. */
+export function heroSizes(image: SiteImage, mobileBox: [number, number], desktopBox: [number, number], desktopWidth: number): string {
+  const mobile = coverScale(image, mobileBox)
+  const desktop = coverScale(image, desktopBox)
+  return `(min-width: 1280px) ${Math.ceil(desktopWidth * desktop)}px, (min-width: 1024px) ${Math.ceil(40 * desktop)}vw, ${Math.ceil(100 * mobile)}vw`
+}
+
+/**
  * Photography registry.
  * - Project photos (public/images/work) are real jobs completed by the company.
  * - The rest are licensed stock photos (see docs/IMAGE-CREDITS.md). Their alt text describes
