@@ -44,6 +44,12 @@ type SiteConfig = {
     emergency24h: boolean
     freeEstimates: boolean
   }
+  credentials: {
+    licensed: boolean
+    insured: boolean
+    /** License number as issued (e.g. NYC DOB LMP #), shown next to the "Licensed" badge. */
+    licenseNumber: string | null
+  }
   profiles: {
     googleBusinessProfile: string | null
     instagram: string | null
@@ -96,6 +102,14 @@ export const site: SiteConfig = {
     freeEstimates: true,
   },
 
+  credentials: {
+    /** Confirmed by the company 2026-10-18. */
+    licensed: true,
+    /** Set to true only once insurance is confirmed; the badge then reads "Licensed & Insured". */
+    insured: false,
+    licenseNumber: null,
+  },
+
   profiles: {
     /** Google Business Profile URL, once the listing is verified. */
     googleBusinessProfile: null,
@@ -115,6 +129,13 @@ export const ctaLabels = {
   emergency: 'Request Emergency Service',
   call: 'Call Now',
 } as const
+
+/** "Licensed & Insured", "Licensed" or null: only what the company has confirmed. */
+export const credentialLabel = site.credentials.licensed
+  ? site.credentials.insured
+    ? 'Licensed & Insured'
+    : 'Licensed'
+  : null
 
 /** Official Google Maps URLs (no API key required). */
 export const mapsLinks = {

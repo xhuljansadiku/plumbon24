@@ -15,7 +15,7 @@ export const generalFaqs: Faq[] = [
   {
     question: 'What plumbing problems can you help with?',
     answer:
-      'Leaks, clogged drains, sewer and water line problems, water heaters, pipe repair and replacement, repiping, faucets and fixtures, toilets, garbage disposals, sump pumps, boilers and heating, fire sprinkler systems, backflow prevention, gas piping, and kitchen and bathroom plumbing.',
+      'Leaks, clogged drains, water heaters, pipe repair and replacement, repiping, faucets and fixtures, toilets, garbage disposals, sump pumps, boilers and heating, fire sprinkler systems, backflow prevention, gas piping, and kitchen and bathroom plumbing.',
   },
   ...(site.features.emergencyService
     ? [
@@ -41,6 +41,14 @@ export const generalFaqs: Faq[] = [
     question: 'What are your hours?',
     answer: `Our regular hours are ${site.hours.office}.${site.hours.emergency ? ` Emergency service is available 24 hours a day, 7 days a week.` : ''}`,
   },
+  ...(site.credentials.licensed
+    ? [
+        {
+          question: 'Are you licensed?',
+          answer: `Yes. ${site.name} is a licensed plumbing company${site.credentials.insured ? ' and fully insured' : ''}.${site.credentials.licenseNumber ? ` License: ${site.credentials.licenseNumber}.` : ' If your building or project needs license details, ask us and we’ll provide them.'}`,
+        },
+      ]
+    : []),
   {
     question: 'How much does plumbing service cost?',
     answer: site.features.freeEstimates

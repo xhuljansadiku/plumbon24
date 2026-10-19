@@ -9,7 +9,7 @@ import { Eyebrow, SectionHeading } from '@/components/ui/SectionHeading'
 import { images } from '@/lib/images'
 import { REQUEST_ANCHOR } from '@/lib/navigation'
 import { getRelatedServices, type Service } from '@/lib/services'
-import { ctaLabels, site } from '@/lib/site'
+import { credentialLabel, ctaLabels, site } from '@/lib/site'
 import { indexLabel } from '@/lib/utils'
 
 /** 2. Service introduction + NYC-specific note */
@@ -216,6 +216,7 @@ export function RelatedServices({ service }: { service: Service }) {
 
 export function ServiceHeroFacts() {
   const facts: { icon: IconName; label: string }[] = [
+    ...(credentialLabel ? [{ icon: 'shield-check' as const, label: credentialLabel }] : []),
     { icon: 'badge', label: '15+ years of experience' },
     { icon: 'building', label: 'Residential & commercial' },
     { icon: 'map-pin', label: 'All 5 NYC boroughs' },

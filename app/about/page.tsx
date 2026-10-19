@@ -79,7 +79,7 @@ export default function AboutPage() {
             <div className="mt-7 grid gap-5 text-lg leading-relaxed text-muted">
               <p>
                 We work on the plumbing that homes and businesses depend on every day: water lines, drains, water heaters,
-                fixtures, sewer connections and the systems that tie them together.
+                fixtures, heating, sprinklers and the systems that tie them together.
               </p>
               <p>
                 Our approach is straightforward: listen to the problem, find the actual cause, explain the options clearly and do the

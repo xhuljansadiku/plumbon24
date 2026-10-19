@@ -23,42 +23,24 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 - [x] Bëjnë **sprinklers**: u shtua `/services/fire-sprinkler-systems` (kategoria Water, Sewer, Gas & Sprinkler Lines)
 - [x] Bëjnë **boilers**: u shtua `/services/boiler-heating-services` (kategoria Heating, Hot Water & Fixtures)
 - [x] Dërguan foto të reja në WhatsApp: valvola sprinkler, underground, 6 water heaters, combi boilers + manifold radiant
-      → [ ] **Shkarko origjinalet** nga WhatsApp (jo screenshot) te `plumbon24-materiale/` dhe vendosi në faqe.
-- [ ] **Licenca për sprinklers**: në NYC, puna me sprinkler zakonisht kërkon licencë Master Fire Suppression Piping Contractor (ose kufizime për LMP). Pyet cilën licencë kanë. Faqja nuk pretendon licencë.
+      → [x] Origjinalet u shtuan në faqe (8 foto). Fotoja e hero-s: cilësia në rregull (2026-10-18).
+- [x] **Licencat**: klienti i ka (2026-10-18). Faqja tregon "Licensed" (hero, faktet e shërbimeve, FAQ). "Insured" jo ende.
 
 ---
 
 ## 1. Pyetje për klientin
 
 ### Në pritje
-- [ ] **Licensed & Insured + numri LMP**: klienti pyeti nëse duhet patjetër. Për faqen jo, por mos e shkruaj pa e konfirmuar. Për punën në NYC, shumica e punëve hidraulike kërkojnë LMP (Gas Line dhe Backflow sidomos).
-      → Kur ta japë: shfaqet në hero (pranë "15+ Years" dhe adresës), te faktet e faqeve të shërbimeve dhe në footer (duhet shtuar një fushë te `lib/site.ts`).
-- [ ] **Google Business Profile**: do ta hapim ne me email-in e klientit. Linku → `profiles.googleBusinessProfile` te `lib/site.ts`
+- [ ] **Numri i licencës + sigurimi (insurance)**: kur t'i japë → `site.credentials.licenseNumber` dhe `insured: true` te `lib/site.ts`. Badge-i bëhet vetë "Licensed & Insured" me numrin.- [ ] **Google Business Profile**: kanë **zyrë** te 235 43rd St → profil normal me **adresë publike** (jo service-area). Shto edhe 5 boroughs si zonë shërbimi. Linku → `profiles.googleBusinessProfile` te `lib/site.ts`
 - [ ] **Review reale**: vijnë pasi të hapet GBP. → `lib/reviews.ts`. Seksioni shfaqet vetë. Vetëm review të vërteta, fjalë për fjalë.
 - [ ] **Domain-i**: `plumbon24.com` (i lirë më 2026-10-17). Blije sa më shpejt, në emër të klientit. Faqja do jetë `https://www.plumbon24.com`.
 
-### Shërbimet (klienti po i pyet)
-- [ ] **Cilat nga këto 20 shërbime i ofrojnë realisht?** (+ sprinklers dhe boilers, të konfirmuara) Ato që nuk i ofrojnë fshihen nga faqja (`published: false`).
-      1. Emergency Plumbing
-      2. Drain Cleaning
-      3. Water Heater Services
-      4. Sewer Line Services
-      5. Leak Detection & Repair
-      6. Pipe Repair & Replacement
-      7. Repiping
-      8. Water Line Services
-      9. Gas Line Plumbing ⚠️ kërkon licencë në NYC
-      10. Backflow Prevention ⚠️ kërkon certifikim në NYC
-      11. Faucet & Fixture Repair
-      12. Toilet Repair & Installation
-      13. Garbage Disposal Services
-      14. Sump Pump Services
-      15. Kitchen Plumbing
-      16. Bathroom Plumbing
-      17. Plumbing Installation
-      18. Plumbing Maintenance
-      19. Residential Plumbing
-      20. Commercial Plumbing
+### Shërbimet ✅ (2026-10-18)
+- [x] Klienti bën gjithçka **përveç punës jashtë ndërtesës** (water service dhe main sewer deri te rruga).
+      → U fshehën `water-line-services` dhe `sewer-line-services` (`published: false`). Për t'i rikthyer: `published: true`.
+- [x] Gas Line dhe Backflow: **po** i bën. Mbeten në faqe.
+- [x] Sprinklers dhe boilers: **po**. U shtuan si shërbime.
+- Gjithsej 20 shërbime në faqe. Boilers zuri vendin e Sewer te kartat e faqes kryesore dhe në footer.
 
 ### Opsionale
 - [ ] **Videoja**: a duan ta vendosim në faqe?

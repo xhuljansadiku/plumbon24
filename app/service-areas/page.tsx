@@ -34,7 +34,7 @@ const buildingTypes: { icon: IconName; title: string; text: string }[] = [
   {
     icon: 'water-heater',
     title: 'One- and two-family homes',
-    text: 'Common across Brooklyn, Queens and Staten Island. Typical needs include water heater replacement, sewer line problems, fixture upgrades and basement plumbing.',
+    text: 'Common across Brooklyn, Queens and Staten Island. Typical needs include water heater replacement, drain problems, fixture upgrades and basement plumbing.',
   },
   {
     icon: 'kitchen',

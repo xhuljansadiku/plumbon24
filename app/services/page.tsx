@@ -17,7 +17,7 @@ import { ctaLabels } from '@/lib/site'
 export const metadata = createMetadata({
   title: 'Plumbing Services in New York City | PLUMBON24',
   description:
-    'Emergency plumbing, drain cleaning, sewer and water lines, water heaters, leak repair, repiping and more for homes and businesses in all five NYC boroughs. 15+ years of experience.',
+    'Emergency plumbing, drain cleaning, water heaters, boilers, fire sprinklers, leak repair, repiping and more for homes and businesses in all five NYC boroughs. 15+ years of experience.',
   path: '/services',
 })
 

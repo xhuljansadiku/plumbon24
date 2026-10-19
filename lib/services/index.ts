@@ -58,8 +58,8 @@ export const serviceCategories: { id: ServiceCategoryId; title: string; descript
   },
   {
     id: 'lines',
-    title: 'Water, Sewer, Gas & Sprinkler Lines',
-    description: 'The lines that bring water and gas into your building, carry waste out and protect it from fire, and the devices that keep them safe.',
+    title: 'Piping, Gas & Fire Sprinklers',
+    description: 'Repiping, gas piping, backflow protection for the water supply and fire sprinkler systems.',
   },
   {
     id: 'equipment',
@@ -114,7 +114,7 @@ export const featuredServices: Service[] = [
   'emergency-plumbing',
   'drain-cleaning',
   'water-heater-services',
-  'sewer-line-services',
+  'boiler-heating-services',
   'leak-detection-repair',
   'pipe-repair-replacement',
 ]
@@ -125,7 +125,7 @@ export const featuredServices: Service[] = [
 export const footerServices: Service[] = [
   'emergency-plumbing',
   'drain-cleaning',
-  'sewer-line-services',
+  'boiler-heating-services',
   'water-heater-services',
   'leak-detection-repair',
   'pipe-repair-replacement',

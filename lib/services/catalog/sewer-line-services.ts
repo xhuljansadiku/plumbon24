@@ -2,7 +2,8 @@ import type { Service } from '../types'
 
 export const sewerLineServices: Service = {
   slug: 'sewer-line-services',
-  published: true,
+  /** Hidden: the company does not do outside work (main sewer to the street). Confirmed 2026-10-18. */
+  published: false,
   category: 'lines',
   title: 'Sewer Line Services',
   shortTitle: 'Sewer Services',

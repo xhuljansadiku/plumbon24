@@ -5,7 +5,7 @@ import { Container } from '@/components/ui/Layout'
 import { Eyebrow } from '@/components/ui/SectionHeading'
 import { heroSizes, images } from '@/lib/images'
 import { REQUEST_ANCHOR } from '@/lib/navigation'
-import { addressLine, ctaLabels, site } from '@/lib/site'
+import { addressLine, credentialLabel, ctaLabels, site } from '@/lib/site'
 
 export function HomeHero() {
   const photo = images.boilerRoomInstall
@@ -65,6 +65,22 @@ export function HomeHero() {
                 <span className="mt-0.5 block text-muted">{addressLine}</span>
               </span>
             </p>
+            {credentialLabel ? (
+              <>
+                <div aria-hidden="true" className="hidden h-12 w-px bg-line sm:block" />
+                <p className="flex items-center gap-4">
+                  <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600">
+                    <Icon name="shield-check" className="size-6" />
+                  </span>
+                  <span className="text-sm leading-snug">
+                    <span className="block font-semibold text-ink">{credentialLabel}</span>
+                    <span className="mt-0.5 block text-muted">
+                      {site.credentials.licenseNumber ?? 'Residential & commercial'}
+                    </span>
+                  </span>
+                </p>
+              </>
+            ) : null}
           </div>
         </div>
 
