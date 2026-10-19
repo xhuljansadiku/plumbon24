@@ -27,7 +27,7 @@ export function HomeHero() {
           </h1>
           <p className="text-lead mt-6 max-w-xl text-muted">
             Repairs, installations and emergency service for homes and businesses in all five boroughs, from a leaking
-            faucet to a full bathroom rough-in.
+            faucet to boiler rooms and fire sprinklers.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">

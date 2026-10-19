@@ -88,6 +88,8 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 - [ ] **Faqe për çdo borough** (`/service-areas/queens` etj.), me përmbajtje unike për secilin (lloje ndërtesash, probleme tipike, projekte aty). Vetëm kur kemi informacion real, ndryshe Google i sheh si "doorway pages".
 - [ ] **Licensed & Insured + numri i licencës** në faqe dhe në schema, kur ta japë klienti.
 - [ ] **Review në schema** (`aggregateRating`), vetëm me review reale të verifikueshme.
-- [ ] **Lighthouse audit** para publikimit (Performance / SEO / Accessibility ≥ 90).
+- [x] **Lighthouse audit** (2026-10-19, lokalisht): Accessibility 100, Best Practices 100, SEO 100 në të gjitha faqet. Performance desktop 99, CLS 0. Mobile 80–92 (luhatje e madhe; edhe /terms del njësoj, pra është kostoja e Next/React, jo e faqes).
+      → [ ] Pas publikimit: provo **PageSpeed Insights** te URL-ja reale (Vercel CDN zakonisht jep më shumë se localhost).
+- [x] **Koordinatat `geo`** në schema (OpenStreetMap + US Census, 2026-10-19).
 - [ ] **Analytics** (Vercel Analytics, pa cookies) + ndjekja e klikimeve "Call Now" dhe dërgimeve të formularit. Përditëso faqen Privacy.
 - [ ] **Kontroll mujor** në Search Console: cilat fjalë sjellin vizita, cilat faqe nuk janë indeksuar.

@@ -80,8 +80,11 @@ export const site: SiteConfig = {
   },
   neighborhood: 'Sunset Park',
 
-  /** Verified latitude/longitude for structured data. Leave null until confirmed. */
-  geo: null,
+  /**
+   * Latitude/longitude for structured data: the building at 235 43rd St in OpenStreetMap,
+   * cross-checked with the US Census geocoder (2026-10-19, within ~20 m).
+   */
+  geo: { latitude: 40.65257, longitude: -74.0118 },
   /** Business hours in schema.org format, e.g. ['Mo-Fr 08:00-18:00']. Leave empty until confirmed. */
   openingHours: ['Mo-Fr 09:00-17:00'],
   /** Human-readable hours shown on the site. */
