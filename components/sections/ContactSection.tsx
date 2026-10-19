@@ -42,8 +42,10 @@ export function ContactSection({
         </div>
 
         <div className="lg:col-span-5 lg:row-start-2">
-          <ContactDetails />
-          <div className="mt-10 border-t border-line pt-8">
+          <div className="hidden lg:block">
+            <ContactDetails />
+          </div>
+          <div className="lg:mt-10 lg:border-t lg:border-line lg:pt-8">
             <h3 className="text-eyebrow text-[0.75rem] text-subtle">What happens next</h3>
             <ol className="mt-5 grid gap-4">
               {nextSteps.map((step, index) => (

@@ -5,7 +5,7 @@ import { Container } from '@/components/ui/Layout'
 import { Eyebrow } from '@/components/ui/SectionHeading'
 import { heroSizes, images } from '@/lib/images'
 import { REQUEST_ANCHOR } from '@/lib/navigation'
-import { addressLine, credentialLabel, ctaLabels, site } from '@/lib/site'
+import { credentialLabel, ctaLabels, site } from '@/lib/site'
 
 export function HomeHero() {
   const photo = images.boilerRoomInstall
@@ -30,7 +30,7 @@ export function HomeHero() {
             faucet to boiler rooms and fire sprinklers.
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <div data-hero-cta className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <ButtonLink href={`#${REQUEST_ANCHOR}`} size="lg" icon="arrow-right">
               {ctaLabels.primary}
             </ButtonLink>
@@ -39,49 +39,38 @@ export function HomeHero() {
                 {ctaLabels.call}
               </ButtonLink>
             ) : null}
-            <ButtonLink href="/services" size="lg" variant="outline">
-              Explore Our Services
-            </ButtonLink>
+            {/* Two clear actions on phones; the services menu is one tap away in the header. */}
+            <span className="hidden sm:contents">
+              <ButtonLink href="/services" size="lg" variant="outline">
+                Explore Our Services
+              </ButtonLink>
+            </span>
           </div>
 
-          <div className="mt-11 flex flex-wrap items-center gap-x-8 gap-y-6 border-t border-line pt-8">
-            <p className="flex items-center gap-4">
-              <span className="font-display text-[3.25rem] font-extrabold leading-none tracking-[-0.04em] text-ink">
-                15<span className="text-brand-500">+</span>
-              </span>
-              <span className="text-sm font-semibold leading-snug text-ink">
-                Years of Plumbing
-                <br />
-                Experience
-              </span>
-            </p>
-            <div aria-hidden="true" className="hidden h-12 w-px bg-line sm:block" />
-            <p className="flex items-center gap-4">
-              <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600">
-                <Icon name="map-pin" className="size-6" />
-              </span>
-              <span className="text-sm leading-snug">
-                <span className="block font-semibold text-ink">Based in {site.neighborhood}, Brooklyn</span>
-                <span className="mt-0.5 block text-muted">{addressLine}</span>
-              </span>
-            </p>
+          {/* Key facts in one compact strip. */}
+          <ul
+            className={`mt-8 grid divide-x divide-line rounded-2xl border border-line bg-white/90 py-4 shadow-card sm:mt-11 sm:max-w-xl sm:py-5 ${credentialLabel ? 'grid-cols-3' : 'grid-cols-2'}`}
+          >
+            <li className="px-2 text-center">
+              <p className="font-display text-[1.75rem] font-extrabold leading-7 tracking-tight text-ink sm:text-[2rem] sm:leading-8">
+                {site.experienceYears.replace('+', '')}
+                <span className="text-brand-500">+</span>
+              </p>
+              <p className="mt-1.5 text-xs font-medium leading-tight text-muted sm:text-sm">Years of experience</p>
+            </li>
             {credentialLabel ? (
-              <>
-                <div aria-hidden="true" className="hidden h-12 w-px bg-line sm:block" />
-                <p className="flex items-center gap-4">
-                  <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600">
-                    <Icon name="shield-check" className="size-6" />
-                  </span>
-                  <span className="text-sm leading-snug">
-                    <span className="block font-semibold text-ink">{credentialLabel}</span>
-                    <span className="mt-0.5 block text-muted">
-                      {site.credentials.licenseNumber ?? 'Residential & commercial'}
-                    </span>
-                  </span>
-                </p>
-              </>
+              <li className="px-2 text-center">
+                <Icon name="shield-check" className="mx-auto size-7 text-brand-600 sm:size-8" />
+                <p className="mt-1.5 text-xs font-medium leading-tight text-muted sm:text-sm">{credentialLabel}</p>
+              </li>
             ) : null}
-          </div>
+            <li className="px-2 text-center">
+              <Icon name="map-pin" className="mx-auto size-7 text-brand-600 sm:size-8" />
+              <p className="mt-1.5 text-xs font-medium leading-tight text-muted sm:text-sm">
+                {site.neighborhood}, Brooklyn
+              </p>
+            </li>
+          </ul>
         </div>
 
         <div className="relative lg:col-span-5">

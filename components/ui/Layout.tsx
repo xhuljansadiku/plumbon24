@@ -36,7 +36,7 @@ export function Section({
   children: ReactNode
 }) {
   return (
-    <section id={id} aria-labelledby={labelledBy} className={cn('relative isolate py-20 sm:py-24 lg:py-28', tones[tone], className)}>
+    <section id={id} aria-labelledby={labelledBy} className={cn('relative isolate py-16 sm:py-24 lg:py-28', tones[tone], className)}>
       {children}
     </section>
   )

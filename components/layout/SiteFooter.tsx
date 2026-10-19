@@ -18,8 +18,8 @@ export function SiteFooter() {
       <div aria-hidden="true" className="h-1 bg-gradient-to-r from-brand-700 via-brand-500 to-brand-700" />
 
       <Container className="py-16 lg:py-20">
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-12 lg:gap-10">
-          <div className="sm:col-span-2 lg:col-span-4">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-12 lg:grid-cols-12 lg:gap-10">
+          <div className="col-span-2 lg:col-span-4">
             <LogoPlate />
             <p className="mt-7 font-display text-lg font-extrabold tracking-tight">{site.name}</p>
             <p className="mt-1.5 font-semibold text-brand-300">{site.experienceYears} years of plumbing experience.</p>
@@ -81,7 +81,7 @@ export function SiteFooter() {
             </ul>
           </nav>
 
-          <div className="sm:col-span-2 lg:col-span-3">
+          <div className="col-span-2 lg:col-span-3">
             <h2 className={headingClasses}>Contact</h2>
             <ContactDetails tone="dark" showName={false} className="mt-5" />
           </div>

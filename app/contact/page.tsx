@@ -4,6 +4,7 @@ import { MapEmbed } from '@/components/contact/MapEmbed'
 import { serviceOptions } from '@/components/sections/ContactSection'
 import { FaqList } from '@/components/sections/FaqSection'
 import { PageHero } from '@/components/sections/PageHero'
+import { ButtonLink } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
 import { JsonLd } from '@/components/ui/JsonLd'
 import { Container, Section } from '@/components/ui/Layout'
@@ -40,6 +41,13 @@ export default function ContactPage() {
           </p>
         }
         crumbs={[{ name: 'Contact', path: '/contact' }]}
+        actions={
+          site.phone ? (
+            <ButtonLink href={`tel:${site.phone.e164}`} size="lg" variant="light" icon="phone" iconPosition="start">
+              Call {site.phone.display}
+            </ButtonLink>
+          ) : undefined
+        }
       />
 
       <Section tone="mist" id={REQUEST_ANCHOR} labelledBy="contact-form-title" className="pt-14 sm:pt-16 lg:pt-20">

@@ -53,12 +53,12 @@ export function ServiceProblems({ service }: { service: Service }) {
           title={service.problemsHeading ?? 'Common Problems We Solve'}
           id="problems-title"
         />
-        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-10 grid gap-3 sm:mt-12 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
           {service.problems.map((problem, index) => (
-            <li key={problem.title} className="reveal rounded-2xl border border-line bg-white p-6 sm:p-7">
+            <li key={problem.title} className="reveal rounded-2xl border border-line bg-white p-5 sm:p-7">
               <span className="font-display text-sm font-extrabold tabular-nums tracking-[0.14em] text-brand-600">{indexLabel(index)}</span>
-              <h3 className="text-h4 mt-3 text-ink">{problem.title}</h3>
-              <p className="mt-2.5 leading-relaxed text-muted">{problem.text}</p>
+              <h3 className="text-h4 mt-2 text-ink sm:mt-3">{problem.title}</h3>
+              <p className="mt-1.5 leading-relaxed text-muted sm:mt-2.5">{problem.text}</p>
             </li>
           ))}
         </ul>
@@ -132,14 +132,16 @@ export function ServiceBenefits({ service }: { service: Service }) {
     <Section tone="white" labelledBy="benefits-title">
       <Container>
         <SectionHeading eyebrow="Benefits" title="What You Gain" id="benefits-title" />
-        <ul className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-10 grid gap-x-8 gap-y-7 sm:mt-12 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
           {service.benefits.map((benefit, index) => (
-            <li key={benefit.title} className="reveal">
-              <span className="grid size-12 place-items-center rounded-xl bg-brand-50 text-brand-600 ring-1 ring-brand-100">
+            <li key={benefit.title} className="reveal flex gap-4 sm:block">
+              <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600 ring-1 ring-brand-100 sm:size-12">
                 <Icon name={benefitIcons[index % benefitIcons.length]} className="size-6" />
               </span>
-              <h3 className="text-h4 mt-5 text-ink">{benefit.title}</h3>
-              <p className="mt-2.5 leading-relaxed text-muted">{benefit.text}</p>
+              <div>
+                <h3 className="text-h4 text-ink sm:mt-5">{benefit.title}</h3>
+                <p className="mt-1 leading-relaxed text-muted sm:mt-2.5">{benefit.text}</p>
+              </div>
             </li>
           ))}
         </ul>
@@ -164,7 +166,7 @@ export function ServiceWhyUs({ service }: { service: Service }) {
     <Section tone="navy" labelledBy="why-title" className="overflow-hidden">
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-blueprint-dark fade-edges" />
       <Container className="grid items-center gap-14 lg:grid-cols-12 lg:gap-16">
-        <div className="lg:col-span-5">
+        <div className="hidden lg:col-span-5 lg:block">
           <ExperienceFigure tone="dark" />
         </div>
         <div className="lg:col-span-7">
@@ -202,7 +204,7 @@ export function RelatedServices({ service }: { service: Service }) {
             All Services
           </ButtonLink>
         </div>
-        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+        <ul className="mt-10 grid gap-3 sm:mt-12 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-6">
           {related.map((item) => (
             <li key={item.slug} className="reveal">
               <ServiceCard service={item} />

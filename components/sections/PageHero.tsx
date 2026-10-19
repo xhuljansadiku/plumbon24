@@ -38,7 +38,7 @@ export function PageHero({
             <Eyebrow tone="dark">{eyebrow}</Eyebrow>
             <h1 className="text-h1 mt-5 text-white">{title}</h1>
             <div className="text-lead mt-6 max-w-2xl text-white/75">{intro}</div>
-            {actions ? <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">{actions}</div> : null}
+            {actions ? <div data-hero-cta className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">{actions}</div> : null}
             {footer ? <div className="mt-10">{footer}</div> : null}
           </div>
           {image ? (

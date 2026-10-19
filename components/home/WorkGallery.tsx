@@ -25,6 +25,7 @@ export function WorkGallery() {
                 className={cn(
                   'group relative overflow-hidden rounded-xl bg-mist',
                   featured ? 'col-span-2 row-span-2 aspect-square' : 'aspect-square',
+                  index >= 7 && 'hidden lg:block',
                 )}
               >
                 <Image

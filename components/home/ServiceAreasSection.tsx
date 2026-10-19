@@ -10,9 +10,9 @@ export function ServiceAreasSection() {
 
   return (
     <Section tone="mist" labelledBy="areas-title">
-      <Container className="grid items-center gap-14 lg:grid-cols-12 lg:gap-16">
-        <div className="lg:col-span-5">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl sm:aspect-[16/11] lg:aspect-[4/5]">
+      <Container className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
+        <div className="order-last lg:order-none lg:col-span-5">
+          <div className="relative aspect-[16/10] overflow-hidden rounded-2xl sm:aspect-[16/11] lg:aspect-[4/5]">
             <Image
               src={photo.src}
               alt={photo.alt}

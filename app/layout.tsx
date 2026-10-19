@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Manrope } from 'next/font/google'
+import { BackToTop } from '@/components/layout/BackToTop'
 import { MobileActionBar } from '@/components/layout/MobileActionBar'
 import { SiteFooter } from '@/components/layout/SiteFooter'
 import { SiteHeader } from '@/components/layout/SiteHeader'
@@ -55,6 +56,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
         </main>
         <SiteFooter />
         <MobileActionBar phone={site.phone} email={site.email} />
+        <BackToTop />
         <JsonLd data={[businessSchema(), websiteSchema()]} />
       </body>
     </html>

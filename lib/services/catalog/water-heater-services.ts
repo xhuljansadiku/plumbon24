@@ -5,6 +5,7 @@ export const waterHeaterServices: Service = {
   published: true,
   category: 'equipment',
   title: 'Water Heater Services',
+  shortTitle: 'Water Heaters',
   icon: 'water-heater',
   image: 'waterHeaterBank',
   summary: 'Professional repair, replacement and installation solutions.',

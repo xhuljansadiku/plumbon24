@@ -12,7 +12,7 @@ import { images } from '@/lib/images'
 import { REQUEST_ANCHOR } from '@/lib/navigation'
 import { createMetadata } from '@/lib/seo'
 import { getServicesByCategory, serviceCategories } from '@/lib/services'
-import { ctaLabels } from '@/lib/site'
+import { ctaLabels, site } from '@/lib/site'
 
 export const metadata = createMetadata({
   title: 'Plumbing Services in New York City | PLUMBON24',
@@ -50,9 +50,11 @@ export default function ServicesPage() {
             <ButtonLink href={`#${REQUEST_ANCHOR}`} size="lg" icon="arrow-right">
               {ctaLabels.primary}
             </ButtonLink>
-            <ButtonLink href={`#${REQUEST_ANCHOR}`} size="lg" variant="outline-light">
-              {ctaLabels.quote}
-            </ButtonLink>
+            {site.phone ? (
+              <ButtonLink href={`tel:${site.phone.e164}`} size="lg" variant="light" icon="phone" iconPosition="start">
+                {ctaLabels.call}
+              </ButtonLink>
+            ) : null}
           </>
         }
         footer={
@@ -82,7 +84,7 @@ export default function ServicesPage() {
               lead={category.description}
               id={`${category.id}-title`}
             />
-            <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+            <ul className="mt-10 grid gap-3 sm:mt-12 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-6">
               {category.items.map((service, position) => (
                 <li key={service.slug} className="reveal">
                   <ServiceCard service={service} index={startIndexes[index] + position} />

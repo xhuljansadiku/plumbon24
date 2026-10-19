@@ -124,14 +124,16 @@ export default function AboutPage() {
             lead="The standards we bring to every residential and commercial job."
             id="values-title"
           />
-          <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <ul className="mt-10 grid gap-3 sm:mt-12 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
             {values.map((value) => (
-              <li key={value.title} className="reveal rounded-2xl border border-line bg-white p-7">
-                <span className="grid size-12 place-items-center rounded-xl bg-brand-50 text-brand-600 ring-1 ring-brand-100">
+              <li key={value.title} className="reveal flex gap-4 rounded-2xl border border-line bg-white p-5 sm:block sm:p-7">
+                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600 ring-1 ring-brand-100 sm:size-12">
                   <Icon name={value.icon} className="size-6" />
                 </span>
-                <h3 className="text-h4 mt-6 text-ink">{value.title}</h3>
-                <p className="mt-2.5 leading-relaxed text-muted">{value.text}</p>
+                <div>
+                  <h3 className="text-h4 text-ink sm:mt-6">{value.title}</h3>
+                  <p className="mt-1 leading-relaxed text-muted sm:mt-2.5">{value.text}</p>
+                </div>
               </li>
             ))}
           </ul>
@@ -141,7 +143,7 @@ export default function AboutPage() {
       <Section tone="navy" labelledBy="experience-about-title" className="overflow-hidden">
         <div aria-hidden="true" className="absolute inset-0 -z-10 bg-blueprint-dark fade-edges" />
         <Container className="grid items-center gap-14 lg:grid-cols-12 lg:gap-16">
-          <div className="lg:col-span-5">
+          <div className="hidden lg:col-span-5 lg:block">
             <ExperienceFigure tone="dark" />
           </div>
           <div className="lg:col-span-7">

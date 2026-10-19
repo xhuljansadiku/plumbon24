@@ -60,7 +60,7 @@ export function EmergencySection() {
 
         <div className="lg:col-span-5">
           <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/10">
-            <div className="relative aspect-[4/5] sm:aspect-[16/12] lg:aspect-[4/5]">
+            <div className="relative hidden sm:block sm:aspect-[16/12] lg:aspect-[4/5]">
               <Image
                 src={photo.src}
                 alt={photo.alt}
@@ -70,7 +70,7 @@ export function EmergencySection() {
                 style={{ objectPosition: photo.position }}
               />
             </div>
-            <div className="absolute inset-x-3 bottom-3 rounded-xl bg-white p-5 text-ink shadow-lift sm:inset-x-4 sm:bottom-4">
+            <div className="rounded-xl bg-white p-5 text-ink shadow-lift sm:absolute sm:inset-x-4 sm:bottom-4">
               <p className="flex items-center gap-2.5 font-display text-lg font-bold">
                 <Icon name="alert" className="size-5 text-brand-600" />
                 While you wait

@@ -2,17 +2,39 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import type { MouseEvent } from 'react'
+import { useEffect, useState, type MouseEvent } from 'react'
 import type { PhoneNumber } from '@/lib/site'
+import { cn } from '@/lib/utils'
 
 const FORM_ID = 'request-service'
 
 /**
  * Sticky bottom bar on phones and tablets: "Request Service" plus "Call Now" once a phone number exists
  * (otherwise an email shortcut). Scrolls to the request form when the current page has one.
+ *
+ * While the page's own hero buttons (`[data-hero-cta]`) are on screen the bar slides away, so the same
+ * two actions are never shown twice at once.
  */
 export function MobileActionBar({ phone, email }: { phone: PhoneNumber | null; email: string }) {
   const pathname = usePathname()
+  // Start hidden: most pages open with their hero buttons in view, so this avoids a flash of the bar.
+  const [heroCtaInView, setHeroCtaInView] = useState(true)
+
+  useEffect(() => {
+    // Hidden (preserved) routes stay in the DOM, so only watch the hero of the visible page.
+    const target = Array.from(document.querySelectorAll<HTMLElement>('[data-hero-cta]')).find(
+      (element) => element.checkVisibility?.() !== false && element.offsetParent !== null,
+    )
+    if (!target) {
+      // No hero buttons on this page: show the bar right after the first paint.
+      const frame = requestAnimationFrame(() => setHeroCtaInView(false))
+      return () => cancelAnimationFrame(frame)
+    }
+    const observer = new IntersectionObserver(([entry]) => setHeroCtaInView(entry.isIntersecting))
+    observer.observe(target)
+    return () => observer.disconnect()
+  }, [pathname])
+
   if (pathname === '/contact') return null
 
   const goToForm = (event: MouseEvent<HTMLAnchorElement>) => {
@@ -26,7 +48,13 @@ export function MobileActionBar({ phone, email }: { phone: PhoneNumber | null; e
   }
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-line bg-white/95 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 shadow-[0_-12px_32px_-20px_rgb(17_24_39/0.35)] backdrop-blur-md lg:hidden">
+    <div
+      inert={heroCtaInView}
+      className={cn(
+        'fixed inset-x-0 bottom-0 z-40 border-t border-line bg-white/95 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 shadow-[0_-12px_32px_-20px_rgb(17_24_39/0.35)] backdrop-blur-md transition-transform duration-300 ease-out-soft lg:hidden',
+        heroCtaInView && 'translate-y-full',
+      )}
+    >
       <div className="mx-auto flex max-w-xl gap-3">
         <Link
           href={`/contact#${FORM_ID}`}

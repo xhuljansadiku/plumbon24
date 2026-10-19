@@ -7,6 +7,7 @@
  */
 export const iconPaths = {
   'arrow-right': '<path d="M4.5 12h15"/><path d="m13.5 6 6 6-6 6"/>',
+  'arrow-up': '<path d="M12 19.5v-15"/><path d="m6 10.5 6-6 6 6"/>',
   'arrow-up-right': '<path d="M7 17 17 7"/><path d="M8.5 7H17v8.5"/>',
   'chevron-down': '<path d="m6 9 6 6 6-6"/>',
   'chevron-right': '<path d="m9 6 6 6-6 6"/>',
