@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Manrope } from 'next/font/google'
+import { Anton, Inter, Instrument_Serif, Manrope } from 'next/font/google'
 import { BackToTop } from '@/components/layout/BackToTop'
 import { MobileActionBar } from '@/components/layout/MobileActionBar'
 import { SiteFooter } from '@/components/layout/SiteFooter'
@@ -11,6 +11,9 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' })
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope', display: 'swap' })
+/** Used only by the Illyrian Pixel credit in the footer. */
+const anton = Anton({ subsets: ['latin'], weight: '400', variable: '--font-anton', display: 'swap' })
+const instrumentSerif = Instrument_Serif({ subsets: ['latin'], weight: '400', style: 'italic', variable: '--font-instrument-serif', display: 'swap' })
 
 /** Every page is a fully static marketing page; the build fails if one accidentally becomes dynamic. */
 export const ensureStatic = 'navigation'
@@ -45,7 +48,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
-    <html lang="en-US" data-scroll-behavior="smooth" className={`${inter.variable} ${manrope.variable}`}>
+    <html lang="en-US" data-scroll-behavior="smooth" className={`${inter.variable} ${manrope.variable} ${anton.variable} ${instrumentSerif.variable}`}>
       <body className="min-h-dvh pb-[calc(4.75rem+env(safe-area-inset-bottom))] lg:pb-0">
         <a href="#main-content" className="skip-link">
           Skip to main content

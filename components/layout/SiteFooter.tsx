@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { StudioCredit } from '@/components/layout/StudioCredit'
 import { ContactDetails } from '@/components/contact/ContactDetails'
 import { ButtonLink } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
@@ -104,6 +105,9 @@ export function SiteFooter() {
               ))}
             </ul>
           </nav>
+        </Container>
+        <Container>
+          <StudioCredit />
         </Container>
       </div>
     </footer>
