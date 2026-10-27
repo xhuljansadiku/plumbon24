@@ -51,10 +51,11 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 ---
 
 ## 2. Publikimi (teknike)
-- [ ] **Domain-i**: cili do jetë? → `NEXT_PUBLIC_SITE_URL` (shih `.env.example`)
-- [ ] **Email-i i formularit**: çelës Resend ose SendGrid (`RESEND_API_KEY` / `SENDGRID_API_KEY`) dhe një email dërguesi i verifikuar te domain-i.
-      ⚠️ Pa këtë, formulari nuk dërgon kërkesa.
-- [ ] **Hostimi** (p.sh. Vercel), me variablat e mjedisit.
+- [x] **Domain-i**: `plumbon24.com` (Namecheap). `NEXT_PUBLIC_SITE_URL=https://www.plumbon24.com` në Vercel.
+- [x] **Email-i i formularit** (2026-10-27): Resend, domain-i `plumbon24.com` i verifikuar, dërguesi `website@plumbon24.com`, kërkesat shkojnë te `info@plumbon24.com`. Testi me formular: ✅ erdhi.
+      Email-i i domain-it: Google Workspace (MX, SPF, DKIM, DMARC në Namecheap).
+- [x] **Hostimi**: Vercel (`plumbon24-six.vercel.app`), variablat e mjedisit në Production.
+      → [ ] Lidh `plumbon24.com` + `www` te Vercel → Domains (hiq URL Redirect dhe CNAME-n e parking-ut te Namecheap, mos prek MX/TXT).
 - [ ] **Google Search Console**: verifiko domain-in dhe dorëzo `https://domain/sitemap.xml`
 - [ ] **Google Business Profile**: vendos aty linkun e faqes dhe numrin e njëjtë (NAP i njëjtë kudo).
 - [ ] **Test pas publikimit**: dërgo një kërkesë provë nga formulari (me foto), provo "Call Now" në celular, kontrollo faqen në telefon.
