@@ -64,7 +64,7 @@ export const site: SiteConfig = {
   description:
     'Professional plumbing services for homes and businesses across all five boroughs of New York City, backed by 15+ years of plumbing experience.',
   experienceYears: '15+',
-  email: 'plumbon24@gmail.com',
+  email: 'info@plumbon24.com',
 
   phone: { display: '(917) 702-0072', e164: '+19177020072' },
   /** While `phone` is null, contact blocks show a clearly marked "[PHONE NUMBER]" placeholder. */

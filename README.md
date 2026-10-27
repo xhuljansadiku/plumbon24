@@ -69,7 +69,7 @@ Everything is data-driven. You rarely need to touch components.
   Upstash Redis for multi-instance deployments).
 - Works without JavaScript (falls back to a normal form post and `/contact/thank-you`).
 - Delivery: set **one** of `RESEND_API_KEY`, `SENDGRID_API_KEY` or `CONTACT_WEBHOOK_URL`. Requests go to
-  `CONTACT_TO_EMAIL` (default `plumbon24@gmail.com`) with the customer as reply-to.
+  `CONTACT_TO_EMAIL` (default `info@plumbon24.com`) with the customer as reply-to.
 - In production, if no provider is configured, the form shows an error with the email address instead of silently
   dropping the request.
 

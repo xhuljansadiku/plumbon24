@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useEffect } from 'react'
 
-const EMAIL = 'plumbon24@gmail.com'
+const EMAIL = 'info@plumbon24.com'
 
 export default function ErrorPage({ error, retry }: { error: Error & { digest?: string }; retry: () => void }) {
   useEffect(() => {

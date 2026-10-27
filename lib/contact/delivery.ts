@@ -28,7 +28,7 @@ export type Submission = {
 
 export type DeliveryResult = { delivered: true; provider: string } | { delivered: false; provider: 'none' }
 
-const DEFAULT_TO = 'plumbon24@gmail.com'
+const DEFAULT_TO = 'info@plumbon24.com'
 
 function recipient() {
   return process.env.CONTACT_TO_EMAIL || DEFAULT_TO

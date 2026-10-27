@@ -13,8 +13,8 @@ export default function GlobalError({ retry }: { error: Error & { digest?: strin
           <h1 className="mt-4 text-3xl font-extrabold tracking-tight">Something went wrong.</h1>
           <p className="mt-4 text-lg text-muted">
             Please try again or contact us directly at{' '}
-            <a href="mailto:plumbon24@gmail.com" className="font-semibold text-brand-700 underline">
-              plumbon24@gmail.com
+            <a href="mailto:info@plumbon24.com" className="font-semibold text-brand-700 underline">
+              info@plumbon24.com
             </a>
             .
           </p>

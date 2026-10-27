@@ -13,7 +13,7 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 - [x] Foto reale të punës (`public/images/work/`)
 
 ## ✅ Të marra nga klienti (2026-10-17)
-- [x] Email-i mbetet `plumbon24@gmail.com`
+- [x] Email-i: `info@plumbon24.com` (ndryshuar 2026-10-26)
 - [x] Eksperienca: 15+ vite eksperiencë personale. Kompania sapo është hapur, ndaj **mos shkruaj kurrë** "since 20XX", "in business for 15 years" ose `foundingDate` në schema.
 - [x] Fotot: përdorim ato që dërguan + fotot falas me licencë (`docs/IMAGE-CREDITS.md`). Fotot e banjave/kuzhinave të përfunduara janë në rregull.
 - [x] Lagjet e projekteve: nuk dihen. Galeria dhe karta te hero mbeten pa lagje.
