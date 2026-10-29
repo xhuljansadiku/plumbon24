@@ -31,9 +31,10 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 ## 1. Pyetje për klientin
 
 ### Në pritje
-- [ ] **Numri i licencës + sigurimi (insurance)**: kur t'i japë → `site.credentials.licenseNumber` dhe `insured: true` te `lib/site.ts`. Badge-i bëhet vetë "Licensed & Insured" me numrin.- [ ] **Google Business Profile**: kanë **zyrë** te 235 43rd St → profil normal me **adresë publike** (jo service-area). Shto edhe 5 boroughs si zonë shërbimi. Linku → `profiles.googleBusinessProfile` te `lib/site.ts`
+- [ ] **Numri i licencës + sigurimi (insurance)**: kur t'i japë → `site.credentials.licenseNumber` dhe `insured: true` te `lib/site.ts`. Badge-i bëhet vetë "Licensed & Insured" me numrin.
+- [ ] **Google Business Profile**: kanë **zyrë** te 235 43rd St → profil normal me **adresë publike** (jo service-area). Shto edhe 5 boroughs si zonë shërbimi. Linku → `profiles.googleBusinessProfile` te `lib/site.ts`
 - [ ] **Review reale**: vijnë pasi të hapet GBP. → `lib/reviews.ts`. Seksioni shfaqet vetë. Vetëm review të vërteta, fjalë për fjalë.
-- [ ] **Domain-i**: `plumbon24.com` (i lirë më 2026-10-17). Blije sa më shpejt, në emër të klientit. Faqja do jetë `https://www.plumbon24.com`.
+- [x] **Domain-i**: `plumbon24.com`, i blerë dhe i lidhur.
 
 ### Shërbimet ✅ (2026-10-18)
 - [x] Klienti bën gjithçka **përveç punës jashtë ndërtesës** (water service dhe main sewer deri te rruga).
@@ -55,8 +56,8 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 - [x] **Email-i i formularit** (2026-10-27): Resend, domain-i `plumbon24.com` i verifikuar, dërguesi `website@plumbon24.com`, kërkesat shkojnë te `info@plumbon24.com`. Testi me formular: ✅ erdhi.
       Email-i i domain-it: Google Workspace (MX, SPF, DKIM, DMARC në Namecheap).
 - [x] **Hostimi**: Vercel (`plumbon24-six.vercel.app`), variablat e mjedisit në Production.
-      → [ ] Lidh `plumbon24.com` + `www` te Vercel → Domains (hiq URL Redirect dhe CNAME-n e parking-ut te Namecheap, mos prek MX/TXT).
-- [ ] **Google Search Console**: verifiko domain-in dhe dorëzo `https://domain/sitemap.xml`
+      → [x] U lidh `plumbon24.com` + `www` te Vercel (2026-10-29). Apex bën 308 te `www`.
+- [x] **Google Search Console** (2026-10-29): domain-i u verifikua, u kërkua indeksimi i faqes kryesore. **Bing**: u importua nga GSC.
 - [ ] **Google Business Profile**: vendos aty linkun e faqes dhe numrin e njëjtë (NAP i njëjtë kudo).
 - [ ] **Test pas publikimit**: dërgo një kërkesë provë nga formulari (me foto), provo "Call Now" në celular, kontrollo faqen në telefon.
 
@@ -83,14 +84,14 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 - [ ] **Backlinks**: link nga furnitorët, kontraktorët partnerë, shoqatat lokale (p.sh. Chamber of Commerce), komuniteti shqiptar në NYC.
 
 ### Nga ne (teknike)
-- [ ] **Domain + `NEXT_PUBLIC_SITE_URL`**: pa këtë, canonical dhe sitemap tregojnë `localhost`. ⚠️ Mos publiko pa të.
-- [ ] **Google Search Console**: verifiko domain-in, dorëzo `sitemap.xml`, kërko indeksimin e faqes kryesore.
-- [ ] **Bing Webmaster Tools**: importo nga Search Console.
+- [x] **Domain + `NEXT_PUBLIC_SITE_URL`** (2026-10-29).
+- [x] **Google Search Console** (2026-10-29).
+- [x] **Bing Webmaster Tools** (2026-10-29): importuar nga GSC.
 - [ ] **Faqe për çdo borough** (`/service-areas/queens` etj.), me përmbajtje unike për secilin (lloje ndërtesash, probleme tipike, projekte aty). Vetëm kur kemi informacion real, ndryshe Google i sheh si "doorway pages".
 - [ ] **Licensed & Insured + numri i licencës** në faqe dhe në schema, kur ta japë klienti.
 - [ ] **Review në schema** (`aggregateRating`), vetëm me review reale të verifikueshme.
 - [x] **Lighthouse audit** (2026-10-19, lokalisht): Accessibility 100, Best Practices 100, SEO 100 në të gjitha faqet. Performance desktop 99, CLS 0. Mobile 80–92 (luhatje e madhe; edhe /terms del njësoj, pra është kostoja e Next/React, jo e faqes).
-      → [ ] Pas publikimit: provo **PageSpeed Insights** te URL-ja reale (Vercel CDN zakonisht jep më shumë se localhost).
+      → [x] **PageSpeed Insights** te URL-ja reale (2026-10-29): 100 në të katër kategoritë, desktop dhe mobile.
 - [x] **Koordinatat `geo`** në schema (OpenStreetMap + US Census, 2026-10-19).
 - [ ] **Analytics** (Vercel Analytics, pa cookies) + ndjekja e klikimeve "Call Now" dhe dërgimeve të formularit. Përditëso faqen Privacy.
 - [ ] **Kontroll mujor** në Search Console: cilat fjalë sjellin vizita, cilat faqe nuk janë indeksuar.

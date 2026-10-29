@@ -24,9 +24,9 @@ export function PhoneDisplay({ tone = 'light', className }: { tone?: Tone; class
   )
 }
 
-function DetailRow({ icon, label, tone, children }: { icon: IconName; label: string; tone: Tone; children: ReactNode }) {
+function DetailRow({ icon, label, tone, centered, children }: { icon: IconName; label: string; tone: Tone; centered?: boolean; children: ReactNode }) {
   return (
-    <li className="flex gap-4">
+    <li className={cn('flex gap-4', centered && 'max-lg:flex-col max-lg:items-center max-lg:gap-2 max-lg:text-center')}>
       <span
         className={cn(
           'grid size-11 shrink-0 place-items-center rounded-lg',
@@ -44,7 +44,18 @@ function DetailRow({ icon, label, tone, children }: { icon: IconName; label: str
 }
 
 /** Name, address, phone, email and hours — the NAP block, identical everywhere it appears. */
-export function ContactDetails({ tone = 'light', showName = true, className }: { tone?: Tone; showName?: boolean; className?: string }) {
+export function ContactDetails({
+  tone = 'light',
+  showName = true,
+  centered = false,
+  className,
+}: {
+  tone?: Tone
+  showName?: boolean
+  /** Stacks each row (icon above text) and centers it below the lg breakpoint. */
+  centered?: boolean
+  className?: string
+}) {
   const showPhone = Boolean(site.phone) || site.showPhonePlaceholder
 
   return (
@@ -53,7 +64,7 @@ export function ContactDetails({ tone = 'light', showName = true, className }: {
         <p className={cn('font-display text-lg font-extrabold tracking-tight', tone === 'dark' ? 'text-white' : 'text-ink')}>{site.name}</p>
       ) : null}
       <ul className={cn('grid gap-5', showName && 'mt-6')}>
-        <DetailRow icon="map-pin" label="Address" tone={tone}>
+        <DetailRow icon="map-pin" label="Address" tone={tone} centered={centered}>
           <address className="not-italic">
             {site.address.street}
             <br />
@@ -76,16 +87,16 @@ export function ContactDetails({ tone = 'light', showName = true, className }: {
           </a>
         </DetailRow>
         {showPhone ? (
-          <DetailRow icon="phone" label="Phone" tone={tone}>
+          <DetailRow icon="phone" label="Phone" tone={tone} centered={centered}>
             <PhoneDisplay tone={tone} />
           </DetailRow>
         ) : null}
-        <DetailRow icon="mail" label="Email" tone={tone}>
+        <DetailRow icon="mail" label="Email" tone={tone} centered={centered}>
           <a href={`mailto:${site.email}`} className="font-semibold underline-offset-4 hover:underline">
             {site.email}
           </a>
         </DetailRow>
-        <DetailRow icon="clock" label="Hours" tone={tone}>
+        <DetailRow icon="clock" label="Hours" tone={tone} centered={centered}>
           <p>{site.hours.office}</p>
           {site.hours.emergency ? (
             <p className={cn('mt-0.5 font-semibold', tone === 'dark' ? 'text-brand-300' : 'text-brand-700')}>{site.hours.emergency}</p>
