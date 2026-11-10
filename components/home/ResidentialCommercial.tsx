@@ -18,25 +18,25 @@ type Panel = {
 
 const panels: Panel[] = [
   {
-    slug: 'residential-plumbing',
+    slug: 'residential-piping',
     eyebrow: 'For homeowners & residents',
-    title: 'Residential Plumbing',
+    title: 'Residential Piping',
     text: 'Repairs, installations and upgrades for New York City homes, handled with care for your space.',
     items: ['Houses', 'Apartments', 'Condos', 'Kitchens', 'Bathrooms', 'Water heaters', 'Boilers', 'Drains', 'Leaks', 'Fixtures'],
     image: images.finishedBathroom,
     tone: 'light',
   },
   {
-    slug: 'commercial-plumbing',
+    slug: 'commercial-piping',
     eyebrow: 'For businesses & buildings',
-    title: 'Commercial Plumbing',
-    text: 'Plumbing, heating and fire sprinkler work for businesses and building owners, with clear communication and respect for your operations.',
+    title: 'Commercial Piping',
+    text: 'Piping, heating and build-out work for businesses and building owners, with clear communication and respect for your operations.',
     items: [
       'Offices',
       'Restaurants',
       'Retail',
       'Property managers',
-      'Fire sprinklers',
+      'Restrooms',
       'Boiler rooms',
       'Build-outs',
       'Maintenance',

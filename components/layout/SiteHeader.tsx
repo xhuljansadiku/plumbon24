@@ -38,7 +38,7 @@ function TopBar() {
         ) : (
           <p className="flex items-center gap-2.5">
             <BrandDrop className="h-3.5 text-brand-400" />
-            <span className="font-semibold text-white">{site.experienceYears} Years of Plumbing Experience</span>
+            <span className="font-semibold text-white">{site.experienceYears} Years of Piping Experience</span>
           </p>
         )}
 

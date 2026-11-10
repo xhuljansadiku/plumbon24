@@ -3,7 +3,7 @@ import type { Service } from '../types'
 export const repiping: Service = {
   slug: 'repiping',
   published: true,
-  category: 'lines',
+  category: 'projects',
   title: 'Repiping',
   icon: 'repipe',
   image: 'copperRisers',
@@ -90,7 +90,7 @@ export const repiping: Service = {
     },
     {
       title: 'A stronger property',
-      text: 'Updated plumbing is an advantage when you renovate, rent or sell.',
+      text: 'Updated piping is an advantage when you renovate, rent or sell.',
     },
   ],
   whyUs:
@@ -117,5 +117,5 @@ export const repiping: Service = {
         'Material choices depend on the building, the application and the code requirements that apply. We’ll discuss the appropriate options for your project.',
     },
   ],
-  related: ['pipe-repair-replacement', 'water-line-services', 'bathroom-plumbing'],
+  related: ['pipe-repair-replacement', 'water-line-services', 'bathroom-piping'],
 }

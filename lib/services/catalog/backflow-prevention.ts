@@ -2,7 +2,7 @@ import type { Service } from '../types'
 
 export const backflowPrevention: Service = {
   slug: 'backflow-prevention',
-  published: true,
+  published: false,
   category: 'lines',
   title: 'Backflow Prevention',
   icon: 'backflow',
@@ -19,12 +19,12 @@ export const backflowPrevention: Service = {
       'Backflow prevention devices keep contaminated water from flowing back into the drinking water supply. We help with installation, repair and replacement.',
   },
   overview: [
-    'Backflow happens when water reverses direction in a plumbing system (after a pressure drop in the city main, for example) and draws water from equipment, irrigation or process lines back into the drinking water supply. A backflow prevention device is designed to stop that.',
+    'Backflow happens when water reverses direction in a piping system (after a pressure drop in the city main, for example) and draws water from equipment, irrigation or process lines back into the drinking water supply. A backflow prevention device is designed to stop that.',
     'Commercial buildings, restaurants, medical and industrial properties, and buildings with fire sprinkler or irrigation systems commonly need backflow protection. We help owners and property managers with installing, repairing and replacing backflow prevention assemblies.',
   ],
   local: {
     heading: 'NYC backflow requirements',
-    text: 'New York City’s Department of Environmental Protection (DEP) requires backflow prevention devices on the water service of many properties, based on the potential hazard of what is connected to the building’s plumbing. Required devices generally must be tested every year by a certified tester, with the results submitted to DEP. If you’ve received a notice, or you aren’t sure whether your property needs a device, contact us to talk it through.',
+    text: 'New York City’s Department of Environmental Protection (DEP) requires backflow prevention devices on the water service of many properties, based on the potential hazard of what is connected to the building’s piping. Required devices generally must be tested every year by a certified tester, with the results submitted to DEP. If you’ve received a notice, or you aren’t sure whether your property needs a device, contact us to talk it through.',
   },
   problemsHeading: 'Common Backflow Issues',
   problems: [
@@ -98,17 +98,17 @@ export const backflowPrevention: Service = {
     },
   ],
   whyUs:
-    'Backflow requirements can be confusing. We help you understand what your property needs and handle the plumbing work with care.',
+    'Backflow requirements can be confusing. We help you understand what your property needs and handle the piping work with care.',
   faqs: [
     {
       question: 'What is backflow?',
       answer:
-        'Backflow is the unwanted reversal of water flow in a plumbing system, which can allow contaminated water to enter the drinking water supply.',
+        'Backflow is the unwanted reversal of water flow in a piping system, which can allow contaminated water to enter the drinking water supply.',
     },
     {
       question: 'Does my property need a backflow preventer?',
       answer:
-        'It depends on how the building is used and what is connected to its plumbing. Many commercial, mixed-use and larger residential properties need one. NYC DEP sets the requirements, and properties that need a device are typically notified.',
+        'It depends on how the building is used and what is connected to its piping. Many commercial, mixed-use and larger residential properties need one. NYC DEP sets the requirements, and properties that need a device are typically notified.',
     },
     {
       question: 'How often does a backflow device need to be tested?',
@@ -121,5 +121,5 @@ export const backflowPrevention: Service = {
         'A reduced pressure zone (RPZ) assembly is a type of backflow preventer used where the hazard is high. It has a relief valve that discharges water if its internal check valves stop sealing.',
     },
   ],
-  related: ['water-line-services', 'fire-sprinkler-systems', 'commercial-plumbing'],
+  related: ['water-line-services', 'fire-sprinkler-systems', 'commercial-piping'],
 }

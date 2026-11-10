@@ -1,34 +1,34 @@
 import { site } from '@/lib/site'
 import type { Service } from '../types'
 
-export const emergencyPlumbing: Service = {
-  slug: 'emergency-plumbing',
+export const emergencyPiping: Service = {
+  slug: 'emergency-piping',
   /** Controlled by `features.emergencyService` in lib/site.ts so the page and the homepage section stay in sync. */
   published: site.features.emergencyService,
   category: 'repairs',
-  title: 'Emergency Plumbing',
+  title: 'Emergency Piping',
   icon: 'alert',
   image: 'faucetDark',
-  summary: 'Professional assistance for urgent plumbing problems and unexpected leaks.',
+  summary: 'Professional assistance for urgent piping problems and unexpected leaks.',
   seo: {
-    title: 'Emergency Plumbing Services in New York City | PLUMBON24',
+    title: 'Emergency Piping Services in New York City | PLUMBON24',
     description:
-      'Burst pipe, major leak or sewer backup in NYC? Request emergency plumbing service from PLUMBON24 MECHANICAL INC, backed by 15+ years of experience.',
+      'Burst pipe, major leak or sewer backup in NYC? Request emergency piping service from PLUMBON24 MECHANICAL INC, backed by 15+ years of experience.',
   },
   hero: {
-    heading: 'Emergency Plumbing Services in New York City',
+    heading: 'Emergency Piping Services in New York City',
     intro:
       'A burst pipe, a major leak or a sewage backup can damage a home or business quickly. Tell us what’s happening and we’ll help you work out the right next step.',
   },
   overview: [
-    'Some plumbing problems can wait for a convenient appointment. Others can’t. When water is coming through a ceiling, a drain is backing up into the basement or a pipe has split, you need a plumber who can assess the situation and stop the damage from spreading.',
+    'Some piping problems can wait for a convenient appointment. Others can’t. When water is coming through a ceiling, a drain is backing up into the basement or a pipe has split, you need a technician who can assess the situation and stop the damage from spreading.',
     'We approach urgent problems methodically: make the situation safe and stop the water first, then find the cause and explain the options for a proper repair, instead of a quick patch that fails again a week later.',
   ],
   local: {
     heading: 'Why urgent problems escalate quickly in NYC buildings',
-    text: 'In row houses, brownstones and multi-family buildings, plumbing runs through shared walls, floors and stacks. A leak in one apartment can reach the unit below within minutes, and a blocked main line can affect every unit in the building. Knowing where your main shut-off valve is (usually in the basement or cellar, near where the water service enters from the street) is the most useful thing you can do before an emergency happens.',
+    text: 'In row houses, brownstones and multi-family buildings, piping runs through shared walls, floors and stacks. A leak in one apartment can reach the unit below within minutes, and a blocked main line can affect every unit in the building. Knowing where your main shut-off valve is (usually in the basement or cellar, near where the water service enters from the street) is the most useful thing you can do before an emergency happens.',
   },
-  problemsHeading: 'Common Plumbing Emergencies',
+  problemsHeading: 'Common Piping Emergencies',
   problems: [
     {
       title: 'Burst or split pipes',
@@ -97,14 +97,14 @@ export const emergencyPlumbing: Service = {
     },
     {
       title: 'Experience under pressure',
-      text: 'Years of plumbing experience help us diagnose urgent problems calmly and methodically.',
+      text: 'Years of piping experience help us diagnose urgent problems calmly and methodically.',
     },
   ],
   whyUs:
-    'When something goes wrong, you want a plumbing company that stays calm, explains what’s going on and does the work properly. That’s how we approach every urgent request.',
+    'When something goes wrong, you want a piping company that stays calm, explains what’s going on and does the work properly. That’s how we approach every urgent request.',
   faqs: [
     {
-      question: 'What should I do while I wait for a plumber?',
+      question: 'What should I do while I wait for a technician?',
       answer:
         'If water is leaking, close the nearest fixture shut-off valve or the main water shut-off valve. Keep away from water near outlets, electrical panels or appliances, and only turn off power if you can do it safely. Move valuables out of the way and take photos for your records.',
     },

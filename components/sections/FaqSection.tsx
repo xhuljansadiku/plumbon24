@@ -31,7 +31,7 @@ export function FaqList({ faqs }: { faqs: Faq[] }) {
 export function FaqSection({
   faqs,
   title = 'Frequently Asked Questions',
-  lead = 'Straight answers to common questions about our plumbing services.',
+  lead = 'Straight answers to common questions about our piping services.',
   tone = 'white',
   id = 'faq-title',
 }: {

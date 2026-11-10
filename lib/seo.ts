@@ -4,7 +4,7 @@ import { absoluteUrl, getSiteUrl, site } from '@/lib/site'
 
 export type Crumb = { name: string; path: string }
 
-export const OG_IMAGE_ALT = 'PLUMBON24 MECHANICAL INC: Professional Plumbing Services in New York City'
+export const OG_IMAGE_ALT = 'PLUMBON24 MECHANICAL INC: Professional Piping Services in New York City'
 
 /**
  * The generated share image (app/opengraph-image.tsx). Page-level `openGraph` objects replace the
@@ -49,13 +49,13 @@ export function createMetadata({
 
 const businessId = () => `${getSiteUrl()}/#business`
 
-/** LocalBusiness (Plumber) structured data. Unverified details (hours, geo, phone, ratings) are omitted until set. */
+/** LocalBusiness (HVACBusiness) structured data. Unverified details (hours, geo, phone, ratings) are omitted until set. */
 export function businessSchema(): Record<string, unknown> {
   const url = getSiteUrl()
 
   return {
     '@context': 'https://schema.org',
-    '@type': 'Plumber',
+    '@type': 'HVACBusiness',
     '@id': businessId(),
     name: site.name,
     url,
@@ -63,7 +63,7 @@ export function businessSchema(): Record<string, unknown> {
     description: site.description,
     logo: absoluteUrl('/brand/plumbon24-logo.png'),
     image: absoluteUrl('/brand/plumbon24-logo.png'),
-    slogan: '15+ Years of Plumbing Experience',
+    slogan: '15+ Years of Piping Experience',
     address: {
       '@type': 'PostalAddress',
       streetAddress: site.address.street,
@@ -78,7 +78,7 @@ export function businessSchema(): Record<string, unknown> {
     ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Plumbing services',
+      name: 'Piping services',
       itemListElement: services.map((service) => ({
         '@type': 'Offer',
         itemOffered: { '@type': 'Service', name: service.title, url: absoluteUrl(serviceHref(service.slug)) },

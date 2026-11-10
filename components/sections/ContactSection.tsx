@@ -20,7 +20,7 @@ const nextSteps = [
 
 /** Request-service block (form + NAP) placed at the end of most pages. Anchor: #request-service */
 export function ContactSection({
-  title = 'Tell Us About Your Plumbing Problem',
+  title = 'Tell Us About Your Piping Problem',
   lead = 'Send a service request and we’ll get back to you as soon as possible. Photos help us understand the problem.',
   defaultService,
 }: {

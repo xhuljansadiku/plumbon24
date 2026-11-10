@@ -10,7 +10,7 @@ export const garbageDisposalServices: Service = {
   image: 'wrenchOnSink',
   summary: 'Repair, replacement and installation of kitchen garbage disposals.',
   seo: {
-    title: 'Garbage Disposal Repair & Installation in New York City | PLUMBON24',
+    title: 'Garbage Disposal Repair & Installation in NYC | PLUMBON24',
     description:
       'Jammed, leaking or humming garbage disposal? PLUMBON24 MECHANICAL INC repairs, replaces and installs garbage disposals in NYC kitchens.',
   },
@@ -122,5 +122,5 @@ export const garbageDisposalServices: Service = {
         'It varies with the quality of the unit and how it’s used, but many disposals last around a decade.',
     },
   ],
-  related: ['kitchen-plumbing', 'drain-cleaning', 'plumbing-installation'],
+  related: ['kitchen-piping', 'drain-cleaning', 'piping-installation'],
 }

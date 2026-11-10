@@ -7,16 +7,17 @@ import { ctaLabels } from '@/lib/site'
 
 /** Desktop "Services" dropdown panel (server-rendered). */
 export function ServicesMegaMenu() {
-  const columns = serviceCategories.filter((category) => category.id !== 'property')
+  const columns = serviceCategories
+    .filter((category) => category.id !== 'property')
+    .map((category) => ({ ...category, items: getServicesByCategory(category.id) }))
+    .filter((category) => category.items.length > 0)
   const propertyTypes = getServicesByCategory('property')
 
   return (
     <div className="border-y border-line bg-white shadow-lift">
       <Container className="py-8">
-        <div className="grid grid-cols-4 gap-8">
-          {columns.map((category) => {
-            const items = getServicesByCategory(category.id)
-            if (!items.length) return null
+        <div className="grid gap-8" style={{ gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))` }}>
+          {columns.map(({ items, ...category }) => {
             return (
               <div key={category.id}>
                 <p className="text-eyebrow text-[0.6875rem] text-subtle">{category.title}</p>

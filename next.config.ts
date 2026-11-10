@@ -24,6 +24,18 @@ const nextConfig: NextConfig = {
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }]
   },
+  /** Service URLs renamed from "-plumbing" to "-piping" (2026-11-10); old links keep working. */
+  async redirects() {
+    return [
+      ['emergency-plumbing', 'emergency-piping'],
+      ['bathroom-plumbing', 'bathroom-piping'],
+      ['kitchen-plumbing', 'kitchen-piping'],
+      ['residential-plumbing', 'residential-piping'],
+      ['commercial-plumbing', 'commercial-piping'],
+      ['plumbing-installation', 'piping-installation'],
+      ['plumbing-maintenance', 'piping-maintenance'],
+    ].map(([from, to]) => ({ source: `/services/${from}`, destination: `/services/${to}`, permanent: true }))
+  },
   turbopack: {
     rules: {
       '*.css': {

@@ -14,9 +14,9 @@ import { createMetadata } from '@/lib/seo'
 import { addressLine, ctaLabels, mapsLinks, site } from '@/lib/site'
 
 export const metadata = createMetadata({
-  title: 'About PLUMBON24 MECHANICAL INC | NYC Plumbing Company',
+  title: 'About PLUMBON24 MECHANICAL INC | NYC Piping Company',
   description:
-    'PLUMBON24 MECHANICAL INC is a New York City plumbing company based in Sunset Park, Brooklyn, bringing 15+ years of plumbing experience to homes and businesses.',
+    'PLUMBON24 MECHANICAL INC is a New York City piping company based in Sunset Park, Brooklyn, bringing 15+ years of piping experience to homes and businesses.',
   path: '/about',
 })
 
@@ -29,7 +29,7 @@ const values: { icon: IconName; title: string; text: string }[] = [
   {
     icon: 'badge',
     title: 'Quality workmanship',
-    text: 'Suitable materials, proper connections and careful testing. Good plumbing is the part you never have to think about again.',
+    text: 'Suitable materials, proper connections and careful testing. Good piping is the part you never have to think about again.',
   },
   {
     icon: 'message',
@@ -38,7 +38,7 @@ const values: { icon: IconName; title: string; text: string }[] = [
   },
   {
     icon: 'target',
-    title: 'Practical plumbing solutions',
+    title: 'Practical piping solutions',
     text: 'We focus on the solution that actually fits the problem, the property and your priorities.',
   },
 ]
@@ -48,10 +48,10 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About us"
-        title="Your Local Plumbing Partner"
+        title="Your Local Piping Partner"
         intro={
           <p>
-            {site.name} is a New York City plumbing company with 15+ years of plumbing experience, serving homes and businesses from our
+            {site.name} is a New York City piping company with 15+ years of piping experience, serving homes and businesses from our
             base in {site.neighborhood}.
           </p>
         }
@@ -74,16 +74,16 @@ export default function AboutPage() {
           <div className="lg:col-span-6">
             <Eyebrow>Who we are</Eyebrow>
             <h2 id="story-title" className="text-h2 mt-4 text-ink">
-              Plumbing Done Properly, Explained Clearly
+              Piping Done Properly, Explained Clearly
             </h2>
             <div className="mt-7 grid gap-5 text-lg leading-relaxed text-muted">
               <p>
-                We work on the plumbing that homes and businesses depend on every day: water lines, drains, water heaters,
-                fixtures, heating, sprinklers and the systems that tie them together.
+                We work on the piping that homes and businesses depend on every day: water piping, drains, water heaters,
+                fixtures, boilers and steam heat, and the systems that tie them together.
               </p>
               <p>
                 Our approach is straightforward: listen to the problem, find the actual cause, explain the options clearly and do the
-                work properly. We believe you should understand what’s wrong with your plumbing, and why a repair is recommended,
+                work properly. We believe you should understand what’s wrong with your piping, and why a repair is recommended,
                 before any work begins.
               </p>
             </div>
@@ -151,7 +151,7 @@ export default function AboutPage() {
               tone="dark"
               eyebrow="Experience"
               title="Experience That Shows in the Details"
-              lead="Fifteen-plus years of plumbing teaches you where problems start, how older buildings behave and why careful work matters. That experience is what we bring to every job, big or small."
+              lead="Fifteen-plus years of piping teaches you where problems start, how older buildings behave and why careful work matters. That experience is what we bring to every job, big or small."
               id="experience-about-title"
             />
           </div>
@@ -162,8 +162,8 @@ export default function AboutPage() {
         <Container>
           <SectionHeading
             eyebrow="Who we serve"
-            title="Residential & Commercial Plumbing"
-            lead="Plumbing services for homes, apartments, businesses and commercial properties across New York City."
+            title="Residential & Commercial Piping"
+            lead="Piping services for homes, apartments, businesses and commercial properties across New York City."
             id="properties-title"
           />
           <div className="mt-12">

@@ -10,8 +10,8 @@ export function ServicesSection() {
       <Container>
         <SectionHeading
           eyebrow="Our services"
-          title="Complete Plumbing Services"
-          lead="Professional plumbing solutions for repairs, installations, maintenance and more."
+          title="Complete Piping Services"
+          lead="Professional piping solutions for repairs, installations, maintenance and more."
           id="services-title"
         />
         <ul className="mt-10 grid gap-3 sm:mt-12 sm:grid-cols-2 sm:gap-5 lg:mt-16 lg:grid-cols-3 lg:gap-6">

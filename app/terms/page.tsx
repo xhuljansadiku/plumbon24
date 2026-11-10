@@ -18,12 +18,12 @@ export default function TermsPage() {
 
       <h2>About this website</h2>
       <p>
-        This website provides information about the plumbing services offered by {site.name} and lets you send us a service request.
+        This website provides information about the piping services offered by {site.name} and lets you send us a service request.
       </p>
 
       <h2>Information on this website</h2>
       <p>
-        The content on this website is general information about plumbing and our services. It is not a substitute for an assessment
+        The content on this website is general information about piping and our services. It is not a substitute for an assessment
         of your specific situation. We work to keep the information accurate and up to date, but it may change without notice.
       </p>
 

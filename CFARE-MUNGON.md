@@ -24,7 +24,7 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 - [x] Bëjnë **boilers**: u shtua `/services/boiler-heating-services` (kategoria Heating, Hot Water & Fixtures)
 - [x] Dërguan foto të reja në WhatsApp: valvola sprinkler, underground, 6 water heaters, combi boilers + manifold radiant
       → [x] Origjinalet u shtuan në faqe (8 foto). Fotoja e hero-s: cilësia në rregull (2026-10-18).
-- [x] **Licencat**: klienti i ka (2026-10-18). Faqja tregon "Licensed" (hero, faktet e shërbimeve, FAQ). "Insured" jo ende.
+- [x] **Licencat**: klienti i ka (2026-10-18). Badge-i "Licensed" u hoq më 2026-11-10 (lloji i licencës i pakonfirmuar). "Insured" jo ende.
 
 ---
 
@@ -41,7 +41,20 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
       → U fshehën `water-line-services` dhe `sewer-line-services` (`published: false`). Për t'i rikthyer: `published: true`.
 - [x] Gas Line dhe Backflow: **po** i bën. Mbeten në faqe.
 - [x] Sprinklers dhe boilers: **po**. U shtuan si shërbime.
-- Gjithsej 20 shërbime në faqe. Boilers zuri vendin e Sewer te kartat e faqes kryesore dhe në footer.
+- [x] **2026-11-10: u fshehën shërbimet që kërkojnë licencë të veçantë** përtej LMP-së (`published: false`):
+      `fire-sprinkler-systems` (Master Fire Suppression Piping Contractor), `gas-line-plumbing` (GWQ për punëtorët),
+      `backflow-prevention` (PE/RA për DEP + tester i certifikuar NYS DOH), `boiler-heating-services` (oil burner / inspektime).
+      Tekstet që i përmendnin (hero, About, FAQ, Commercial, Maintenance, panelet Residential/Commercial) u pastruan.
+      Hero dhe galeria nuk tregojnë më foto me boilera/sprinkler. Repiping kaloi te kategoria "Kitchens, Bathrooms & Projects".
+      Për t'i rikthyer: `published: true` + rikthe tekstet (shih git log).
+- [x] **2026-11-10 (më vonë): klienti nuk lejohet të përdorë fjalën "plumbing"** (as në makina). Kudo "plumbing" → **"piping"**,
+      "plumber" → "piping contractor" / "technician". URL-të u ndërruan (`/services/emergency-piping` etj.) me redirect 308
+      nga të vjetrat te `next.config.ts`. Schema: `Plumber` → `HVACBusiness`.
+- [x] Klienti bën edhe **heating** (steam pipe repair): `boiler-heating-services` u rikthye, me steam pipe repair.
+- Gjithsej **17 shërbime** në faqe. Boilers mbeten te kartat e faqes kryesore dhe në footer.
+- [x] **GBP**: kategoria, përshkrimi dhe shërbimet u rregulluan (2026-11-10).
+- [x] **Badge "Licensed"**: u hoq (2026-11-10, `credentials.licensed: false` te `lib/site.ts`). Zhduket nga hero
+      (kalon në 2 kolona), faktet e shërbimeve dhe FAQ "Are you licensed?". Për ta rikthyer: `licensed: true`.
 
 ### Opsionale
 - [ ] **Videoja**: a duan ta vendosim në faqe?

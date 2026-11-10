@@ -5,7 +5,7 @@ import { images } from '@/lib/images'
 import { getServicesByCategory, serviceHref } from '@/lib/services'
 import { cn } from '@/lib/utils'
 
-/** Horizontal banner cards for Residential and Commercial plumbing; the photo alternates sides. */
+/** Horizontal banner cards for Residential and Commercial piping; the photo alternates sides. */
 export function PropertyTypeCards() {
   const propertyServices = getServicesByCategory('property')
   if (!propertyServices.length) return null

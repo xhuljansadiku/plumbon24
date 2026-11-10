@@ -225,7 +225,7 @@ export function ContactForm({
       aria-busy={submitting}
       className="grid gap-6"
     >
-      {defaultService === 'emergency-plumbing' ? (
+      {defaultService === 'emergency-piping' ? (
         <div className="flex gap-3 rounded-xl border border-amber-300 bg-amber-50 p-4 text-[0.9375rem] text-ink">
           <WarningGlyph />
           <p>

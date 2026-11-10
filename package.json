@@ -2,7 +2,7 @@
   "name": "plumbon24-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Website for PLUMBON24 MECHANICAL INC, a plumbing company in Brooklyn, NY.",
+  "description": "Website for PLUMBON24 MECHANICAL INC, a piping and heating company in Brooklyn, NY.",
   "engines": {
     "node": ">=20.9"
   },

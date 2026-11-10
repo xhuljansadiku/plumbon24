@@ -74,7 +74,7 @@ const registry = {
   // Project photos
   commercialRoughIn: {
     src: commercialRoughIn,
-    alt: 'PLUMBON24 plumber installing drain and vent piping overhead during a commercial build-out',
+    alt: 'PLUMBON24 technician installing drain and vent piping overhead during a commercial build-out',
     position: '30% 50%',
   },
   framedRoughIn: {
@@ -137,7 +137,7 @@ const registry = {
   // Project photos supplied 2026-10-18
   boilerRoomInstall: {
     src: boilerRoomInstall,
-    alt: 'PLUMBON24 plumber at work in a mechanical room with three wall-hung boilers and a copper heating manifold',
+    alt: 'PLUMBON24 technician at work in a mechanical room with three wall-hung boilers and a copper heating manifold',
     position: '45% 50%',
   },
   wallHungBoilers: {
@@ -263,14 +263,14 @@ export const images: Record<ImageKey, SiteImage> = registry
 
 /** Real project photos for the "Our Work" gallery — finished spaces first, then work behind the walls. */
 export const workGallery: ImageKey[] = [
-  'commercialRoughIn',
   'finishedFreestandingTub',
+  'commercialRoughIn',
   'finishedKitchen',
   'radiantManifold',
   'waterHeaterBank',
   'finishedTiledShower',
   'undergroundRoughIn',
-  'sprinklerTestDrain',
+  'inWallToiletCarrier',
   'wallHungBoilers',
   'castIronDrainStack',
   'finishedGlassShower',

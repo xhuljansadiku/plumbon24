@@ -32,7 +32,7 @@ export function ServiceIntro({ service }: { service: Service }) {
           <div className="rounded-2xl border border-line bg-mist p-7 sm:p-8">
             <p className="flex items-center gap-3 text-eyebrow text-[0.75rem] text-brand-700">
               <Icon name="map-pin" className="size-4" />
-              Plumbing in New York City
+              Piping in New York City
             </p>
             <h3 className="text-h4 mt-4 text-ink">{service.local.heading}</h3>
             <p className="mt-3 leading-relaxed text-muted">{service.local.text}</p>
@@ -236,7 +236,7 @@ export function ServiceHeroFacts() {
 }
 
 export function ServiceHeroActions({ service }: { service: Service }) {
-  const emergency = service.slug === 'emergency-plumbing'
+  const emergency = service.slug === 'emergency-piping'
   return (
     <>
       <ButtonLink href={`#${REQUEST_ANCHOR}`} size="lg" icon="arrow-right">

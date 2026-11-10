@@ -62,7 +62,7 @@ export const site: SiteConfig = {
   name: 'PLUMBON24 MECHANICAL INC',
   shortName: 'PLUMBON24',
   description:
-    'Professional plumbing services for homes and businesses across all five boroughs of New York City, backed by 15+ years of plumbing experience.',
+    'Professional piping services for homes and businesses across all five boroughs of New York City, backed by 15+ years of piping experience.',
   experienceYears: '15+',
   email: 'info@plumbon24.com',
 
@@ -97,7 +97,7 @@ export const site: SiteConfig = {
   boroughs: ['Manhattan', 'Brooklyn', 'Queens', 'The Bronx', 'Staten Island'],
 
   features: {
-    /** Shows emergency plumbing messaging. */
+    /** Shows emergency piping messaging. */
     emergencyService: true,
     /** Confirmed by the company: emergency calls are answered 24 hours a day, 7 days a week. */
     emergency24h: true,
@@ -106,8 +106,12 @@ export const site: SiteConfig = {
   },
 
   credentials: {
-    /** Confirmed by the company 2026-10-18. */
-    licensed: true,
+    /**
+     * Off since 2026-11-10: the client's license type is unconfirmed (likely not LMP), so the
+     * site makes no license claim. Turning it on again shows the badge in the hero, the service
+     * facts and the "Are you licensed?" FAQ.
+     */
+    licensed: false,
     /** Set to true only once insurance is confirmed; the badge then reads "Licensed & Insured". */
     insured: false,
     licenseNumber: null,

@@ -8,7 +8,7 @@ export const pipeRepairReplacement: Service = {
   shortTitle: 'Pipe Repair',
   icon: 'pipe',
   image: 'basementCastIron',
-  summary: 'Professional pipe repair, replacement and plumbing system upgrades.',
+  summary: 'Professional pipe repair, replacement and piping system upgrades.',
   seo: {
     title: 'Pipe Repair & Replacement in New York City | PLUMBON24',
     description:
@@ -114,7 +114,7 @@ export const pipeRepairReplacement: Service = {
     {
       question: 'How can I prevent frozen pipes?',
       answer:
-        'Insulate pipes in unheated areas, seal drafts near plumbing, keep the heat on during cold weather and know where your shut-off valves are. Pipes along exterior walls and in unheated basements are most at risk.',
+        'Insulate pipes in unheated areas, seal drafts near piping, keep the heat on during cold weather and know where your shut-off valves are. Pipes along exterior walls and in unheated basements are most at risk.',
     },
     {
       question: 'Why are my pipes banging?',

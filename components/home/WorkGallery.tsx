@@ -4,7 +4,7 @@ import { SectionHeading } from '@/components/ui/SectionHeading'
 import { images, workGallery } from '@/lib/images'
 import { cn } from '@/lib/utils'
 
-/** Real project photos: finished spaces and the plumbing behind the walls. */
+/** Real project photos: finished spaces and the piping behind the walls. */
 export function WorkGallery() {
   return (
     <Section tone="white" labelledBy="work-title">

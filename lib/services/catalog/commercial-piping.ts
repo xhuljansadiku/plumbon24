@@ -1,35 +1,35 @@
 import type { Service } from '../types'
 
-export const commercialPlumbing: Service = {
-  slug: 'commercial-plumbing',
+export const commercialPiping: Service = {
+  slug: 'commercial-piping',
   published: true,
   category: 'property',
-  title: 'Commercial Plumbing',
+  title: 'Commercial Piping',
   icon: 'building',
-  image: 'sprinklerBuildOut',
-  summary: 'Plumbing for offices, restaurants, retail spaces, property managers and commercial buildings.',
+  image: 'framedRoughIn',
+  summary: 'Piping for offices, restaurants, retail spaces, property managers and commercial buildings.',
   seo: {
-    title: 'Commercial Plumber in New York City | PLUMBON24 MECHANICAL INC',
+    title: 'Commercial Piping Contractor in New York City | PLUMBON24',
     description:
-      'Commercial plumbing for NYC restaurants, offices, retail and property managers. Repairs, installations and maintenance from PLUMBON24 MECHANICAL INC.',
+      'Commercial piping for NYC restaurants, offices, retail and property managers. Repairs, installations and maintenance from PLUMBON24 MECHANICAL INC.',
   },
   hero: {
-    heading: 'Commercial Plumbing in New York City',
+    heading: 'Commercial Piping in New York City',
     intro:
-      'For restaurants, offices, retail spaces and building owners, plumbing problems affect customers, tenants and revenue. We provide professional commercial plumbing with clear communication.',
+      'For restaurants, offices, retail spaces and building owners, piping problems affect customers, tenants and revenue. We provide professional commercial piping with clear communication.',
   },
   overview: [
-    'Commercial plumbing carries more load and more responsibility than residential plumbing: more fixtures, more users, larger piping and equipment, and requirements such as backflow protection. When something fails, it can close a restroom, stop a kitchen or affect every tenant in the building.',
+    'Commercial piping carries more load and more responsibility than residential piping: more fixtures, more users, larger piping and equipment, and stricter building requirements. When something fails, it can close a restroom, stop a kitchen or affect every tenant in the building.',
     'We work with business owners and property managers on repairs, installations and maintenance, communicating clearly about the problem, the plan and anything that affects your operations.',
   ],
   local: {
     heading: 'New York City’s commercial mix',
-    text: 'From restaurants and shops on New York City’s commercial avenues to mixed-use buildings with storefronts below apartments, commercial plumbing here often means working in tight spaces, around business hours and alongside residential tenants. Planning work to limit disruption is part of the job.',
+    text: 'From restaurants and shops on New York City’s commercial avenues to mixed-use buildings with storefronts below apartments, commercial piping here often means working in tight spaces, around business hours and alongside residential tenants. Planning work to limit disruption is part of the job.',
   },
-  problemsHeading: 'Commercial Plumbing We Handle',
+  problemsHeading: 'Commercial Piping We Handle',
   problems: [
     {
-      title: 'Restroom plumbing',
+      title: 'Restroom piping',
       text: 'Toilets, urinals, flush valves and sinks that see heavy daily use.',
     },
     {
@@ -45,22 +45,22 @@ export const commercialPlumbing: Service = {
       text: 'Water heaters sized and maintained for commercial demand.',
     },
     {
-      title: 'Backflow prevention',
-      text: 'Protection that many commercial properties are required to have.',
+      title: 'Leaks and pipe failures',
+      text: 'Leaks that can damage inventory, ceilings and the spaces below.',
     },
     {
       title: 'Tenant fit-outs',
-      text: 'Plumbing for new or changing commercial spaces.',
+      text: 'Piping for new or changing commercial spaces.',
     },
   ],
   signsHeading: 'When to Call Us',
   signs: [
     'Recurring drain or restroom problems',
     'Leaks affecting tenants or customers',
-    'A backflow notice or a failed backflow test',
+    'Slow drains or odors in a kitchen or restroom',
     'Hot water problems affecting operations',
     'A new tenant or a change of use',
-    'Plumbing that needs planned maintenance',
+    'Piping that needs planned maintenance',
   ],
   process: [
     {
@@ -87,11 +87,11 @@ export const commercialPlumbing: Service = {
     },
     {
       title: 'One point of contact',
-      text: 'One plumbing company for repairs, installations and maintenance.',
+      text: 'One piping company for repairs, installations and maintenance.',
     },
     {
-      title: 'Requirements explained',
-      text: 'Help understanding obligations such as backflow protection.',
+      title: 'Clear scope',
+      text: 'You’ll know what the work involves, including any permits it requires.',
     },
     {
       title: 'Professional on site',
@@ -99,7 +99,7 @@ export const commercialPlumbing: Service = {
     },
   ],
   whyUs:
-    'Businesses need a plumber who communicates clearly and respects their operations. That’s how we work.',
+    'Businesses need a contractor who communicates clearly and respects their operations. That’s how we work.',
   faqs: [
     {
       question: 'What types of commercial properties do you work with?',
@@ -114,13 +114,13 @@ export const commercialPlumbing: Service = {
     {
       question: 'Do you work with property managers?',
       answer:
-        'Yes. We work with property managers and building owners on repairs, tenant issues and planned plumbing work.',
+        'Yes. We work with property managers and building owners on repairs, tenant issues and planned piping work.',
     },
     {
-      question: 'Do commercial buildings need backflow prevention?',
+      question: 'Can you handle piping for a tenant build-out?',
       answer:
-        'Many do. NYC DEP requires backflow protection based on a building’s use and potential hazard, and required devices must generally be tested every year.',
+        'Yes. We handle piping rough-in and fixture installation for new and changing commercial spaces. Tell us about the project and we’ll explain what’s involved, including any permits or building approvals it requires.',
     },
   ],
-  related: ['fire-sprinkler-systems', 'backflow-prevention', 'boiler-heating-services'],
+  related: ['boiler-heating-services', 'drain-cleaning', 'water-heater-services'],
 }

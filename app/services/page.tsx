@@ -15,9 +15,9 @@ import { getServicesByCategory, serviceCategories } from '@/lib/services'
 import { ctaLabels, site } from '@/lib/site'
 
 export const metadata = createMetadata({
-  title: 'Plumbing Services in New York City | PLUMBON24',
+  title: 'Piping Services in New York City | PLUMBON24',
   description:
-    'Emergency plumbing, drain cleaning, water heaters, boilers, fire sprinklers, leak repair, repiping and more for homes and businesses in all five NYC boroughs. 15+ years of experience.',
+    'Boilers and steam heat, emergency repairs, drain cleaning, water heaters, leak repair and repiping for homes and businesses in all five NYC boroughs.',
   path: '/services',
 })
 
@@ -35,12 +35,12 @@ export default function ServicesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Plumbing services"
-        title="Plumbing Services in New York City"
+        eyebrow="Piping services"
+        title="Piping Services in New York City"
         intro={
           <p>
             Urgent repairs, installations and planned maintenance for homes and businesses
-            across all five NYC boroughs, backed by 15+ years of plumbing experience.
+            across all five NYC boroughs, backed by 15+ years of piping experience.
           </p>
         }
         crumbs={[{ name: 'Services', path: '/services' }]}
@@ -100,7 +100,7 @@ export default function ServicesPage() {
           <Container>
             <SectionHeading
               eyebrow="By property type"
-              title="Residential & Commercial Plumbing"
+              title="Residential & Commercial Piping"
               lead="Whether it’s your home or your business, the services above are available for the property you own, manage or run."
               id="property-title"
             />

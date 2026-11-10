@@ -1,32 +1,32 @@
 import type { Service } from '../types'
 
-export const kitchenPlumbing: Service = {
-  slug: 'kitchen-plumbing',
+export const kitchenPiping: Service = {
+  slug: 'kitchen-piping',
   published: true,
   category: 'projects',
-  title: 'Kitchen Plumbing',
+  title: 'Kitchen Piping',
   icon: 'kitchen',
   image: 'finishedKitchen',
   summary: 'Sinks, faucets, dishwashers, disposals and kitchen drains: repaired, upgraded or installed.',
   seo: {
-    title: 'Kitchen Plumbing in New York City | PLUMBON24 MECHANICAL INC',
+    title: 'Kitchen Piping in New York City | PLUMBON24 MECHANICAL INC',
     description:
-      'Kitchen sink, faucet, dishwasher and drain plumbing for NYC homes and restaurants. Repairs, upgrades and installs by PLUMBON24 MECHANICAL INC.',
+      'Kitchen sink, faucet, dishwasher and drain piping for NYC homes and restaurants. Repairs, upgrades and installs by PLUMBON24 MECHANICAL INC.',
   },
   hero: {
-    heading: 'Kitchen Plumbing in New York City',
+    heading: 'Kitchen Piping in New York City',
     intro:
       'Kitchen sinks, faucets, dishwashers, disposals and drains, repaired when they fail and installed properly when you upgrade.',
   },
   overview: [
-    'The kitchen sink handles grease, food waste and heavy daily use, and the plumbing around it connects to the faucet, dishwasher, garbage disposal, ice maker and water filter. Small leaks under the sink often go unnoticed until the cabinet floor is ruined.',
-    'We repair kitchen plumbing problems and install new sinks, faucets and appliance connections in home kitchens, and in commercial kitchens where reliability matters for every service.',
+    'The kitchen sink handles grease, food waste and heavy daily use, and the piping around it connects to the faucet, dishwasher, garbage disposal, ice maker and water filter. Small leaks under the sink often go unnoticed until the cabinet floor is ruined.',
+    'We repair kitchen piping problems and install new sinks, faucets and appliance connections in home kitchens, and in commercial kitchens where reliability matters for every service.',
   ],
   local: {
     heading: 'Kitchen upgrades in NYC homes',
     text: 'Upgrading a kitchen in an older NYC home often means connecting new fixtures to older drain lines, adding shut-off valves where there were none, and making room for a dishwasher or filtration system. In apartment buildings, kitchen drains usually tie into shared stacks, so clean, correctly sloped connections matter.',
   },
-  problemsHeading: 'Kitchen Plumbing We Handle',
+  problemsHeading: 'Kitchen Piping We Handle',
   problems: [
     {
       title: 'Clogged kitchen drains',
@@ -118,8 +118,8 @@ export const kitchenPlumbing: Service = {
     {
       question: 'Do you work on restaurant kitchens?',
       answer:
-        'Yes. Commercial kitchen plumbing is part of our commercial plumbing services.',
+        'Yes. Commercial kitchen piping is part of our commercial piping services.',
     },
   ],
-  related: ['garbage-disposal-services', 'drain-cleaning', 'commercial-plumbing'],
+  related: ['garbage-disposal-services', 'drain-cleaning', 'commercial-piping'],
 }

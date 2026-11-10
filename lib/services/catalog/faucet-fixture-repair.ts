@@ -19,7 +19,7 @@ export const faucetFixtureRepair: Service = {
       'Dripping faucets, leaking shower valves and loose fixtures are repaired or replaced with care for the finishes around them.',
   },
   overview: [
-    'Fixtures are the plumbing you use every day: faucets, shower valves, sinks, tubs and outdoor hose bibs. When a cartridge wears out, a seal fails or a connection loosens, the result can be a constant drip, a shower that won’t hold temperature or a leak inside the vanity.',
+    'Fixtures are the piping you use every day: faucets, shower valves, sinks, tubs and outdoor hose bibs. When a cartridge wears out, a seal fails or a connection loosens, the result can be a constant drip, a shower that won’t hold temperature or a leak inside the vanity.',
     'We repair fixtures when parts are available and the fixture is worth saving, and install new faucets and fixtures when replacement makes more sense, taking care with the countertops, tile and finishes around them.',
   ],
   local: {
@@ -121,5 +121,5 @@ export const faucetFixtureRepair: Service = {
         'A clogged aerator, a worn cartridge or a partly closed supply valve are common causes. If several fixtures are affected, the cause is more likely in the piping.',
     },
   ],
-  related: ['toilet-repair-installation', 'bathroom-plumbing', 'kitchen-plumbing'],
+  related: ['toilet-repair-installation', 'bathroom-piping', 'kitchen-piping'],
 }

@@ -55,7 +55,7 @@ export default async function OpenGraphImage() {
               maxWidth: 940,
             }}
           >
-            Professional Plumbing Services in New York City
+            Professional Piping Services in New York City
           </div>
           <div style={{ display: 'flex', alignItems: 'center', marginTop: 30 }}>
             <div
@@ -68,7 +68,7 @@ export default async function OpenGraphImage() {
                 fontWeight: 500,
               }}
             >
-              15+ Years of Plumbing Experience
+              15+ Years of Piping Experience
             </div>
             <div style={{ display: 'flex', marginLeft: 22, fontSize: 27, color: 'rgba(255,255,255,0.75)' }}>
               Residential &amp; Commercial

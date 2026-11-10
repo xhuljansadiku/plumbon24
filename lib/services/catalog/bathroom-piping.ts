@@ -1,32 +1,32 @@
 import type { Service } from '../types'
 
-export const bathroomPlumbing: Service = {
-  slug: 'bathroom-plumbing',
+export const bathroomPiping: Service = {
+  slug: 'bathroom-piping',
   published: true,
   category: 'projects',
-  title: 'Bathroom Plumbing',
+  title: 'Bathroom Piping',
   icon: 'bath',
   image: 'finishedMarbleBathroom',
-  summary: 'Plumbing for bathroom repairs, upgrades and remodels: showers, tubs, toilets and vanities.',
+  summary: 'Piping for bathroom repairs, upgrades and remodels: showers, tubs, toilets and vanities.',
   seo: {
-    title: 'Bathroom Plumbing in New York City | PLUMBON24 MECHANICAL INC',
+    title: 'Bathroom Piping in New York City | PLUMBON24 MECHANICAL INC',
     description:
-      'Bathroom plumbing for repairs, upgrades and remodels in NYC: showers, tubs, toilets, vanities and valves, from PLUMBON24 MECHANICAL INC.',
+      'Bathroom piping for repairs, upgrades and remodels in NYC: showers, tubs, toilets, vanities and valves, from PLUMBON24 MECHANICAL INC.',
   },
   hero: {
-    heading: 'Bathroom Plumbing in New York City',
+    heading: 'Bathroom Piping in New York City',
     intro:
-      'From a leaking shower valve to a complete bathroom remodel, we handle the plumbing behind your fixtures and finishes.',
+      'From a leaking shower valve to a complete bathroom remodel, we handle the piping behind your fixtures and finishes.',
   },
   overview: [
-    'A bathroom packs more plumbing into a small space than any other room: supply lines, drains, vents, shower valves, tub connections and the toilet flange, all hidden behind tile and finishes. Good bathroom plumbing is the part you never see, and it’s what keeps the room working for years.',
-    'We handle bathroom plumbing repairs and upgrades, and we work with homeowners and contractors on renovations: roughing in new layouts, installing valves and drains, and setting fixtures once the finishes are complete.',
+    'A bathroom packs more piping into a small space than any other room: supply lines, drains, vents, shower valves, tub connections and the toilet flange, all hidden behind tile and finishes. Good bathroom piping is the part you never see, and it’s what keeps the room working for years.',
+    'We handle bathroom piping repairs and upgrades, and we work with homeowners and contractors on renovations: roughing in new layouts, installing valves and drains, and setting fixtures once the finishes are complete.',
   ],
   local: {
     heading: 'Renovating bathrooms in older buildings',
-    text: 'Bathroom renovations in NYC brownstones and pre-war apartments often uncover old galvanized supply lines, cast iron drains and tight spaces between floor joists. In co-ops and condos, the building may also have alteration requirements and set working hours. Planning the plumbing early avoids surprises once the walls are open.',
+    text: 'Bathroom renovations in NYC brownstones and pre-war apartments often uncover old galvanized supply lines, cast iron drains and tight spaces between floor joists. In co-ops and condos, the building may also have alteration requirements and set working hours. Planning the piping early avoids surprises once the walls are open.',
   },
-  problemsHeading: 'Bathroom Plumbing We Handle',
+  problemsHeading: 'Bathroom Piping We Handle',
   problems: [
     {
       title: 'Shower and tub valves',
@@ -49,7 +49,7 @@ export const bathroomPlumbing: Service = {
       text: 'Supply lines, valves and drain connections under the sink can fail.',
     },
     {
-      title: 'Remodel plumbing',
+      title: 'Remodel piping',
       text: 'New layouts need properly planned supply, drain and vent piping.',
     },
   ],
@@ -67,7 +67,7 @@ export const bathroomPlumbing: Service = {
       text: 'Repair or remodel, we start with what you need and the existing conditions.',
     },
     {
-      title: 'Plan the plumbing',
+      title: 'Plan the piping',
       text: 'For renovations, we plan supply, drain and valve locations around your layout and fixtures.',
     },
     {
@@ -89,7 +89,7 @@ export const bathroomPlumbing: Service = {
       text: 'Well-installed valves provide steady temperature and pressure.',
     },
     {
-      title: 'Renovation-ready plumbing',
+      title: 'Renovation-ready piping',
       text: 'Piping planned around your layout and chosen fixtures.',
     },
     {
@@ -98,12 +98,12 @@ export const bathroomPlumbing: Service = {
     },
   ],
   whyUs:
-    'Bathroom plumbing sits behind expensive finishes, so it has to be right. We take care with every connection before the walls are closed.',
+    'Bathroom piping sits behind expensive finishes, so it has to be right. We take care with every connection before the walls are closed.',
   faqs: [
     {
       question: 'Can you work with my contractor on a bathroom remodel?',
       answer:
-        'We can coordinate the plumbing portion of a renovation with your contractor or designer. Let us know who’s involved when you request service.',
+        'We can coordinate the piping portion of a renovation with your contractor or designer. Let us know who’s involved when you request service.',
     },
     {
       question: 'Can I move my toilet or shower to a new spot?',
@@ -118,7 +118,7 @@ export const bathroomPlumbing: Service = {
     {
       question: 'Do I need a permit for a bathroom renovation?',
       answer:
-        'It depends on the scope. Moving or adding plumbing often requires permits in New York City, and co-op and condo buildings may have their own approval process.',
+        'It depends on the scope. Moving or adding piping often requires permits in New York City, and co-op and condo buildings may have their own approval process.',
     },
   ],
   related: ['toilet-repair-installation', 'faucet-fixture-repair', 'repiping'],

@@ -16,9 +16,9 @@ import { createMetadata, faqSchema } from '@/lib/seo'
 import { addressLine, mapsLinks, site } from '@/lib/site'
 
 export const metadata = createMetadata({
-  title: 'Contact a NYC Plumber | PLUMBON24 MECHANICAL INC',
+  title: 'Contact a NYC Piping & Heating Contractor | PLUMBON24',
   description:
-    'Request plumbing service anywhere in New York City from PLUMBON24 MECHANICAL INC. Call (917) 702-0072 for 24/7 emergency service and free estimates. Send photos with your request.',
+    'Request piping or heating service anywhere in NYC. Call (917) 702-0072 for 24/7 emergency service and free estimates, or send photos with your request.',
   path: '/contact',
 })
 
@@ -33,10 +33,10 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact"
-        title="Contact a NYC Plumber"
+        title="Contact a NYC Piping & Heating Contractor"
         intro={
           <p>
-            Tell us about your plumbing problem and we’ll get back to you as soon as possible. Photos and a short description help us
+            Tell us about your piping problem and we’ll get back to you as soon as possible. Photos and a short description help us
             understand what’s going on.
           </p>
         }
@@ -95,7 +95,7 @@ export default function ContactPage() {
                 <div className="text-[0.9375rem]">
                   <p className="font-semibold text-ink">Dealing with an active leak?</p>
                   <p className="mt-1 text-muted">
-                    Close your main water shut-off valve, then choose “Emergency Plumbing” in the form. If you smell gas, leave the
+                    Close your main water shut-off valve, then choose “Emergency Piping” in the form. If you smell gas, leave the
                     building and call 911 or your gas utility from outside.
                   </p>
                 </div>

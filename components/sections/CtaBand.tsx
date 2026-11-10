@@ -4,7 +4,7 @@ import { ctaLabels, site } from '@/lib/site'
 
 /** Closing call to action — black, brand blue and white. */
 export function CtaBand({
-  title = 'Need Plumbing Service? Let’s Get It Fixed.',
+  title = 'Need Piping Service? Let’s Get It Fixed.',
   text = 'Tell us what you’re dealing with and we’ll help you determine the next step.',
   primaryHref = '/contact',
   secondary = { label: 'Contact Us', href: '/contact' },

@@ -117,5 +117,5 @@ export const drainCleaning: Service = {
         'Keep grease, oils and fats out of the sink, scrape plates into the trash, and run plenty of cold water when using a garbage disposal.',
     },
   ],
-  related: ['sewer-line-services', 'garbage-disposal-services', 'kitchen-plumbing'],
+  related: ['sewer-line-services', 'garbage-disposal-services', 'kitchen-piping'],
 }

@@ -8,7 +8,7 @@ import { REQUEST_ANCHOR } from '@/lib/navigation'
 import { credentialLabel, ctaLabels, site } from '@/lib/site'
 
 export function HomeHero() {
-  const photo = images.boilerRoomInstall
+  const photo = images.commercialRoughIn
 
   return (
     <section aria-labelledby="hero-title" className="relative isolate overflow-hidden bg-white">
@@ -23,11 +23,11 @@ export function HomeHero() {
         <div className="lg:col-span-7">
           <Eyebrow>{site.name}</Eyebrow>
           <h1 id="hero-title" className="text-h1 mt-5 text-ink">
-            Reliable Plumbing Services in <span className="text-brand-600">New York City</span>
+            Reliable Piping Services in <span className="text-brand-600">New York City</span>
           </h1>
           <p className="text-lead mt-6 max-w-xl text-muted">
             Repairs, installations and emergency service for homes and businesses in all five boroughs, from a leaking
-            faucet to boiler rooms and fire sprinklers.
+            faucet to steam heating, boiler rooms and full repiping.
           </p>
 
           <div data-hero-cta className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -104,7 +104,7 @@ export function HomeHero() {
               </span>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.12em] text-subtle">From our own job site</p>
-                <p className="mt-1 font-semibold text-ink">Boiler room with a radiant heating manifold</p>
+                <p className="mt-1 font-semibold text-ink">Drain and vent piping for a commercial build-out</p>
               </div>
             </div>
           </div>

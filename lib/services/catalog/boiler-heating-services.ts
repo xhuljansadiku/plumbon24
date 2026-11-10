@@ -8,7 +8,7 @@ export const boilerHeatingServices: Service = {
   shortTitle: 'Boilers & Heating',
   icon: 'boiler',
   image: 'wallHungBoilers',
-  summary: 'Boiler repair, replacement and installation, plus the piping for radiators, baseboard and radiant heat.',
+  summary: 'Boiler repair and installation, steam pipe repair, and the piping for radiators, baseboard and radiant heat.',
   seo: {
     title: 'Boiler Repair & Installation in New York City | PLUMBON24',
     description:
@@ -46,8 +46,8 @@ export const boilerHeatingServices: Service = {
       text: 'Usually a leak in the piping, a failing relief valve or a problem with the expansion tank.',
     },
     {
-      title: 'Banging pipes',
-      text: 'Common in steam systems with water trapped in the pipes, and in hot water systems with air.',
+      title: 'Steam pipe leaks and banging',
+      text: 'Leaking steam pipes and fittings, and banging from water trapped in the pipes. We repair and replace steam piping.',
     },
     {
       title: 'Old, inefficient boilers',
@@ -122,5 +122,5 @@ export const boilerHeatingServices: Service = {
         'In NYC, boilers in many multifamily and commercial buildings must be inspected every year, with the results filed with the Department of Buildings. Even when it isn’t required, a yearly check before heat season helps prevent breakdowns.',
     },
   ],
-  related: ['water-heater-services', 'gas-line-plumbing', 'plumbing-maintenance'],
+  related: ['water-heater-services', 'repiping', 'piping-maintenance'],
 }

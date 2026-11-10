@@ -46,7 +46,7 @@ const groups: ServiceAreaGroup[] = [
     id: 'manhattan',
     title: 'Manhattan',
     description:
-      'Pre-war and high-rise apartment buildings, townhouses, offices, restaurants and retail spaces, where shared risers, building rules and coordination with management matter as much as the plumbing itself.',
+      'Pre-war and high-rise apartment buildings, townhouses, offices, restaurants and retail spaces, where shared risers, building rules and coordination with management matter as much as the piping itself.',
     neighborhoods: [
       { name: 'Lower Manhattan', published: true },
       { name: 'Midtown', published: true },
@@ -60,7 +60,7 @@ const groups: ServiceAreaGroup[] = [
     id: 'queens',
     title: 'Queens',
     description:
-      'Detached and attached houses, two-family homes, garden apartments and busy commercial corridors, with basement plumbing, water heaters and sewer lines that see heavy use.',
+      'Detached and attached houses, two-family homes, garden apartments and busy commercial corridors, with basement piping, water heaters and sewer lines that see heavy use.',
     neighborhoods: [
       { name: 'Astoria', published: true },
       { name: 'Long Island City', published: true },

@@ -1,30 +1,30 @@
 import type { Service } from '../types'
 
-export const plumbingMaintenance: Service = {
-  slug: 'plumbing-maintenance',
+export const pipingMaintenance: Service = {
+  slug: 'piping-maintenance',
   published: true,
   category: 'projects',
-  title: 'Plumbing Maintenance',
+  title: 'Piping Maintenance',
   icon: 'gauge',
   image: 'manifoldGauge',
   summary: 'Inspections and preventive maintenance that catch small problems before they become emergencies.',
   seo: {
-    title: 'Plumbing Maintenance in New York City | PLUMBON24 MECHANICAL INC',
+    title: 'Piping Maintenance in New York City | PLUMBON24 MECHANICAL INC',
     description:
-      'Preventive plumbing maintenance and inspections for NYC homes, buildings and businesses. Catch small problems early with PLUMBON24 MECHANICAL INC.',
+      'Preventive piping maintenance and inspections for NYC homes, buildings and businesses. Catch small problems early with PLUMBON24 MECHANICAL INC.',
   },
   hero: {
-    heading: 'Plumbing Maintenance in New York City',
+    heading: 'Piping Maintenance in New York City',
     intro:
       'Preventive maintenance finds worn valves, slow leaks and failing components before they turn into emergencies.',
   },
   overview: [
-    'Most plumbing emergencies start as small problems nobody noticed: a seeping valve, a corroded fitting, a water heater full of sediment or a drain that has been slowing down for months. Regular maintenance is the most practical way to catch them early.',
-    'We inspect and maintain plumbing for homeowners, building owners and businesses, checking valves, water heaters, drains, fixtures and visible piping, and explaining anything that needs attention.',
+    'Most piping emergencies start as small problems nobody noticed: a seeping valve, a corroded fitting, a water heater full of sediment or a drain that has been slowing down for months. Regular maintenance is the most practical way to catch them early.',
+    'We inspect and maintain piping for homeowners, building owners and businesses, checking valves, water heaters, drains, fixtures and visible piping, and explaining anything that needs attention.',
   ],
   local: {
     heading: 'Maintenance for older buildings',
-    text: 'In New York City’s older housing stock, shut-off valves that haven’t been turned in years, aging water heaters and older drain lines are common. For multi-family and commercial buildings, planned maintenance also helps avoid tenant emergencies and keeps equipment such as sump pumps and backflow devices ready.',
+    text: 'In New York City’s older housing stock, shut-off valves that haven’t been turned in years, aging water heaters and older drain lines are common. For multi-family and commercial buildings, planned maintenance also helps avoid tenant emergencies and keeps equipment such as water heaters and sump pumps ready.',
   },
   problemsHeading: 'What Maintenance Covers',
   problems: [
@@ -49,13 +49,13 @@ export const plumbingMaintenance: Service = {
       text: 'Finding drips, running toilets and worn parts.',
     },
     {
-      title: 'Pumps and devices',
-      text: 'Testing sump pumps and checking backflow devices.',
+      title: 'Sump pumps',
+      text: 'Testing sump pumps so they’re ready before heavy rain.',
     },
   ],
   signsHeading: 'Good Reasons to Schedule Maintenance',
   signs: [
-    'Your plumbing has never been inspected',
+    'Your piping has never been inspected',
     'Your water heater is several years old',
     'You manage a multi-family or commercial building',
     'You’ve had recurring drain problems',
@@ -69,7 +69,7 @@ export const plumbingMaintenance: Service = {
     },
     {
       title: 'Inspect',
-      text: 'We check the key components of your plumbing system.',
+      text: 'We check the key components of your piping system.',
     },
     {
       title: 'Report',
@@ -95,14 +95,14 @@ export const plumbingMaintenance: Service = {
     },
     {
       title: 'Know your system',
-      text: 'Understand the condition of your plumbing and plan ahead.',
+      text: 'Understand the condition of your piping and plan ahead.',
     },
   ],
   whyUs:
     'Maintenance is about noticing details. We know where problems tend to start and how to catch them early.',
   faqs: [
     {
-      question: 'How often should plumbing be inspected?',
+      question: 'How often should piping be inspected?',
       answer:
         'Many homeowners schedule a general check about once a year. Larger buildings and commercial properties often benefit from more frequent maintenance.',
     },
@@ -112,14 +112,14 @@ export const plumbingMaintenance: Service = {
         'Periodically flushing a tank water heater removes sediment, which can improve efficiency and reduce noise. Manufacturer recommendations vary.',
     },
     {
-      question: 'What can I do to prevent plumbing problems?',
+      question: 'What can I do to prevent piping problems?',
       answer:
         'Know where your main shut-off valve is, keep grease and wipes out of drains, watch for leaks and stains, and protect pipes from freezing in winter.',
     },
     {
       question: 'Do you offer maintenance for buildings?',
       answer:
-        'Yes. We work with building owners and property managers on planned plumbing maintenance.',
+        'Yes. We work with building owners and property managers on planned piping maintenance.',
     },
   ],
   related: ['water-heater-services', 'drain-cleaning', 'sump-pump-services'],

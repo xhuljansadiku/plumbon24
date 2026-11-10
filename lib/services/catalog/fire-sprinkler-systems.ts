@@ -2,7 +2,7 @@ import type { Service } from '../types'
 
 export const fireSprinklerSystems: Service = {
   slug: 'fire-sprinkler-systems',
-  published: true,
+  published: false,
   category: 'lines',
   title: 'Fire Sprinkler Systems',
   shortTitle: 'Fire Sprinklers',
@@ -100,7 +100,7 @@ export const fireSprinklerSystems: Service = {
     },
   ],
   whyUs:
-    'Sprinkler work sits where plumbing, building rules and life safety meet. We take it seriously: careful piping, clear communication and coordination with everyone involved in your building.',
+    'Sprinkler work sits where piping, building rules and life safety meet. We take it seriously: careful piping, clear communication and coordination with everyone involved in your building.',
   faqs: [
     {
       question: 'Do sprinkler changes need a permit in NYC?',
@@ -122,5 +122,5 @@ export const fireSprinklerSystems: Service = {
       answer: 'Yes. We work on sprinkler systems in apartment buildings, mixed-use buildings, storefronts, restaurants and offices.',
     },
   ],
-  related: ['backflow-prevention', 'commercial-plumbing', 'water-line-services'],
+  related: ['backflow-prevention', 'commercial-piping', 'water-line-services'],
 }

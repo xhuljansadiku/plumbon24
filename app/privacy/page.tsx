@@ -36,7 +36,7 @@ export default function PrivacyPage() {
       <h2>How we use information</h2>
       <ul>
         <li>To respond to your service request and communicate with you about it.</li>
-        <li>To provide plumbing services you request from us.</li>
+        <li>To provide piping services you request from us.</li>
         <li>To keep records of our communications with customers.</li>
         <li>To protect this website against spam, fraud and abuse.</li>
         <li>To comply with legal obligations.</li>

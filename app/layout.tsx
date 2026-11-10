@@ -21,20 +21,20 @@ export const ensureStatic = 'navigation'
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: {
-    default: 'NYC Plumber for All 5 Boroughs | PLUMBON24 MECHANICAL INC',
+    default: 'NYC Piping & Heating for All 5 Boroughs | PLUMBON24',
     template: '%s | PLUMBON24 MECHANICAL INC',
   },
   description:
-    'Professional plumbing services for homes and businesses in Manhattan, Brooklyn, Queens, the Bronx and Staten Island. 24/7 emergency service and free estimates from PLUMBON24 MECHANICAL INC.',
+    'Professional piping services for homes and businesses in Manhattan, Brooklyn, Queens, the Bronx and Staten Island. 24/7 emergency service and free estimates from PLUMBON24 MECHANICAL INC.',
   applicationName: site.name,
-  category: 'Plumbing',
+  category: 'Piping',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     siteName: site.name,
-    title: 'PLUMBON24 MECHANICAL INC | Professional Plumbing Services in New York City',
+    title: 'PLUMBON24 MECHANICAL INC | Professional Piping Services in New York City',
     description:
-      'Professional plumbing services for homes and businesses across all five NYC boroughs. 24/7 emergency service and free estimates. Call (917) 702-0072.',
+      'Professional piping services for homes and businesses across all five NYC boroughs. 24/7 emergency service and free estimates. Call (917) 702-0072.',
   },
   twitter: { card: 'summary_large_image' },
   formatDetection: { telephone: false, address: false, email: false },

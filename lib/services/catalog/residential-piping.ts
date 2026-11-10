@@ -1,32 +1,32 @@
 import type { Service } from '../types'
 
-export const residentialPlumbing: Service = {
-  slug: 'residential-plumbing',
+export const residentialPiping: Service = {
+  slug: 'residential-piping',
   published: true,
   category: 'property',
-  title: 'Residential Plumbing',
+  title: 'Residential Piping',
   icon: 'home',
   image: 'brooklynBrownstones',
-  summary: 'Plumbing for houses, brownstones, apartments and condos: repairs, installations and upgrades.',
+  summary: 'Piping for houses, brownstones, apartments and condos: repairs, installations and upgrades.',
   seo: {
-    title: 'Residential Plumber in New York City | PLUMBON24 MECHANICAL INC',
+    title: 'Residential Piping Contractor in New York City | PLUMBON24',
     description:
-      'Residential plumbing for NYC houses, apartments, condos and brownstones: leaks, drains, water heaters, fixtures and pipes. 15+ years of experience.',
+      'Residential piping for NYC houses, apartments, condos and brownstones: leaks, drains, water heaters, fixtures and pipes. 15+ years of experience.',
   },
   hero: {
-    heading: 'Residential Plumbing in New York City',
+    heading: 'Residential Piping in New York City',
     intro:
-      'Houses, brownstones, apartments and condos: we handle residential plumbing repairs, installations and upgrades with respect for your home.',
+      'Houses, brownstones, apartments and condos: we handle residential piping repairs, installations and upgrades with respect for your home.',
   },
   overview: [
-    'Residential plumbing covers everything that keeps a home running: water lines, drains, water heaters, fixtures, toilets and the main lines in and out of the building. When something goes wrong, you want a plumber who explains the problem clearly and treats your home with care.',
+    'Residential piping covers everything that keeps a home running: water lines, drains, water heaters, fixtures, toilets and the main lines in and out of the building. When something goes wrong, you want a technician who explains the problem clearly and treats your home with care.',
     'We work in single-family and multi-family houses, apartments, condos and co-ops across all five boroughs, on everything from a dripping faucet to a water heater replacement or a full repipe.',
   ],
   local: {
     heading: 'Every NYC home is different',
-    text: 'A 19th-century brownstone, a 1920s two-family house and a new condo all have very different plumbing. Older homes may have galvanized and cast iron piping with decades of renovations layered on top; newer buildings have their own systems and building rules. Experience with that variety is what makes an accurate diagnosis possible.',
+    text: 'A 19th-century brownstone, a 1920s two-family house and a new condo all have very different piping. Older homes may have galvanized and cast iron piping with decades of renovations layered on top; newer buildings have their own systems and building rules. Experience with that variety is what makes an accurate diagnosis possible.',
   },
-  problemsHeading: 'Home Plumbing We Handle',
+  problemsHeading: 'Home Piping We Handle',
   problems: [
     {
       title: 'Leaks',
@@ -53,7 +53,7 @@ export const residentialPlumbing: Service = {
       text: 'Pressure problems at one fixture or across the whole home.',
     },
   ],
-  signsHeading: 'When to Call a Plumber',
+  signsHeading: 'When to Call Us',
   signs: [
     'A leak you can’t stop at the fixture',
     'Slow drains or repeated clogs',
@@ -107,14 +107,14 @@ export const residentialPlumbing: Service = {
         'Yes. Some buildings have rules about working hours and access, so let us know about your building’s requirements when you request service.',
     },
     {
-      question: 'What residential plumbing services do you offer?',
+      question: 'What residential piping services do you offer?',
       answer:
         'Leak detection and repair, drain cleaning, water heater services, fixture and toilet repair, pipe repair and replacement, repiping, and more. See the full list on our services page.',
     },
     {
       question: 'Can you help with a renovation?',
       answer:
-        'Yes. We handle the plumbing for kitchen and bathroom upgrades and can work alongside your contractor.',
+        'Yes. We handle the piping for kitchen and bathroom upgrades and can work alongside your contractor.',
     },
     {
       question: 'Do you serve my neighborhood?',
@@ -122,5 +122,5 @@ export const residentialPlumbing: Service = {
         'We’re based in Sunset Park and serve customers throughout NYC. Check our service areas page or contact us to confirm.',
     },
   ],
-  related: ['water-heater-services', 'leak-detection-repair', 'bathroom-plumbing'],
+  related: ['water-heater-services', 'leak-detection-repair', 'bathroom-piping'],
 }

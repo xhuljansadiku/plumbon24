@@ -8,11 +8,11 @@ export const leakDetectionRepair: Service = {
   shortTitle: 'Leak Repair',
   icon: 'leak-search',
   image: 'drippingTap',
-  summary: 'Identify and repair plumbing leaks before they become larger problems.',
+  summary: 'Identify and repair piping leaks before they become larger problems.',
   seo: {
     title: 'Leak Detection & Repair in New York City | PLUMBON24',
     description:
-      'Water stains, damp walls or a rising water bill? PLUMBON24 MECHANICAL INC traces and repairs plumbing leaks in NYC homes and commercial buildings.',
+      'Water stains, damp walls or a rising water bill? PLUMBON24 MECHANICAL INC traces and repairs piping leaks in NYC homes and commercial buildings.',
   },
   hero: {
     heading: 'Leak Detection & Repair in New York City',
@@ -118,5 +118,5 @@ export const leakDetectionRepair: Service = {
         'If the leak is active and you can’t stop it at a fixture valve, close the main water shut-off valve to limit damage, then request service.',
     },
   ],
-  related: ['pipe-repair-replacement', 'emergency-plumbing', 'water-line-services'],
+  related: ['pipe-repair-replacement', 'emergency-piping', 'water-line-services'],
 }

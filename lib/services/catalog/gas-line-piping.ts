@@ -1,20 +1,20 @@
 import type { Service } from '../types'
 
-export const gasLinePlumbing: Service = {
-  slug: 'gas-line-plumbing',
-  published: true,
+export const gasLinePiping: Service = {
+  slug: 'gas-line-piping',
+  published: false,
   category: 'lines',
-  title: 'Gas Line Plumbing',
+  title: 'Gas Line Piping',
   icon: 'flame',
   image: 'gasPipeFitting',
   summary: 'Gas piping for appliances, water heaters and equipment, handled with safety as the priority.',
   seo: {
-    title: 'Gas Line Plumbing in New York City | PLUMBON24 MECHANICAL INC',
+    title: 'Gas Line Piping in New York City | PLUMBON24 MECHANICAL INC',
     description:
-      'Gas piping for ranges, water heaters and commercial equipment in NYC. PLUMBON24 MECHANICAL INC handles gas line plumbing with safety first.',
+      'Gas piping for ranges, water heaters and commercial equipment in NYC. PLUMBON24 MECHANICAL INC handles gas line piping with safety first.',
   },
   hero: {
-    heading: 'Gas Line Plumbing in New York City',
+    heading: 'Gas Line Piping in New York City',
     intro:
       'Gas piping for ranges, water heaters, dryers and commercial equipment calls for careful work and strict attention to safety. If you smell gas right now, leave the building and call 911 or your gas utility from outside.',
   },
@@ -122,5 +122,5 @@ export const gasLinePlumbing: Service = {
         'Local Law 152 requires many New York City buildings to have their gas piping periodically inspected. One- and two-family homes are generally exempt. Building owners should confirm the requirements and deadlines that apply to their property.',
     },
   ],
-  related: ['water-heater-services', 'kitchen-plumbing', 'commercial-plumbing'],
+  related: ['water-heater-services', 'kitchen-piping', 'commercial-piping'],
 }

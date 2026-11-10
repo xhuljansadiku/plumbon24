@@ -65,7 +65,7 @@ export function MobileMenuContent() {
 
       <div className="mt-8 rounded-xl bg-mist p-5 text-[0.9375rem]">
         <p className="font-display font-extrabold text-ink">{site.name}</p>
-        <p className="mt-1 text-muted">{site.experienceYears} Years of Plumbing Experience</p>
+        <p className="mt-1 text-muted">{site.experienceYears} Years of Piping Experience</p>
         <p className="mt-4 flex items-start gap-2.5 text-ink">
           <Icon name="map-pin" className="mt-0.5 size-5 text-brand-600" />
           {addressLine}

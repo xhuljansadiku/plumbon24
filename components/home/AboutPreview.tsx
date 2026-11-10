@@ -32,7 +32,7 @@ export function AboutPreview() {
           </div>
           <div className="absolute -bottom-6 right-4 rounded-xl bg-brand-600 px-6 py-5 text-white shadow-lift sm:right-6 lg:-right-6">
             <p className="font-display text-5xl font-extrabold leading-none tracking-[-0.04em]">15+</p>
-            <p className="mt-2 text-sm font-semibold">Years of plumbing experience</p>
+            <p className="mt-2 text-sm font-semibold">Years of piping experience</p>
           </div>
         </div>
         <div className="lg:col-span-6">
@@ -40,7 +40,7 @@ export function AboutPreview() {
             tone="dark"
             eyebrow="About PLUMBON24"
             title="Built on Experience. Focused on Quality."
-            lead={`With 15+ years of plumbing experience, ${site.name} brings practical knowledge and professional service to residential and commercial plumbing projects across New York City.`}
+            lead={`With 15+ years of piping experience, ${site.name} brings practical knowledge and professional service to residential and commercial piping projects across New York City.`}
             id="about-title"
           />
           <ul className="mt-9 grid gap-4">

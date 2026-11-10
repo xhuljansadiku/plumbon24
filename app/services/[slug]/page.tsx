@@ -40,7 +40,7 @@ export default async function ServicePage({ params }: PageProps<'/services/[slug
   return (
     <>
       <PageHero
-        eyebrow={category?.title ?? 'Plumbing services'}
+        eyebrow={category?.title ?? 'Piping services'}
         title={service.hero.heading}
         intro={<p>{service.hero.intro}</p>}
         crumbs={[

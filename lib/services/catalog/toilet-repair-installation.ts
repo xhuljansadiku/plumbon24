@@ -121,5 +121,5 @@ export const toiletRepairInstallation: Service = {
         'Share the make and model when you request service and we’ll confirm whether it fits your bathroom’s rough-in measurement and connections.',
     },
   ],
-  related: ['drain-cleaning', 'bathroom-plumbing', 'faucet-fixture-repair'],
+  related: ['drain-cleaning', 'bathroom-piping', 'faucet-fixture-repair'],
 }

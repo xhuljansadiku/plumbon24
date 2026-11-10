@@ -1,20 +1,20 @@
 import { backflowPrevention } from './catalog/backflow-prevention'
 import { boilerHeatingServices } from './catalog/boiler-heating-services'
-import { bathroomPlumbing } from './catalog/bathroom-plumbing'
-import { commercialPlumbing } from './catalog/commercial-plumbing'
+import { bathroomPiping } from './catalog/bathroom-piping'
+import { commercialPiping } from './catalog/commercial-piping'
 import { drainCleaning } from './catalog/drain-cleaning'
-import { emergencyPlumbing } from './catalog/emergency-plumbing'
+import { emergencyPiping } from './catalog/emergency-piping'
 import { faucetFixtureRepair } from './catalog/faucet-fixture-repair'
 import { fireSprinklerSystems } from './catalog/fire-sprinkler-systems'
 import { garbageDisposalServices } from './catalog/garbage-disposal-services'
-import { gasLinePlumbing } from './catalog/gas-line-plumbing'
-import { kitchenPlumbing } from './catalog/kitchen-plumbing'
+import { gasLinePiping } from './catalog/gas-line-piping'
+import { kitchenPiping } from './catalog/kitchen-piping'
 import { leakDetectionRepair } from './catalog/leak-detection-repair'
 import { pipeRepairReplacement } from './catalog/pipe-repair-replacement'
-import { plumbingInstallation } from './catalog/plumbing-installation'
-import { plumbingMaintenance } from './catalog/plumbing-maintenance'
+import { pipingInstallation } from './catalog/piping-installation'
+import { pipingMaintenance } from './catalog/piping-maintenance'
 import { repiping } from './catalog/repiping'
-import { residentialPlumbing } from './catalog/residential-plumbing'
+import { residentialPiping } from './catalog/residential-piping'
 import { sewerLineServices } from './catalog/sewer-line-services'
 import { sumpPumpServices } from './catalog/sump-pump-services'
 import { toiletRepairInstallation } from './catalog/toilet-repair-installation'
@@ -26,55 +26,55 @@ export type { Faq, Service, ServiceCategoryId } from './types'
 
 /** Every service, in display order. Add new services here after creating their file in ./catalog. */
 const catalog: Service[] = [
-  emergencyPlumbing,
+  emergencyPiping,
   drainCleaning,
   leakDetectionRepair,
   pipeRepairReplacement,
   sewerLineServices,
   waterLineServices,
-  gasLinePlumbing,
+  gasLinePiping,
   backflowPrevention,
   fireSprinklerSystems,
-  repiping,
   waterHeaterServices,
   boilerHeatingServices,
   sumpPumpServices,
   faucetFixtureRepair,
   toiletRepairInstallation,
   garbageDisposalServices,
-  bathroomPlumbing,
-  kitchenPlumbing,
-  plumbingInstallation,
-  plumbingMaintenance,
-  residentialPlumbing,
-  commercialPlumbing,
+  bathroomPiping,
+  kitchenPiping,
+  pipingInstallation,
+  repiping,
+  pipingMaintenance,
+  residentialPiping,
+  commercialPiping,
 ]
 
 export const serviceCategories: { id: ServiceCategoryId; title: string; description: string }[] = [
   {
     id: 'repairs',
     title: 'Repairs & Urgent Problems',
-    description: 'Leaks, clogs, broken pipes and the plumbing problems that need attention now.',
+    description: 'Leaks, clogs, broken pipes and the piping problems that need attention now.',
   },
   {
     id: 'lines',
-    title: 'Piping, Gas & Fire Sprinklers',
-    description: 'Repiping, gas piping, backflow protection for the water supply and fire sprinkler systems.',
+    title: 'Lines, Gas & Fire Sprinklers',
+    description: 'Water and sewer lines, gas piping, backflow protection and fire sprinkler systems.',
   },
   {
     id: 'equipment',
     title: 'Heating, Hot Water & Fixtures',
-    description: 'Boilers, water heaters, pumps and the fixtures you rely on every day, repaired, replaced or installed.',
+    description: 'Boilers, steam heat, water heaters, pumps and the fixtures you rely on every day, repaired, replaced or installed.',
   },
   {
     id: 'projects',
     title: 'Kitchens, Bathrooms & Projects',
-    description: 'Plumbing for renovations, new installations and planned maintenance.',
+    description: 'Piping for renovations, new installations, repiping and planned maintenance.',
   },
   {
     id: 'property',
     title: 'Residential & Commercial',
-    description: 'Plumbing services organized around the property you own, manage or run.',
+    description: 'Piping services organized around the property you own, manage or run.',
   },
 ]
 
@@ -111,7 +111,7 @@ export function serviceLabel(service: Service): string {
 
 /** Homepage service cards, in order (01–06). */
 export const featuredServices: Service[] = [
-  'emergency-plumbing',
+  'emergency-piping',
   'drain-cleaning',
   'water-heater-services',
   'boiler-heating-services',
@@ -123,14 +123,14 @@ export const featuredServices: Service[] = [
 
 /** Footer service links. */
 export const footerServices: Service[] = [
-  'emergency-plumbing',
+  'emergency-piping',
   'drain-cleaning',
   'boiler-heating-services',
   'water-heater-services',
   'leak-detection-repair',
   'pipe-repair-replacement',
-  'commercial-plumbing',
-  'residential-plumbing',
+  'commercial-piping',
+  'residential-piping',
 ]
   .map(getService)
   .filter(isService)

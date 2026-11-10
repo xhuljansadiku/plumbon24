@@ -14,9 +14,9 @@ import { serviceAreaGroups } from '@/lib/service-areas'
 import { addressLine, ctaLabels, mapsLinks, site } from '@/lib/site'
 
 export const metadata = createMetadata({
-  title: 'NYC Plumbing Service Areas in All 5 Boroughs | PLUMBON24',
+  title: 'NYC Piping Service Areas in All 5 Boroughs | PLUMBON24',
   description:
-    'Based in Sunset Park, PLUMBON24 MECHANICAL INC provides plumbing services across all five NYC boroughs: Manhattan, Brooklyn, Queens, the Bronx and Staten Island.',
+    'Based in Sunset Park, PLUMBON24 MECHANICAL INC provides piping services across all five NYC boroughs: Manhattan, Brooklyn, Queens, the Bronx and Staten Island.',
   path: '/service-areas',
 })
 
@@ -34,12 +34,12 @@ const buildingTypes: { icon: IconName; title: string; text: string }[] = [
   {
     icon: 'water-heater',
     title: 'One- and two-family homes',
-    text: 'Common across Brooklyn, Queens and Staten Island. Typical needs include water heater replacement, drain problems, fixture upgrades and basement plumbing.',
+    text: 'Common across Brooklyn, Queens and Staten Island. Typical needs include water heater replacement, drain problems, fixture upgrades and basement piping.',
   },
   {
     icon: 'kitchen',
     title: 'Mixed-use & commercial buildings',
-    text: 'Storefronts, restaurants and offices below apartments need plumbing that works for businesses and residents alike, including backflow protection where required.',
+    text: 'Storefronts, restaurants and offices below apartments need piping that works for businesses and residents alike.',
   },
 ]
 
@@ -51,7 +51,7 @@ export default function ServiceAreasPage() {
         title="Serving All 5 NYC Boroughs"
         intro={
           <p>
-            {site.name} is based in Brooklyn and provides professional plumbing services across Manhattan, Brooklyn, Queens, the
+            {site.name} is based in Brooklyn and provides professional piping services across Manhattan, Brooklyn, Queens, the
             Bronx and Staten Island, with 24/7 emergency service.
           </p>
         }
@@ -122,10 +122,10 @@ export default function ServiceAreasPage() {
             <div className="lg:col-span-4">
               <Eyebrow>Local knowledge</Eyebrow>
               <h2 id="buildings-title" className="text-h2 mt-4 text-ink">
-                Plumbing for Every Kind of NYC Building
+                Piping for Every Kind of NYC Building
               </h2>
               <p className="text-lead mt-5 text-muted">
-                New York City’s housing stock spans more than a century. Each type of building comes with its own plumbing considerations.
+                New York City’s housing stock spans more than a century. Each type of building comes with its own piping considerations.
               </p>
             </div>
             <ul className="grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:col-span-8">

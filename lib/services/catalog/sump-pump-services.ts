@@ -121,5 +121,5 @@ export const sumpPumpServices: Service = {
         'Discharge should be directed safely away from the building, and rules about where it can go vary. We’ll discuss the right approach for your property.',
     },
   ],
-  related: ['sewer-line-services', 'leak-detection-repair', 'plumbing-maintenance'],
+  related: ['sewer-line-services', 'leak-detection-repair', 'piping-maintenance'],
 }

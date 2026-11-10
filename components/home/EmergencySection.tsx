@@ -18,7 +18,7 @@ const whileYouWait = [
 
 /** Dark emergency band. Mentions 24/7 only when `emergency24h` is confirmed. Hidden when emergency service is switched off. */
 export function EmergencySection() {
-  const emergency = getService('emergency-plumbing')
+  const emergency = getService('emergency-piping')
   if (!site.features.emergencyService || !emergency) return null
 
   const photo = images.faucetDark
@@ -29,15 +29,15 @@ export function EmergencySection() {
       <div aria-hidden="true" className="absolute -left-56 top-1/2 -z-10 size-[40rem] -translate-y-1/2 rounded-full bg-brand-600/20 blur-3xl" />
       <Container className="grid items-center gap-14 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-7">
-          <Eyebrow tone="dark">{site.features.emergency24h ? '24/7 emergency service' : 'Urgent plumbing problems'}</Eyebrow>
+          <Eyebrow tone="dark">{site.features.emergency24h ? '24/7 emergency service' : 'Urgent piping problems'}</Eyebrow>
           <h2 id="emergency-title" className="text-h2 mt-4 text-white">
-            {site.features.emergency24h ? 'Emergency Plumbing, Day or Night' : 'Plumbing Problems Can’t Always Wait'}
+            {site.features.emergency24h ? 'Emergency Piping, Day or Night' : 'Piping Problems Can’t Always Wait'}
           </h2>
           <p className="text-lead mt-6 max-w-2xl text-white/75">
             A burst pipe, major leak or serious drainage problem can quickly become a bigger issue.{' '}
             {site.features.emergency24h
               ? `${site.name} answers emergency calls 24 hours a day, 7 days a week, including nights, weekends and holidays.`
-              : `Contact ${site.name} to discuss your plumbing problem and determine the right next step.`}
+              : `Contact ${site.name} to discuss your piping problem and determine the right next step.`}
           </p>
           <ul className="mt-8 flex flex-wrap gap-2.5" aria-label="Common urgent problems">
             {urgentProblems.map((problem) => (

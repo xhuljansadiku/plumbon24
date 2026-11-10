@@ -13,14 +13,14 @@ export const generalFaqs: Faq[] = [
       'Yes, both. We work in houses, brownstones, apartments, condos and multi-family buildings, and with offices, restaurants, retail spaces, property managers and commercial building owners, on repairs, installations and maintenance.',
   },
   {
-    question: 'What plumbing problems can you help with?',
+    question: 'What piping problems can you help with?',
     answer:
-      'Leaks, clogged drains, water heaters, pipe repair and replacement, repiping, faucets and fixtures, toilets, garbage disposals, sump pumps, boilers and heating, fire sprinkler systems, backflow prevention, gas piping, and kitchen and bathroom plumbing.',
+      'Leaks, clogged drains, water heaters, pipe repair and replacement, repiping, faucets and fixtures, toilets, garbage disposals, sump pumps, boilers and steam heating, and kitchen and bathroom piping.',
   },
   ...(site.features.emergencyService
     ? [
         {
-          question: 'Do you offer 24/7 emergency plumbing?',
+          question: 'Do you offer 24/7 emergency piping?',
           answer:
             site.features.emergency24h && site.phone
               ? `Yes. Emergency service is available 24 hours a day, 7 days a week, in all five boroughs. For burst pipes, major leaks or sewer backups, call us at ${site.phone.display}. If water is actively leaking, close the main water shut-off valve while you wait.`
@@ -29,7 +29,7 @@ export const generalFaqs: Faq[] = [
       ]
     : []),
   {
-    question: 'How can I request plumbing service?',
+    question: 'How can I request piping service?',
     answer: `Tell us what’s going on: ${contactOptions}. Include your address, the type of property and photos of the problem if you can.`,
   },
   {
@@ -45,15 +45,15 @@ export const generalFaqs: Faq[] = [
     ? [
         {
           question: 'Are you licensed?',
-          answer: `Yes. ${site.name} is a licensed plumbing company${site.credentials.insured ? ' and fully insured' : ''}.${site.credentials.licenseNumber ? ` License: ${site.credentials.licenseNumber}.` : ' If your building or project needs license details, ask us and we’ll provide them.'}`,
+          answer: `Yes. ${site.name} is a licensed piping company${site.credentials.insured ? ' and fully insured' : ''}.${site.credentials.licenseNumber ? ` License: ${site.credentials.licenseNumber}.` : ' If your building or project needs license details, ask us and we’ll provide them.'}`,
         },
       ]
     : []),
   {
-    question: 'How much does plumbing service cost?',
+    question: 'How much does piping service cost?',
     answer: site.features.freeEstimates
-      ? 'Every job is different, so we offer free estimates. Cost depends on the problem, how accessible the plumbing is, the parts and materials needed and the overall scope of work. Tell us about the issue and we’ll give you a free estimate before any work begins.'
-      : 'Every job is different. Cost depends on the problem, how accessible the plumbing is, the parts and materials needed and the overall scope of work. Tell us about the issue and we’ll discuss pricing once we understand what’s involved.',
+      ? 'Every job is different, so we offer free estimates. Cost depends on the problem, how accessible the piping is, the parts and materials needed and the overall scope of work. Tell us about the issue and we’ll give you a free estimate before any work begins.'
+      : 'Every job is different. Cost depends on the problem, how accessible the piping is, the parts and materials needed and the overall scope of work. Tell us about the issue and we’ll discuss pricing once we understand what’s involved.',
   },
 ]
 
@@ -74,7 +74,7 @@ export const contactFaqs: Faq[] = [
       'We’re based in Sunset Park and serve all five boroughs: Manhattan, Brooklyn, Queens, the Bronx and Staten Island. If you’re not sure whether we cover your location, just ask.',
   },
   {
-    question: 'How much does plumbing service cost?',
+    question: 'How much does piping service cost?',
     answer:
       site.features.freeEstimates
         ? 'It depends on the problem and the scope of work. Estimates are free. Once we understand what’s involved, we’ll give you a price before any work begins.'
