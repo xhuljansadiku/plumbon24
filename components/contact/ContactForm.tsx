@@ -21,6 +21,7 @@ import {
   type ContactErrors,
   type ContactField,
 } from '@/lib/contact/schema'
+import { trackLeadSubmitted } from '@/lib/analytics'
 import { formatBytes, isLikelyImage, preparePhoto } from '@/lib/contact/photos'
 import { cn } from '@/lib/utils'
 
@@ -166,6 +167,9 @@ export function ContactForm({
       const body: { message?: string; errors?: ContactErrors } | null = await response.json().catch(() => null)
 
       if (response.ok) {
+        // The server also answers ok when the honeypot is filled, so bots are not counted as leads.
+        const isBot = String(data.get('company') ?? '').trim() !== ''
+        if (!isBot) trackLeadSubmitted({ formLocation: pathname, serviceType: String(data.get('service') ?? '') })
         photos.forEach((photo) => URL.revokeObjectURL(photo.url))
         setPhotos([])
         form.reset()

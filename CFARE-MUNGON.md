@@ -114,5 +114,12 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 - [x] **Lighthouse audit** (2026-10-19, lokalisht): Accessibility 100, Best Practices 100, SEO 100 në të gjitha faqet. Performance desktop 99, CLS 0. Mobile 80–92 (luhatje e madhe; edhe /terms del njësoj, pra është kostoja e Next/React, jo e faqes).
       → [x] **PageSpeed Insights** te URL-ja reale (2026-10-29): 100 në të katër kategoritë, desktop dhe mobile.
 - [x] **Koordinatat `geo`** në schema (OpenStreetMap + US Census, 2026-10-19).
-- [ ] **Analytics** (Vercel Analytics, pa cookies) + ndjekja e klikimeve "Call Now" dhe dërgimeve të formularit. Përditëso faqen Privacy.
+- [x] **Google Tag Manager `GTM-T7G4NV6H`** (2026-11-12, në kod): ngarkohet në çdo faqe nga `app/layout.tsx` (`@next/third-parties`).
+      dataLayer: `phone_click` (`phone_number`, `page_path`) për çdo link `tel:`; `generate_lead` (`form_id`, `form_location`, `service_type`)
+      vetëm pas `response.ok` nga `/api/contact` (jo kur dështon, jo për honeypot). Asnjë e dhënë e klientit në dataLayer.
+      Faqja Privacy u përditësua (seksioni "Advertising measurement"). Testuar lokalisht në Chrome headless: 18/18.
+      → [ ] **Brenda GTM**: triggers Custom Event `generate_lead` + `phone_click`, Conversion Linker, tag-et Google Ads Conversion
+        (Conversion ID + Label nga Google Ads), pastaj **Submit/Publish** containerin.
+      → [ ] **Test live** me GTM Preview / Tag Assistant te https://www.plumbon24.com pas deploy-it.
+      → [ ] Opsionale: GA4 nga brenda GTM (jo në kod) + Vercel Analytics.
 - [ ] **Kontroll mujor** në Search Console: cilat fjalë sjellin vizita, cilat faqe nuk janë indeksuar.

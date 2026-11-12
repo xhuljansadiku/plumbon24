@@ -1,10 +1,13 @@
 import type { Metadata, Viewport } from 'next'
 import { Anton, Inter, Instrument_Serif, Manrope } from 'next/font/google'
+import { GoogleTagManager } from '@next/third-parties/google'
+import { PhoneClickTracker } from '@/components/analytics/PhoneClickTracker'
 import { BackToTop } from '@/components/layout/BackToTop'
 import { MobileActionBar } from '@/components/layout/MobileActionBar'
 import { SiteFooter } from '@/components/layout/SiteFooter'
 import { SiteHeader } from '@/components/layout/SiteHeader'
 import { JsonLd } from '@/components/ui/JsonLd'
+import { GTM_ID } from '@/lib/analytics'
 import { businessSchema, websiteSchema } from '@/lib/seo'
 import { allowIndexing, getSiteUrl, site } from '@/lib/site'
 import './globals.css'
@@ -49,6 +52,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="en-US" data-scroll-behavior="smooth" className={`${inter.variable} ${manrope.variable} ${anton.variable} ${instrumentSerif.variable}`}>
+      <GoogleTagManager gtmId={GTM_ID} />
       <body className="min-h-dvh pb-[calc(4.75rem+env(safe-area-inset-bottom))] lg:pb-0">
         <a href="#main-content" className="skip-link">
           Skip to main content
@@ -60,6 +64,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
         <SiteFooter />
         <MobileActionBar phone={site.phone} email={site.email} />
         <BackToTop />
+        <PhoneClickTracker />
         <JsonLd data={[businessSchema(), websiteSchema()]} />
       </body>
     </html>

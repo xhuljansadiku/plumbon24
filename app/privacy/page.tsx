@@ -31,7 +31,15 @@ export default function PrivacyPage() {
         Like most websites, our hosting provider processes technical information such as your IP address, browser type and the pages
         you request, so the website can be delivered and kept secure. We use IP addresses to limit spam and abuse of our request form.
       </p>
-      <p>This website does not currently use analytics or advertising cookies.</p>
+      <h3>Advertising measurement</h3>
+      <p>
+        We use Google Tag Manager and Google Ads to measure how well our advertising works, for example how many people submit our
+        request form or tap our phone number after seeing an ad. Google may set cookies or use similar technologies and collect
+        information in line with its own privacy policy. We do not share the contents of your service request (such as your name,
+        phone number, email address or message) with these tools. You can learn how Google uses this information at{' '}
+        <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a> and manage
+        ad personalization at <a href="https://myadcenter.google.com">myadcenter.google.com</a>.
+      </p>
 
       <h2>How we use information</h2>
       <ul>

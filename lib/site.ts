@@ -125,7 +125,7 @@ export const site: SiteConfig = {
 
   copyrightYear: 2026,
   /** Date the content was last reviewed (YYYY-MM-DD). Used in the sitemap. */
-  lastUpdated: '2026-10-13',
+  lastUpdated: '2026-11-12',
 }
 
 export const addressLine = `${site.address.street}, ${site.address.city}, ${site.address.state} ${site.address.postalCode}`
