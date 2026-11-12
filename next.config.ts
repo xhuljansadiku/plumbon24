@@ -34,7 +34,9 @@ const nextConfig: NextConfig = {
       ['commercial-plumbing', 'commercial-piping'],
       ['plumbing-installation', 'piping-installation'],
       ['plumbing-maintenance', 'piping-maintenance'],
-    ].map(([from, to]) => ({ source: `/services/${from}`, destination: `/services/${to}`, permanent: true }))
+    ]
+      .map(([from, to]) => ({ source: `/services/${from}`, destination: `/services/${to}`, permanent: true }))
+      .concat({ source: '/services/category', destination: '/services', permanent: true })
   },
   turbopack: {
     rules: {

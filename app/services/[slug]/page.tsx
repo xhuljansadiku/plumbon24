@@ -17,7 +17,7 @@ import {
 import { JsonLd } from '@/components/ui/JsonLd'
 import { images } from '@/lib/images'
 import { createMetadata, serviceSchema } from '@/lib/seo'
-import { getService, serviceCategories, serviceHref, services } from '@/lib/services'
+import { categoryHref, getCategory, getService, serviceHref, services } from '@/lib/services'
 
 export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }))
@@ -35,7 +35,7 @@ export default async function ServicePage({ params }: PageProps<'/services/[slug
   const service = getService(slug)
   if (!service) notFound()
 
-  const category = serviceCategories.find((item) => item.id === service.category)
+  const category = getCategory(service.category)
 
   return (
     <>
@@ -45,6 +45,7 @@ export default async function ServicePage({ params }: PageProps<'/services/[slug
         intro={<p>{service.hero.intro}</p>}
         crumbs={[
           { name: 'Services', path: '/services' },
+          ...(category ? [{ name: category.title, path: categoryHref(category) }] : []),
           { name: service.title, path: serviceHref(service.slug) },
         ]}
         image={images[service.image]}

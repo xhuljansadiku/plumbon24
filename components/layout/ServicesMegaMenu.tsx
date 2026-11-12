@@ -2,15 +2,14 @@ import Link from 'next/link'
 import { ButtonLink } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
 import { Container } from '@/components/ui/Layout'
-import { getServicesByCategory, serviceCategories, serviceHref } from '@/lib/services'
+import { categoryHref, getServicesByCategory, serviceHref, visibleCategories } from '@/lib/services'
 import { ctaLabels } from '@/lib/site'
 
 /** Desktop "Services" dropdown panel (server-rendered). */
 export function ServicesMegaMenu() {
-  const columns = serviceCategories
+  const columns = visibleCategories
     .filter((category) => category.id !== 'property')
     .map((category) => ({ ...category, items: getServicesByCategory(category.id) }))
-    .filter((category) => category.items.length > 0)
   const propertyTypes = getServicesByCategory('property')
 
   return (
@@ -20,7 +19,9 @@ export function ServicesMegaMenu() {
           {columns.map(({ items, ...category }) => {
             return (
               <div key={category.id}>
-                <p className="text-eyebrow text-[0.6875rem] text-subtle">{category.title}</p>
+                <Link href={categoryHref(category)} className="text-eyebrow text-[0.6875rem] text-subtle transition-colors hover:text-brand-700">
+                  {category.title}
+                </Link>
                 <ul className="mt-4 grid gap-0.5">
                   {items.map((service) => (
                     <li key={service.slug}>

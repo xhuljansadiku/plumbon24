@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { serviceHref, services } from '@/lib/services'
+import { categoryHref, serviceHref, services, visibleCategories } from '@/lib/services'
 import { absoluteUrl, site } from '@/lib/site'
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -22,6 +22,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: 'monthly' as const,
       priority,
+    })),
+    ...visibleCategories.map((category) => ({
+      url: absoluteUrl(categoryHref(category)),
+      lastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
     })),
     ...services.map((service) => ({
       url: absoluteUrl(serviceHref(service.slug)),

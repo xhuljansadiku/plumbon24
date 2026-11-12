@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { ContactSection } from '@/components/sections/ContactSection'
 import { CtaBand } from '@/components/sections/CtaBand'
 import { FaqSection } from '@/components/sections/FaqSection'
@@ -11,7 +12,7 @@ import { generalFaqs } from '@/lib/faqs'
 import { images } from '@/lib/images'
 import { REQUEST_ANCHOR } from '@/lib/navigation'
 import { createMetadata } from '@/lib/seo'
-import { getServicesByCategory, serviceCategories } from '@/lib/services'
+import { categoryHref, getCategory, getServicesByCategory, visibleCategories } from '@/lib/services'
 import { ctaLabels, site } from '@/lib/site'
 
 export const metadata = createMetadata({
@@ -22,15 +23,13 @@ export const metadata = createMetadata({
 })
 
 export default function ServicesPage() {
-  const gridCategories = serviceCategories
+  const gridCategories = visibleCategories
     .filter((category) => category.id !== 'property')
     .map((category) => ({ ...category, items: getServicesByCategory(category.id) }))
-    .filter((category) => category.items.length > 0)
   const startIndexes = gridCategories.map((_, index) =>
     gridCategories.slice(0, index).reduce((total, category) => total + category.items.length, 0),
   )
-  const hasPropertyTypes = getServicesByCategory('property').length > 0
-  const visibleCategories = serviceCategories.filter((category) => getServicesByCategory(category.id).length > 0)
+  const propertyCategory = getCategory('property')
 
   return (
     <>
@@ -62,12 +61,12 @@ export default function ServicesPage() {
             <ul className="flex flex-wrap gap-2.5">
               {visibleCategories.map((category) => (
                 <li key={category.id}>
-                  <a
-                    href={`#${category.id}`}
+                  <Link
+                    href={categoryHref(category)}
                     className="inline-flex rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-white/85 transition-colors hover:border-white/40 hover:text-white"
                   >
                     {category.title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -76,11 +75,11 @@ export default function ServicesPage() {
       />
 
       {gridCategories.map((category, index) => (
-        <Section key={category.id} id={category.id} tone={index % 2 === 0 ? 'white' : 'mist'} labelledBy={`${category.id}-title`}>
+        <Section key={category.id} tone={index % 2 === 0 ? 'white' : 'mist'} labelledBy={`${category.id}-title`}>
           <Container>
             <SectionHeading
               eyebrow={`${category.items.length} services`}
-              title={category.title}
+              title={<Link href={categoryHref(category)} className="hover:text-brand-700">{category.title}</Link>}
               lead={category.description}
               id={`${category.id}-title`}
             />
@@ -95,12 +94,12 @@ export default function ServicesPage() {
         </Section>
       ))}
 
-      {hasPropertyTypes ? (
-        <Section id="property" tone={gridCategories.length % 2 === 0 ? 'white' : 'mist'} labelledBy="property-title">
+      {propertyCategory ? (
+        <Section tone={gridCategories.length % 2 === 0 ? 'white' : 'mist'} labelledBy="property-title">
           <Container>
             <SectionHeading
               eyebrow="By property type"
-              title="Residential & Commercial Piping"
+              title={<Link href={categoryHref(propertyCategory)} className="hover:text-brand-700">Residential & Commercial Piping</Link>}
               lead="Whether it’s your home or your business, the services above are available for the property you own, manage or run."
               id="property-title"
             />

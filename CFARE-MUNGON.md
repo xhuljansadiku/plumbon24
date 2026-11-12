@@ -73,6 +73,9 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 - [x] **Google Search Console** (2026-10-29): domain-i u verifikua, u kërkua indeksimi i faqes kryesore. **Bing**: u importua nga GSC.
 - [ ] **Google Business Profile**: vendos aty linkun e faqes dhe numrin e njëjtë (NAP i njëjtë kudo).
 - [ ] **Test pas publikimit**: dërgo një kërkesë provë nga formulari (me foto), provo "Call Now" në celular, kontrollo faqen në telefon.
+      → **2026-11-12: forma online raportohet se nuk punon.** Testi direkt te `/api/contact` (pa foto) ktheu `ok: true`,
+        pra serveri dhe Resend punojnë (u dërgua një email "TEST – please ignore" te `info@plumbon24.com`).
+        Në pritje: a erdhi ai email, dhe çfarë mesazhi shfaqet në shfletues kur dërgohet forma.
 
 ---
 
@@ -86,7 +89,8 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 ## 4. SEO lokale (jashtë faqes, peshon më shumë se vetë faqja)
 
 ### Nga klienti / ne bashkë me klientin
-- [ ] **Google Business Profile**: hape ose verifikoje (business.google.com). Kategoria kryesore: *Plumber*. Shto:
+- [ ] **Google Business Profile**: profili është krijuar; **po presim të bëhet aktiv** (2026-11-12). Kategoria dhe shërbimet
+      u rregulluan më 2026-11-10 (pa fjalën "plumbing"/"plumber"). Kur të jetë publik: linku → `profiles.googleBusinessProfile` te `lib/site.ts`. Shto:
       - NAP identik me faqen: `PLUMBON24 MECHANICAL INC`, `235 43rd St, Brooklyn, NY 11232`, `(917) 702-0072`
       - Service areas: Manhattan, Brooklyn, Queens, Bronx, Staten Island
       - Orari Mon–Fri 9–5 + "Open 24 hours" për emergjencat (ose shënim në përshkrim)
@@ -100,6 +104,9 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 - [x] **Domain + `NEXT_PUBLIC_SITE_URL`** (2026-10-29).
 - [x] **Google Search Console** (2026-10-29).
 - [x] **Bing Webmaster Tools** (2026-10-29): importuar nga GSC.
+- [x] **Faqe për çdo kategori shërbimesh** (2026-11-12): `/services/category/repairs`, `/heating-hot-water-fixtures`,
+      `/kitchens-bathrooms-projects`, `/residential-commercial`. Lidhen nga `/services` (në vend të `#`), menuja, breadcrumbs dhe sitemap.
+      Teksti i tyre është te `serviceCategories` në `lib/services/index.ts`. Kategoria pa shërbime të publikuara nuk merr faqe.
 - [ ] **Faqe për çdo borough** (`/service-areas/queens` etj.), me përmbajtje unike për secilin (lloje ndërtesash, probleme tipike, projekte aty). Vetëm kur kemi informacion real, ndryshe Google i sheh si "doorway pages".
 - [ ] **Licensed & Insured + numri i licencës** në faqe dhe në schema, kur ta japë klienti.
 - [ ] **Review në schema** (`aggregateRating`), vetëm me review reale të verifikueshme.
