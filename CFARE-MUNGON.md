@@ -74,8 +74,9 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
 - [ ] **Google Business Profile**: vendos aty linkun e faqes dhe numrin e njëjtë (NAP i njëjtë kudo).
 - [ ] **Test pas publikimit**: dërgo një kërkesë provë nga formulari (me foto), provo "Call Now" në celular, kontrollo faqen në telefon.
       → **2026-11-12: forma online raportohet se nuk punon.** Testi direkt te `/api/contact` (pa foto) ktheu `ok: true`,
-        pra serveri dhe Resend punojnë (u dërgua një email "TEST – please ignore" te `info@plumbon24.com`).
-        Në pritje: a erdhi ai email, dhe çfarë mesazhi shfaqet në shfletues kur dërgohet forma.
+        pra serveri dhe Resend punojnë (u dërgua një email "TEST – please ignore" te `info@plumbon24.com`; **erdhi** ✅).
+        Testi në shfletues (Edge, desktop) te `https://www.plumbon24.com/contact` me një foto 6.3 MB: `200`, "Request received" ✅.
+        Në pritje: ku/si nuk punon (telefon? iPhone/HEIC? faqja kryesore apo /contact? lokalisht?) dhe mesazhi që shfaqet.
 
 ---
 
