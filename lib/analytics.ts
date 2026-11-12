@@ -6,7 +6,7 @@ import { sendGTMEvent } from '@next/third-parties/google'
  *
  * dataLayer events must never carry visitor data (name, phone, email, message).
  */
-export const GTM_ID = 'GTM-T7G4NV6H'
+export const GTM_ID = 'GTM-KTS5MR48'
 
 /** A visitor tapped or clicked one of our tel: links. `phoneNumber` is the business number in the link. */
 export function trackPhoneClick(phoneNumber: string) {
