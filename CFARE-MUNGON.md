@@ -118,8 +118,46 @@ Faqja është gati teknikisht. Pikat më poshtë varen nga klienti ose nga publi
       dataLayer: `phone_click` (`phone_number`, `page_path`) për çdo link `tel:`; `generate_lead` (`form_id`, `form_location`, `service_type`)
       vetëm pas `response.ok` nga `/api/contact` (jo kur dështon, jo për honeypot). Asnjë e dhënë e klientit në dataLayer.
       Faqja Privacy u përditësua (seksioni "Advertising measurement"). Testuar lokalisht në Chrome headless: 18/18.
-      → [ ] **Brenda GTM**: triggers Custom Event `generate_lead` + `phone_click`, Conversion Linker, tag-et Google Ads Conversion
-        (Conversion ID + Label nga Google Ads), pastaj **Submit/Publish** containerin.
-      → [ ] **Test live** me GTM Preview / Tag Assistant te https://www.plumbon24.com pas deploy-it.
+      → [x] **Brenda GTM** (2026-11-12): containeri i ri GTM-KTS5MR48 te info@plumbon24.com (i vjetri GTM-T7G4NV6H ishte ID e brendshme e Google Ads).
+        Tag-e: "Google Ads - Contact form lead" (konvertimi "Contact", label GWwZCNmn37UdENzYypVF), "Google Ads - Phone click"
+        (konvertimi "Click to call", Calls from website, label 4qx7CJOSgLcdENzYypVF), Conversion Linker. Ads ID: AW-18567310428.
+        Publikuar si Version 2. Testuar me Preview: të dy tag-et Fired 1 herë. Live: klikimi i numrit dërgon konvertimin te Google Ads.
+      → [ ] **Kontrollo pas 24–48 orësh** te Google Ads → Conversions: statusi duhet të dalë "Recording conversions" / "No recent conversions".
+      → [x] **Click-to-Call terms** te Google Ads: pranuar (2026-11-12).
       → [ ] Opsionale: GA4 nga brenda GTM (jo në kod) + Vercel Analytics.
 - [ ] **Kontroll mujor** në Search Console: cilat fjalë sjellin vizita, cilat faqe nuk janë indeksuar.
+
+---
+
+## 5. Google Ads (klienti paguan për menaxhimin)
+
+Llogaria: info@plumbon24.com · Ads ID **AW-18567310428** · GTM **GTM-KTS5MR48** (Version 2 live).
+**Rregull i klientit (konfirmuar 2026-11-12): asnjë "plumber/plumbing" as në reklama** (tituj, përshkrime, emra, search themes).
+
+### ✅ Bërë më 2026-11-12
+- [x] Fushata Performance Max u riemërua nga "A Plumber Near You" në **"NYC Piping & Heating"**. Buxheti .60/ditë, Maximize conversions,
+      qëllimet Contacts + Phone call leads. Nisur më 2026-11-10 (12 klikime, $1.91 deri më 12 nëntor).
+- [x] **Tekstet pa "plumber"**: 12 headlines, 3 long headlines, 4 descriptions (piping / pipe repair / leak / heating / boiler / drain).
+- [x] **6 sitelinks**: Emergency, Leak Detection, Drain Cleaning, Heating & Hot Water, Free Estimate (/contact), Areas We Serve.
+- [x] **13 foto reale pune + 2 logo** (horizontal 1200×628, square 1200×1200, vertical 960×1200), te Desktopplumbon24-google-ads-images.
+- [x] **Zona**: vetëm 5 boroughs (Bronx County, Brooklyn, Manhattan, Queens County, Staten Island), "Presence" (jo "interest").
+      Më parë ishte 20 milje rreth Brooklyn-it (NJ, Long Island).
+- [x] **Asset optimization OFF** (Text customization + Final URL expansion janë të lidhura; të dyja off). Image/Video enhancement off
+      (përndryshe në NY state ads marrin etiketën "created with AI").
+- [x] **Channel prioritization**: Google channels High; Search partners dhe Display Network Low, max 10% secili.
+- [x] **Devices**: TV screens u hoq.
+- [x] **Negative keywords** në nivel llogarie (~42: jobs, school, diy, home depot, sprinkler, backflow, septic, gas line, sewer etj.).
+- [x] **Search themes**: "residential plumber" u zëvendësua me 20 tema (pipe repair, leak detection, boiler repair, no heat apartment…).
+- [x] **Audience signal**: Homeowners + Home Improvement.
+- [x] **Click-to-Call terms** pranuar. Data protection contact (opsional).
+
+### ⏳ Në vazhdim
+- [ ] **Mos ndrysho asgjë për ~2 javë** (learning). Pas çdo ndryshimi të madh Google rifillon mësimin.
+- [ ] **Pas 1–2 ditësh (~14 nëntor)**: Conversions → "Contact" dhe "Click to call" duhet "Recording" / "No recent conversions";
+      tekstet/fotot e reja "Approved"; Ad strength duhet të ketë dalë nga "Poor".
+- [ ] **Pas 7–10 ditësh, pastaj çdo javë**: Insights and reports → Search terms → shto fjalë negative të reja.
+- [ ] **Pas 2 javësh**: rezultatet (thirrje, formularë, kosto për lead).
+- [ ] **Buxheti me klientin**: $9.60/ditë është pak për NYC; propozim për fushatë **Search** (pipe repair, leak, boiler…) + buxhet.
+- [ ] **Raport për klientin**: Reports → Report editor (Campaign, Clicks, Cost, Conversions, Cost/conv, sipas Conversion action) → Schedule me email.
+- [ ] Opsionale: "Serving Manhattan, Brooklyn…" është futur 2 herë (një si long headline) — s'dëmton.
+
