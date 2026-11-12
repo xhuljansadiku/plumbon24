@@ -139,7 +139,7 @@ Llogaria: info@plumbon24.com · Ads ID **AW-18567310428** · GTM **GTM-KTS5MR48*
       qëllimet Contacts + Phone call leads. Nisur më 2026-11-10 (12 klikime, $1.91 deri më 12 nëntor).
 - [x] **Tekstet pa "plumber"**: 12 headlines, 3 long headlines, 4 descriptions (piping / pipe repair / leak / heating / boiler / drain).
 - [x] **6 sitelinks**: Emergency, Leak Detection, Drain Cleaning, Heating & Hot Water, Free Estimate (/contact), Areas We Serve.
-- [x] **13 foto reale pune + 2 logo** (horizontal 1200×628, square 1200×1200, vertical 960×1200), te Desktopplumbon24-google-ads-images.
+- [x] **13 foto reale pune + 2 logo** (horizontal 1200×628, square 1200×1200, vertical 960×1200), te Desktop/plumbon24-google-ads-images.
 - [x] **Zona**: vetëm 5 boroughs (Bronx County, Brooklyn, Manhattan, Queens County, Staten Island), "Presence" (jo "interest").
       Më parë ishte 20 milje rreth Brooklyn-it (NJ, Long Island).
 - [x] **Asset optimization OFF** (Text customization + Final URL expansion janë të lidhura; të dyja off). Image/Video enhancement off
