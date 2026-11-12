@@ -161,6 +161,10 @@ Llogaria: info@plumbon24.com · Ads ID **AW-18567310428** · GTM **GTM-KTS5MR48*
 - [ ] **Pas 7–10 ditësh, pastaj çdo javë**: Insights and reports → Search terms → shto fjalë negative të reja.
 - [ ] **Pas 2 javësh**: rezultatet (thirrje, formularë, kosto për lead).
 - [ ] **Buxheti me klientin**: $9.60/ditë është pak për NYC; propozim për fushatë **Search** (pipe repair, leak, boiler…) + buxhet.
-- [ ] **Raport për klientin**: Reports → Report editor (Campaign, Clicks, Cost, Conversions, Cost/conv, sipas Conversion action) → Schedule me email.
+- [ ] **Raporti i parë për klientin: MANUAL, në fund të muajit** (vendim i 2026-11-12; automatizimi me Looker Studio më vonë).
+      Hapat: Campaigns → periudha e muajit → Segment → Conversions → Conversion action → screenshot + numri i email-eve
+      "New service request" te info@plumbon24.com → ia dërgon Claude-it → Claude shkruan raportin. Quotes = "Contact", Calls = "Calls from ads",
+      Phone taps = "Click to call" (shtypje e numrit, jo domosdoshmërisht thirrje). Opsionale para raportit: rreshti "Source: Google Ads" te email-i.
+- [ ] Më vonë: **Raport automatik** (Looker Studio ose Reports → Report editor (Campaign, Clicks, Cost, Conversions, Cost/conv, sipas Conversion action) → Schedule me email.
 - [ ] Opsionale: "Serving Manhattan, Brooklyn…" është futur 2 herë (një si long headline) — s'dëmton.
 
