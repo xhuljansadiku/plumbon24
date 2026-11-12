@@ -156,7 +156,8 @@ Llogaria: info@plumbon24.com · Ads ID **AW-18567310428** · GTM **GTM-KTS5MR48*
 - [ ] **Pas 1–2 ditësh (~14 nëntor)**: Conversions → "Contact" dhe "Click to call" duhet "Recording" / "No recent conversions";
       tekstet/fotot e reja "Approved"; Ad strength duhet të ketë dalë nga "Poor".
       Diagnostics shfaq "Conversion tracking setup is incomplete" (12 nëntor: normale, s'ka ende konvertim). **Mos kliko "Set up"** (kod i dyfishtë).
-      Nëse mbetet pas 48 orësh: shto në GTM tag "Google tag" AW-18567310428 me trigger Initialization – All Pages, Preview, Publish.
+      → [x] U shtua në GTM (12 nëntor, Version 3): "Google tag - AW-18567310428" në Initialization – All Pages. Verifikuar live:
+        tag-u ngarkohet në çdo faqe, 0 konvertime nga hapja e faqes, konvertimi dërgohet vetëm pas klikimit të numrit.
 - [ ] **Pas 7–10 ditësh, pastaj çdo javë**: Insights and reports → Search terms → shto fjalë negative të reja.
 - [ ] **Pas 2 javësh**: rezultatet (thirrje, formularë, kosto për lead).
 - [ ] **Buxheti me klientin**: $9.60/ditë është pak për NYC; propozim për fushatë **Search** (pipe repair, leak, boiler…) + buxhet.
